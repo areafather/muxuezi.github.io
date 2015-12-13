@@ -1,0 +1,4 @@
+Sitemap: https://muxuezi.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: muxuezi.github.io

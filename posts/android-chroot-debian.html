@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<base href="https://muxuezi.github.io/posts/android-chroot-debian.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>android-chroot-debian | 绿萝间</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="https://muxuezi.github.io/posts/android-chroot-debian.html">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Tao Junjie">
+<link rel="prev" href="3d-javascript-code.html" title="3d-javascript-code" type="text/html">
+<link rel="next" href="android-emulator-in-mint64.html" title="android-emulator-in-mint64" type="text/html">
+<meta property="og:site_name" content="绿萝间">
+<meta property="og:title" content="android-chroot-debian">
+<meta property="og:url" content="https://muxuezi.github.io/posts/android-chroot-debian.html">
+<meta property="og:description" content="以前在Webos、kindle上面用过chroot，可以运行Debian、Ubuntu，现在总结一下Android的chroot Debian（Ubuntu方法类似）方法
+
+
+环境：在ubuntu下
+背景 春节期间，老弟给了一部手机酷派7290，参数如下：
+
+    网络模式：GSM，WCDMA
+    网络类型：双卡双模
+    主屏尺寸：4.5英寸 800x480像素
+    CPU型号：联发">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-01-01T13:44:27+08:00">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="WordPress">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://muxuezi.github.io/">
+
+                <span id="blog-title">绿萝间</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../archive.html">Archive</a>
+                </li>
+<li>
+<a href="../categories/">Tags</a>
+                </li>
+<li>
+<a href="../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="android-chroot-debian.wp" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">android-chroot-debian</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" itemprop="datePublished" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+                <p class="commentline">
+        
+    <a href="android-chroot-debian.html#disqus_thread" data-disqus-identifier="cache/posts/android-chroot-debian.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="android-chroot-debian.wp" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p></p>
+<p>以前在Webos、kindle上面用过chroot，可以运行Debian、Ubuntu，现在总结一下Android的chroot Debian（Ubuntu方法类似）方法</p>
+<!-- TEASER_END -->
+
+<p>环境：在ubuntu下</p>
+<h2>背景 春节期间，老弟给了一部手机酷派7290，参数如下：</h2>
+<p></p>
+<ul>
+<li>网络模式：GSM，WCDMA</li>
+    <li>网络类型：双卡双模</li>
+    <li>主屏尺寸：4.5英寸 800x480像素</li>
+    <li>CPU型号：联发科 MT6577</li>
+    <li>CPU频率：1024MHz 双核</li>
+    <li>电池容量：1800mAh 可拆卸式电池</li>
+    <li>后置摄像头像素：500万像素</li>
+    <li>操作系统：Android OS 4.0</li>
+    <li>RAM容量：512MB</li>
+    <li>ROM容量：4GB</li>
+    <li>SIM卡类型：SIM卡</li>
+    <li>存储卡：MicroSD卡</li>
+</ul>
+<h2>步骤</h2>
+<ol>
+<li>制作Debian arm版本</li>
+</ol>
+<pre>#安装编译工具
+
+apt-get install debootstrap
+
+apt-get install qemu-arm-static #ubuntu32
+
+(apt-get install qemu-user-static) #mint64</pre>
+
+<pre>#生成img文件1.5G
+
+dd if=/dev/zero of=debian.img bs=1M count=1536
+
+mkdir build</pre>
+
+<pre>#将img格式化为ext2
+
+losetup -f debian.img
+
+mkfs.ext2 /dev/loop0</pre>
+
+<pre>#挂载img到文件build内，debootstrap建立debian
+
+mount /dev/loop0 build/ 
+
+debootstrap --arch armhf --foreign sid build/ http://ftp.cn.debian.org/debian</pre>
+
+<pre>#通过chroot进入debian，用qemu编译为arm版本
+
+cp /usr/bin/qemu-arm-static build/usr/bin/
+
+chroot build/
+
+/debootstrap/debootstrap --second-stage</pre>
+
+<pre>#添加源为sid（也可以是wheezy）
+
+apt-get clean
+
+echo "deb http://ftp.us.debian.org/debian sid main" &gt; /etc/apt/sources.list</pre>
+
+<pre>#退出debian，清理qemu
+
+exit
+
+rm build/usr/bin/qemu-arm-static
+
+umount build/
+
+losetup -d /dev/loop0</pre>
+
+<p>参考<a title="webos debian" href="http://www.webos-internals.org/wiki/Debian" target="_blank">http://www.webos-internals.org/wiki/Debian</a></p>
+<ol>
+<li>Andorid Shell</li>
+</ol>
+<ul>
+<li>把debian.img复制到手机内存卡上 /mnt/sdcard</li>
+    <li> Andorid手机上安装BTEP(<a title="BTEP" href="https://play.google.com/store/apps/details?id=com.magicandroidapps.bettertermpro&amp;hl=en" target="_blank">Better Terminal Emulator Pro</a>)</li>
+    <li>两个shell复制到debian.img同文件夹内startbt.sh和bt.sh</li>
+</ul>
+<ol>
+<li>脚本运行Chroot</li>
+</ol>
+<ul>
+<li><span style="line-height: 1.5;">启动BTEP，在preference开启root权限</span></li>
+    <li>
+<span style="line-height: 1.5;">运行一次sh </span><span style="line-height: 1.5;"> /mnt/sdcard/</span><span style="line-height: 1.5;">startbt.sh，每次重启手机后运行一次即可</span>
+</li>
+    <li>再运行sh  /mnt/sdcard/bt.sh，每次进入debian都运行一次，BTEP在android shell下可以init commend运行sh  /mnt/sdcard/bt.sh，一开BTEP就进debian</li>
+</ul>
+<ol>
+<li>apt-get 升级安装软件</li>
+</ol>
+<ul>
+<li><span style="line-height: 1.5;">更新升级apt-get update &amp;&amp; apt-get upgrade</span></li>
+    <li>支持python-pandas 0.13.1 最新版</li>
+    <li>debian的任何命令、软件都可以用</li>
+</ul>
+<h2>结束</h2>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categories/linux.html" rel="tag">Linux</a></li>
+            <li><a class="tag p-category" href="../categories/wordpress.html" rel="tag">WordPress</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="3d-javascript-code.html" rel="prev" title="3d-javascript-code">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="android-emulator-in-mint64.html" rel="next" title="android-emulator-in-mint64">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="tj2",
+            disqus_url="https://muxuezi.github.io/posts/android-chroot-debian.html",
+        disqus_title="android-chroot-debian",
+        disqus_identifier="cache/posts/android-chroot-debian.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="tj2";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2015         <a href="mailto:muxuezi@gmail.com">Tao Junjie</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51330059-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
