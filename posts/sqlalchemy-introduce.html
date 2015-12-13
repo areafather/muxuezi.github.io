@@ -2,17 +2,15 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
 <head>
 <meta charset="utf-8">
-<base href="https://muxuezi.github.io/">
-<meta name="description" content="Tj2's Blog">
+<base href="https://muxuezi.github.io/posts/sqlalchemy-introduce.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>绿萝间</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
-<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<title>SQLAlchemy Introduce | 绿萝间</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="https://muxuezi.github.io/">
-<link rel="next" href="index-196.html" type="text/html">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="https://muxuezi.github.io/posts/sqlalchemy-introduce.html">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -25,7 +23,26 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sqlalchemy-introduce.html" type="text/html">
+</script><!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Tao Junjie">
+<link rel="prev" href="postgres-import-csv-cp936-error.html" title="Postgres Import CSV cp936 Error" type="text/html">
+<meta property="og:site_name" content="绿萝间">
+<meta property="og:title" content="SQLAlchemy Introduce">
+<meta property="og:url" content="https://muxuezi.github.io/posts/sqlalchemy-introduce.html">
+<meta property="og:description" content="perface¶
+
+
+
+
+
+
+
+
+我们每天都要面对数据，数据库CRUD操作的能力对每个任务都至关重要。无论你是开发网页，桌面或其他应用，他们都需要快速且安全的接入数据。关系型数据库仍然是储存数据最主流的手段之一。
+SQL是操作数据的利器，不过有时候要整合到应用里非常麻烦。作为一个Pythoner，你可能需要通过ODBC接口或者数据库API，用一些字符串生成查询。虽然这些方法可以有效的处理数据，但是">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-12-13T19:17:02+08:00">
+<meta property="article:tag" content="ipython">
+<meta property="article:tag" content="sql">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -50,18 +67,24 @@ MathJax.Hub.Config({
         <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
             <ul class="nav navbar-nav">
 <li>
-<a href="archive.html">Archive</a>
+<a href="../archive.html">Archive</a>
                 </li>
 <li>
-<a href="categories/">Tags</a>
+<a href="../categories/">Tags</a>
                 </li>
 <li>
-<a href="rss.xml">RSS feed</a>
+<a href="../rss.xml">RSS feed</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="sqlalchemy-introduce.ipynb" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -72,22 +95,26 @@ MathJax.Hub.Config({
         <div class="row">
             
             
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">SQLAlchemy Introduce</a></h1>
 
-<div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sqlalchemy-introduce.html" class="u-url">SQLAlchemy Introduce</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
+                    Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/sqlalchemy-introduce.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-13T19:17:02+08:00" title="2015-12-13 19:17">2015-12-13 19:17</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-12-13T19:17:02+08:00" itemprop="datePublished" title="2015-12-13 19:17">2015-12-13 19:17</time></a></p>
                 <p class="commentline">
         
-    <a href="posts/sqlalchemy-introduce.html#disqus_thread" data-disqus-identifier="cache/posts/sqlalchemy-introduce.html">Comments</a>
+    <a href="sqlalchemy-introduce.html#disqus_thread" data-disqus-identifier="cache/posts/sqlalchemy-introduce.html">Comments</a>
 
 
+            
         </p>
-</div>
-    </header><div class="p-summary entry-summary">
+<p class="sourceline"><a href="sqlalchemy-introduce.ipynb" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
     <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -96,7 +123,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="perface">perface<a class="anchor-link" href="posts/sqlalchemy-introduce.html#perface">¶</a>
+<h2 id="perface">perface<a class="anchor-link" href="sqlalchemy-introduce.html#perface">¶</a>
 </h2>
 </div>
 </div>
@@ -121,7 +148,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.SQLAlchemy简介">1.SQLAlchemy简介<a class="anchor-link" href="posts/sqlalchemy-introduce.html#1.SQLAlchemy%E7%AE%80%E4%BB%8B">¶</a>
+<h2 id="1.SQLAlchemy简介">1.SQLAlchemy简介<a class="anchor-link" href="sqlalchemy-introduce.html#1.SQLAlchemy%E7%AE%80%E4%BB%8B">¶</a>
 </h2>
 </div>
 </div>
@@ -143,7 +170,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="为什么用SQLAlchemy">为什么用SQLAlchemy<a class="anchor-link" href="posts/sqlalchemy-introduce.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8SQLAlchemy">¶</a>
+<h3 id="为什么用SQLAlchemy">为什么用SQLAlchemy<a class="anchor-link" href="sqlalchemy-introduce.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8SQLAlchemy">¶</a>
 </h3>
 </div>
 </div>
@@ -164,7 +191,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="SQLAlchemy-Core和SQL表达式语言">SQLAlchemy Core和SQL表达式语言<a class="anchor-link" href="posts/sqlalchemy-introduce.html#SQLAlchemy-Core%E5%92%8CSQL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E8%A8%80">¶</a>
+<h4 id="SQLAlchemy-Core和SQL表达式语言">SQLAlchemy Core和SQL表达式语言<a class="anchor-link" href="sqlalchemy-introduce.html#SQLAlchemy-Core%E5%92%8CSQL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E8%A8%80">¶</a>
 </h4>
 </div>
 </div>
@@ -184,7 +211,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="ORM">ORM<a class="anchor-link" href="posts/sqlalchemy-introduce.html#ORM">¶</a>
+<h4 id="ORM">ORM<a class="anchor-link" href="sqlalchemy-introduce.html#ORM">¶</a>
 </h4>
 </div>
 </div>
@@ -205,7 +232,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Core和ORM的选择">Core和ORM的选择<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Core%E5%92%8CORM%E7%9A%84%E9%80%89%E6%8B%A9">¶</a>
+<h3 id="Core和ORM的选择">Core和ORM的选择<a class="anchor-link" href="sqlalchemy-introduce.html#Core%E5%92%8CORM%E7%9A%84%E9%80%89%E6%8B%A9">¶</a>
 </h3>
 <p>究竟是选择Core还是ORM作为应用的数据链接层呢？除了个人喜好，理由可以归结为一些影响因素。这两种模式的语法不太一样，但Core和ORM最大的差异是Core对数据模式和<a href="https://en.wikipedia.org/wiki/Business_object">业务对象（business objects）</a>的不同处理方式。</p>
 <p>SQLAlchemy Core是以模式为中心，和普通SQL一样有表，键和索引等。SQLAlchemy Core最擅长的时数据仓库，报表分析，以及其他使用数据查询和其他操作可以牢牢掌控的地方。它拥有强大的数据库连接池（ connection pool）和数据结果集（ResultSet）优化，非常适合处理大量数据，甚至多数据库也适用。</p>
@@ -229,7 +256,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="SQLAlchemy安装与数据库连接">SQLAlchemy安装与数据库连接<a class="anchor-link" href="posts/sqlalchemy-introduce.html#SQLAlchemy%E5%AE%89%E8%A3%85%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5">¶</a>
+<h3 id="SQLAlchemy安装与数据库连接">SQLAlchemy安装与数据库连接<a class="anchor-link" href="sqlalchemy-introduce.html#SQLAlchemy%E5%AE%89%E8%A3%85%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5">¶</a>
 </h3>
 <p>SQLAlchemy支持Python 2.6+，Python 3.3+和Pypy 2.1+，强烈推荐conda安装，pip也可以（Python 2.7.5+和Python 3.4+自带pip）。</p>
 <div class="highlight"><pre>conda install sqlalchemy
@@ -238,20 +265,20 @@ or
 
 pip install sqlalchemy
 </pre></div>
-<h4 id="安装数据库驱动">安装数据库驱动<a class="anchor-link" href="posts/sqlalchemy-introduce.html#%E5%AE%89%E8%A3%85%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8">¶</a>
+<h4 id="安装数据库驱动">安装数据库驱动<a class="anchor-link" href="sqlalchemy-introduce.html#%E5%AE%89%E8%A3%85%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8">¶</a>
 </h4>
 <p>SQLAlchemy默认支持SQLite3，不需要安装驱动；但是，其他数据库都需要用符合Python的DBAPI（PEP-249）标准的驱动。这些DBAPI提供了与各种数据库进行交互的方言，可以体现不同数据库独有的特性。不同的数据库也可能有多个不同的DBAPI，下面主要介绍PostgreSQL和MySQL数据库的驱动。</p>
-<h5 id="PostgreSQL">PostgreSQL<a class="anchor-link" href="posts/sqlalchemy-introduce.html#PostgreSQL">¶</a>
+<h5 id="PostgreSQL">PostgreSQL<a class="anchor-link" href="sqlalchemy-introduce.html#PostgreSQL">¶</a>
 </h5>
 <p><a href="http://initd.org/psycopg/">Psycopg2</a>提供了PostgreSQL的驱动，可以用<code>pip install psycopg2</code>安装。</p>
-<h5 id="MySQL">MySQL<a class="anchor-link" href="posts/sqlalchemy-introduce.html#MySQL">¶</a>
+<h5 id="MySQL">MySQL<a class="anchor-link" href="sqlalchemy-introduce.html#MySQL">¶</a>
 </h5>
 <p><a href="https://github.com/PyMySQL/PyMySQL">PyMySQL</a>是MySQL的驱动，可以用<code>pip install pymysql</code>安装。SQLAlchemy支持MySQL 4.1+版本，由于之前的版本密码工作方式不同。如果某个类型只存在于MySQL的特定版本中，那么SQLAlchemy不会支持那些没有该类型的MySQL版本使用该类型。用MySQL时，如果SQLAlchemy的某个函数不能正常运行，建议看看MySQL的文档。</p>
-<h4 id="Others">Others<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Others">¶</a>
+<h4 id="Others">Others<a class="anchor-link" href="sqlalchemy-introduce.html#Others">¶</a>
 </h4>
 <p>关于其他数据库的SQLAlchemy支持，请参考SQLAlchemy文档。Drizzle，Firebird，Oracle， Sybase，Microsoft SQL Server都支持。IBM DB2，Informix，Amazon Redshift，EXASolution，SAP SQL Anywhere，Monet等数据库也有SQLAlchemy社区支持。额外的方言也可以由SQLAlchemy支持，在第八章：自定义方言里面有介绍。</p>
 <p>有了DBAPI连接件，我们再看看如何连接数据库。</p>
-<h4 id="连接数据库">连接数据库<a class="anchor-link" href="posts/sqlalchemy-introduce.html#%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93">¶</a>
+<h4 id="连接数据库">连接数据库<a class="anchor-link" href="sqlalchemy-introduce.html#%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93">¶</a>
 </h4>
 <p>连接数据库需要SQLAlchemy引擎，SQLAlchemy引擎为数据库执行SQL语句创建了一个常用的接口。引擎通过封装一个数据库连接池和方言来实现不同数据库类型统一的接口。这样做使得Python代码不需要关心不同数据库DBAPI之间的差异。SQLAlchemy提供了一个带连接字符串（connection string）和一些参数的函数来创建引擎。连接字符串形式如下：</p>
 <ul>
@@ -391,7 +418,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SQLAlchemy-Core">SQLAlchemy Core<a class="anchor-link" href="posts/sqlalchemy-introduce.html#SQLAlchemy-Core">¶</a>
+<h2 id="SQLAlchemy-Core">SQLAlchemy Core<a class="anchor-link" href="sqlalchemy-introduce.html#SQLAlchemy-Core">¶</a>
 </h2>
 </div>
 </div>
@@ -412,7 +439,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.Schema-and-Types">2.Schema and Types<a class="anchor-link" href="posts/sqlalchemy-introduce.html#2.Schema-and-Types">¶</a>
+<h2 id="2.Schema-and-Types">2.Schema and Types<a class="anchor-link" href="sqlalchemy-introduce.html#2.Schema-and-Types">¶</a>
 </h2>
 </div>
 </div>
@@ -441,7 +468,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Types">Types<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Types">¶</a>
+<h3 id="Types">Types<a class="anchor-link" href="sqlalchemy-introduce.html#Types">¶</a>
 </h3>
 <p>SQLAlchemy有四种数据类型：</p>
 <ul>
@@ -565,7 +592,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Metadata">Metadata<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Metadata">¶</a>
+<h4 id="Metadata">Metadata<a class="anchor-link" href="sqlalchemy-introduce.html#Metadata">¶</a>
 </h4>
 </div>
 </div>
@@ -600,7 +627,7 @@ pip install sqlalchemy
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>有了盛放数据库结构的地方，我们就可以建立数据表了。</p>
-<h3 id="Tables">Tables<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Tables">¶</a>
+<h3 id="Tables">Tables<a class="anchor-link" href="sqlalchemy-introduce.html#Tables">¶</a>
 </h3>
 </div>
 </div>
@@ -675,7 +702,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Columns">Columns<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Columns">¶</a>
+<h4 id="Columns">Columns<a class="anchor-link" href="sqlalchemy-introduce.html#Columns">¶</a>
 </h4>
 </div>
 </div>
@@ -763,7 +790,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Keys-and-Constraints">Keys and Constraints<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Keys-and-Constraints">¶</a>
+<h4 id="Keys-and-Constraints">Keys and Constraints<a class="anchor-link" href="sqlalchemy-introduce.html#Keys-and-Constraints">¶</a>
 </h4>
 <p>键和约束是用来保证数据在存到数据库之前能够满足一些约束条件的方法。表示键和约束的对象在SQLAlchemy模块里面都有，常用的三个如下所示：</p>
 
@@ -858,7 +885,7 @@ pip install sqlalchemy
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>除了键和约束，我们还想更高效的查询一些字段。这就要介绍索引（Indexes）。</p>
-<h4 id="Indexes">Indexes<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Indexes">¶</a>
+<h4 id="Indexes">Indexes<a class="anchor-link" href="sqlalchemy-introduce.html#Indexes">¶</a>
 </h4>
 <p>索引是用来加速查询的，在例1里面，我们把<code>cookie_name</code>加上了索引，因为我们知道我们经常需要查询它们。索引创建之后你就会获得一个<code>ix_cookies_cookie_name</code>索引。我们也可以显式定义一个索引。多列的索引可以通过分号分隔名称来建立。你还可以增加一个参数<code>unique=True</code>来保证索引具有唯一性。如果显式声明索引，它们就会在放在对应列后面。下面的做法与例1相同：</p>
 
@@ -920,10 +947,10 @@ pip install sqlalchemy
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>下面到了关系型数据库最重要的部分了，就是表的关联关系与定义。</p>
-<h4 id="Relationships-and-ForeignKeyConstraints">Relationships and ForeignKeyConstraints<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Relationships-and-ForeignKeyConstraints">¶</a>
+<h4 id="Relationships-and-ForeignKeyConstraints">Relationships and ForeignKeyConstraints<a class="anchor-link" href="sqlalchemy-introduce.html#Relationships-and-ForeignKeyConstraints">¶</a>
 </h4>
 <p>现在我们有了一个约束和索引都正确的表，让我们看看表之间的关系如何建立。我们需要一种方法来跟踪订单，包括记录已销售的饼干和数量的信息。表关系图如下所示：
-<img src="posts/relationship.png" alt="">
+<img src="relationship.png" alt="">
 例3实现了<code>line_items</code>表<code>order_id</code>列的关系，就是用<code>ForeignKeyConstraint</code>定义两个表的关系。在本例中，我们有很多<code>line_items</code>表示单个订单。但是，如果你深入到这些订单中，你会发现订单与<code>cookies</code>表的<code>cookie_id</code>外键有关联关系。这是因为<code>line_items</code>表其实与<code>orders</code>和<code>cookies</code>表的一些数据都有关联。关联表用来表示另外两个表之间的多对多关系。通常一个外键用来表示一对多关系，但是如果一个表有多个外键，那么这个表很可能是一个关联表。</p>
 
 </div>
@@ -986,7 +1013,7 @@ pip install sqlalchemy
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>前面做的每件事情都是用SQLAlchemy可以理解的方式定义的。如果你的数据库已经存在，而且schema已经建立，你就可以进行查询了。如果你还没建立，下面就介绍如何把数据库建成文件。</p>
-<h4 id="Persisting-the-Tables">Persisting the Tables<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Persisting-the-Tables">¶</a>
+<h4 id="Persisting-the-Tables">Persisting the Tables<a class="anchor-link" href="sqlalchemy-introduce.html#Persisting-the-Tables">¶</a>
 </h4>
 <p>表和模式定义与原数据相关。把模式保存到数据库很简单，用<code>metadata</code>的<code>create_all()</code>方法就可以了：</p>
 
@@ -1081,7 +1108,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.SQLAlchemy-Core数据操作">3.SQLAlchemy Core数据操作<a class="anchor-link" href="posts/sqlalchemy-introduce.html#3.SQLAlchemy-Core%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C">¶</a>
+<h2 id="3.SQLAlchemy-Core数据操作">3.SQLAlchemy Core数据操作<a class="anchor-link" href="sqlalchemy-introduce.html#3.SQLAlchemy-Core%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C">¶</a>
 </h2>
 </div>
 </div>
@@ -1101,7 +1128,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Inserting-Data">Inserting Data<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Inserting-Data">¶</a>
+<h3 id="Inserting-Data">Inserting Data<a class="anchor-link" href="sqlalchemy-introduce.html#Inserting-Data">¶</a>
 </h3>
 </div>
 </div>
@@ -1400,7 +1427,7 @@ pip install sqlalchemy
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Querying-Data">Querying Data<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Querying-Data">¶</a>
+<h4 id="Querying-Data">Querying Data<a class="anchor-link" href="sqlalchemy-introduce.html#Querying-Data">¶</a>
 </h4>
 </div>
 </div>
@@ -1532,7 +1559,7 @@ FROM cookies
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="ResultProxy">ResultProxy<a class="anchor-link" href="posts/sqlalchemy-introduce.html#ResultProxy">¶</a>
+<h5 id="ResultProxy">ResultProxy<a class="anchor-link" href="sqlalchemy-introduce.html#ResultProxy">¶</a>
 </h5>
 </div>
 </div>
@@ -1726,7 +1753,7 @@ oatmeal raisin
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="控制查询的列">控制查询的列<a class="anchor-link" href="posts/sqlalchemy-introduce.html#%E6%8E%A7%E5%88%B6%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%88%97">¶</a>
+<h5 id="控制查询的列">控制查询的列<a class="anchor-link" href="sqlalchemy-introduce.html#%E6%8E%A7%E5%88%B6%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%88%97">¶</a>
 </h5>
 </div>
 </div>
@@ -1817,7 +1844,7 @@ oatmeal raisin
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Ordering">Ordering<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Ordering">¶</a>
+<h5 id="Ordering">Ordering<a class="anchor-link" href="sqlalchemy-introduce.html#Ordering">¶</a>
 </h5>
 </div>
 </div>
@@ -1931,7 +1958,7 @@ oatmeal raisin
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Limiting">Limiting<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Limiting">¶</a>
+<h5 id="Limiting">Limiting<a class="anchor-link" href="sqlalchemy-introduce.html#Limiting">¶</a>
 </h5>
 </div>
 </div>
@@ -1993,7 +2020,7 @@ oatmeal raisin
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Builtin-SQL-Functions-and-Labels">Builtin SQL Functions and Labels<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Builtin-SQL-Functions-and-Labels">¶</a>
+<h5 id="Builtin-SQL-Functions-and-Labels">Builtin SQL Functions and Labels<a class="anchor-link" href="sqlalchemy-introduce.html#Builtin-SQL-Functions-and-Labels">¶</a>
 </h5>
 </div>
 </div>
@@ -2143,7 +2170,7 @@ oatmeal raisin
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Filtering">Filtering<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Filtering">¶</a>
+<h5 id="Filtering">Filtering<a class="anchor-link" href="sqlalchemy-introduce.html#Filtering">¶</a>
 </h5>
 </div>
 </div>
@@ -2253,7 +2280,7 @@ dark chocolate chip
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Operators">Operators<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Operators">¶</a>
+<h5 id="Operators">Operators<a class="anchor-link" href="sqlalchemy-introduce.html#Operators">¶</a>
 </h5>
 <p>ClauseElements就是我们在从句中使用的一个元素，通常都是数据表的列；但是，和列不同，ClauseElements有许多功能。在例3-18里面，我们用来<code>like()</code>方法，其实还有很多方法如表3-1所示。每个方法都和标准SQL里面的函数类似。后面会大量使用它们。</p>
 <table>
@@ -2306,7 +2333,7 @@ dark chocolate chip
 </table>
 <p>还有两个相反操作的函数<code>notlike()</code>和<code>notin_()</code>，以及一个不带下划线的函数<code>isnot()</code>。</p>
 <p>如果我们不用这些方法，我们还可以用运算符。大部分运算符都和你的习惯一样，不过我们要介绍一些奇怪的地方。</p>
-<h5 id="操作符">操作符<a class="anchor-link" href="posts/sqlalchemy-introduce.html#%E6%93%8D%E4%BD%9C%E7%AC%A6">¶</a>
+<h5 id="操作符">操作符<a class="anchor-link" href="sqlalchemy-introduce.html#%E6%93%8D%E4%BD%9C%E7%AC%A6">¶</a>
 </h5>
 <p>到目前为止我们过滤数据都是通过判断列是否等于一个数值，或者用ClauseElement方法的函数，比如<code>like()</code>；其实我们还可以用很多运算符号来过滤数据。SQLAlchemy提供了大量Python的标准运算符。这包括所有的标准比较运算符（<code>==</code>，<code>!=</code>，<code>&lt;</code>，<code>&gt;</code>，<code>&gt;=</code>），与Python语句里使用方法一致。<code>==</code>操作符在和<code>None</code>比较时还表示<code>IS NULL</code>。算法运算符（<code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>,<code>%</code>）也可用于数据库字符串处理，如例3-19所示。</p>
 
@@ -2406,11 +2433,11 @@ oatmeal raisin - 100.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Boolean-Operators">Boolean Operators<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Boolean-Operators">¶</a>
+<h5 id="Boolean-Operators">Boolean Operators<a class="anchor-link" href="sqlalchemy-introduce.html#Boolean-Operators">¶</a>
 </h5>
 <p>SQLAlchemy也支持逻辑运算符（与AND，或OR，非NOT），用位操作符表示（<code>&amp;</code>，<code>|</code>，<code>~</code>）。使用时一定要注意，因为Python自带的逻辑运算符规则。比如，<code>&amp;</code>比<code>&lt;</code>优先级高，当你写<code>A &lt; B &amp; C &lt; D</code>的时候，运算结果是<code>A &lt; (B &amp; C) &lt; D</code>，而你实际想写的是<code>(A &lt; B) &amp; (C &lt; D)</code>。为了清晰表达意思，请用连接词（conjunctions），不要用这些重载运算符。</p>
 <p>通常在处理多个从句时，从句之间存在与或非关系时，应该用连接词。</p>
-<h5 id="Conjunctions">Conjunctions<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Conjunctions">¶</a>
+<h5 id="Conjunctions">Conjunctions<a class="anchor-link" href="sqlalchemy-introduce.html#Conjunctions">¶</a>
 </h5>
 <p>虽然可以把多个<code>where()</code>从句连起来，但是用连接词会让语句更清晰好看。SQLAlchemy的连接词是<code>and_()</code>，<code>or_()</code>和<code>not_()</code>。如果我们想要查询库存和单价满足特定条件的饼干时，可以用<code>and_()</code>实现。</p>
 
@@ -2507,7 +2534,7 @@ peanut butter
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>not()</code>连接词类似，只是表示不包含条件的结果。到这里我们已经可以轻松的查询数据了，下面我们看看如何更新数据。</p>
-<h4 id="Updating-Data">Updating Data<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Updating-Data">¶</a>
+<h4 id="Updating-Data">Updating Data<a class="anchor-link" href="sqlalchemy-introduce.html#Updating-Data">¶</a>
 </h4>
 <p>还有一个数据更新方法，和前面用的<code>insert</code>方法类似，除了它们需要指定一个条件表面要更新的行，语法与<code>insert</code>完全一致。更新方法可以用<code>update()</code>函数或待更新表的<code>update()</code>方法。如果不增加条件，就会更新表中所有行。当我做完新的饼干之后，就要更新库存数据。在例3-23中，我们更新对应饼干的库存，然后计算新的总库存量。</p>
 
@@ -2563,7 +2590,7 @@ peanut butter
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>除了更新数据，还要删除数据。</p>
-<h4 id="Deleting-Data">Deleting Data<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Deleting-Data">¶</a>
+<h4 id="Deleting-Data">Deleting Data<a class="anchor-link" href="sqlalchemy-introduce.html#Deleting-Data">¶</a>
 </h4>
 <p>删除数据可以用<code>delete()</code>函数或表的<code>delete()</code>方法。和<code>insert()</code>，<code>update()</code>不同的是，<code>delete()</code>无数值参数，只有一个可选的<code>where()</code>用于设置删除区域（如果没有就删除全表所有数据）。</p>
 
@@ -2717,7 +2744,7 @@ peanut butter
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>在SQLAlchemy Core的第二章中我们介绍过外键和关系；但是我们还没有用它们做过查询，下面我们就来看看这些关系。</p>
-<h4 id="Joins">Joins<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Joins">¶</a>
+<h4 id="Joins">Joins<a class="anchor-link" href="sqlalchemy-introduce.html#Joins">¶</a>
 </h4>
 </div>
 </div>
@@ -2880,7 +2907,7 @@ WHERE users.username = :username_1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Aliases">Aliases<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Aliases">¶</a>
+<h4 id="Aliases">Aliases<a class="anchor-link" href="sqlalchemy-introduce.html#Aliases">¶</a>
 </h4>
 </div>
 </div>
@@ -3069,7 +3096,7 @@ WHERE employee.id = employee_1.id AND employee_1.name = :name_1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Grouping">Grouping<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Grouping">¶</a>
+<h4 id="Grouping">Grouping<a class="anchor-link" href="sqlalchemy-introduce.html#Grouping">¶</a>
 </h4>
 </div>
 </div>
@@ -3126,7 +3153,7 @@ WHERE employee.id = employee_1.id AND employee_1.name = :name_1
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>前面的<code>join</code>的例子中我们已经用过，这里再看看<code>group_by</code>的用法。</p>
-<h4 id="Chaining">Chaining<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Chaining">¶</a>
+<h4 id="Chaining">Chaining<a class="anchor-link" href="sqlalchemy-introduce.html#Chaining">¶</a>
 </h4>
 </div>
 </div>
@@ -3387,7 +3414,7 @@ WHERE employee.id = employee_1.id AND employee_1.name = :name_1
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>到此为止，我们已经用SQL表达式语言的例子演示了SQLAlchemy Core。其实，你也可以直接用标准的SQL语言来进行。</p>
-<h4 id="Raw-Queries">Raw Queries<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Raw-Queries">¶</a>
+<h4 id="Raw-Queries">Raw Queries<a class="anchor-link" href="sqlalchemy-introduce.html#Raw-Queries">¶</a>
 </h4>
 <p>在SQLAlchemy Core里面可以用原始的SQL语句进行操作，结果也是返回一个代理，后面的操作和SQLAlchemy Core的SQL表达式语法一样。除非必须，一般不推荐使用原始SQL，因为这么做存在安全隐患。下面我们简单演示一下。</p>
 
@@ -3478,10 +3505,10 @@ WHERE employee.id = employee_1.id AND employee_1.name = :name_1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exceptions-and-Transactions">Exceptions and Transactions<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Exceptions-and-Transactions">¶</a>
+<h2 id="Exceptions-and-Transactions">Exceptions and Transactions<a class="anchor-link" href="sqlalchemy-introduce.html#Exceptions-and-Transactions">¶</a>
 </h2>
 <p>前面做数据处理时，大部分工作我们都只用一行语句就搞定了，我们尽量避免做任何可能引起异常的事情，而本章我们会刻意搞点bug来演示异常处理方法。另外，我们还会介绍如何把对需要处理的任务分成单独的事务进行处理，保证每个事务都可以被适当地执行或正确地清理。</p>
-<h3 id="Exceptions">Exceptions<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Exceptions">¶</a>
+<h3 id="Exceptions">Exceptions<a class="anchor-link" href="sqlalchemy-introduce.html#Exceptions">¶</a>
 </h3>
 <p>SQLAlchemy会产生许多不同类型的异常；不过这里只重点介绍一些常见的异常：<code>AttributeErrors</code>和<code>IntegrityErrors</code>。通过对常用异常处理方法的学习，你可以掌握其他异常的处理方法。</p>
 <p>下面，请重新开一个Python shell或Notebook，然后用SQLAlchemy Core建立数据表。具体过程如例4-1所示。</p>
@@ -3575,7 +3602,7 @@ WHERE employee.id = employee_1.id AND employee_1.name = :name_1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="AttributeError">AttributeError<a class="anchor-link" href="posts/sqlalchemy-introduce.html#AttributeError">¶</a>
+<h4 id="AttributeError">AttributeError<a class="anchor-link" href="sqlalchemy-introduce.html#AttributeError">¶</a>
 </h4>
 <p><code>AttributeError</code>是指获取一个不存在的属性时产生的异常。经常是在连接<code>ResultProxy</code>里没有的一列时发生。在尝试获取一个对象不存在的属性时<code>AttributeError</code>也会发生。在普通的Python代码里也会发生。这里单独拿出来说是因为SQLAlchemy里非常容易出现这类异常，而其产生的根源却很容易忽略。为了演示这类异常，我们在<code>users</code>表里插入一列数据，然后我们查询没有<code>selsect</code>的一列来诱发异常。</p>
 
@@ -3692,7 +3719,7 @@ During handling of the above exception, another exception occurred:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>在例4-2中我们看到Python抛出了<code>AttributeError</code>并停止了程序，我们可以看到<code>AttributeError</code>是Python里常见的形式。首先显示错异常的类型，然后一个箭头会指明异常发生的位置，紧接着是异常发生源代码。最后一行会显示异常的具体内容，它会显示异常类型，以及为什么发生异常。这里出现异常的原因是ResultProxy里面没有<code>password</code>列，我们只查询了<code>username</code>列。这是在使用SQLAlchemy对象时出现的一个常见Python异常，还有一些SQLAlchemy自己特有的异常。下面就是其中一个：<code>IntegrityError</code>。</p>
-<h4 id="IntegrityError">IntegrityError<a class="anchor-link" href="posts/sqlalchemy-introduce.html#IntegrityError">¶</a>
+<h4 id="IntegrityError">IntegrityError<a class="anchor-link" href="sqlalchemy-introduce.html#IntegrityError">¶</a>
 </h4>
 <p><code>IntegrityError</code>是另一个SQLAlchemy常见的异常，当我们做了不符合数据表或字段约束条件的事情时就会发生。当你请求的数据是唯一的，比如<code>users</code>表中的<code>username</code>,想创建两个同名用户时就会产生<code>IntegrityError</code>，演示程序如下所示。</p>
 
@@ -3772,7 +3799,7 @@ During handling of the above exception, another exception occurred:
 <p>这就告诉我们在<code>users</code>表的<code>username</code>里面插入同名用户是不允许的。之后的内容是SQLAlchemy表达式转变成的SQL语句，我们在第三章里介绍过，还有我们计划插入却产生异常的数据。程序在这里停止。</p>
 <p>当然会有很多种异常类型，这里介绍的两种是最常见的。SQLAlchemy里所有异常发生都会按照这两种方式产生。具体异常的内容请查看<a href="http://docs.sqlalchemy.org/en/latest/core/exceptions.html">SQLAlchemy文档</a>。</p>
 <p>为了保证程序在发生异常时继续运行，我们需要实现异常处理方法。</p>
-<h4 id="Handling-Errors">Handling Errors<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Handling-Errors">¶</a>
+<h4 id="Handling-Errors">Handling Errors<a class="anchor-link" href="sqlalchemy-introduce.html#Handling-Errors">¶</a>
 </h4>
 <p>要防止异常中断程序，我们需要正确地处理异常。这与Python的异常处理方法一样，用<code>try/except</code>代码块实现。例如，我们可以用<code>try/except</code>代码块捕捉异常显示信息，然后让后面的程序继续运行。</p>
 
@@ -3828,12 +3855,12 @@ During handling of the above exception, another exception occurred:
 <p><code>try/except</code>里面的代码越少越好。因为代码太多可能会出现你意料之外的异常，不符合你捕捉的目标。</p>
 </blockquote>
 <p>用传统的Python方法可以捕捉一行语句的异常，如果我们有多个数据库语句，彼此之间互相关联，这个方法可能就不适用了。这时，我们需要将那些语句封装成一个数据库事务，SQLAlchemy提供了一个简单的包装来建立对象之间的链接：transactions。</p>
-<h3 id="Transactions">Transactions<a class="anchor-link" href="posts/sqlalchemy-introduce.html#Transactions">¶</a>
+<h3 id="Transactions">Transactions<a class="anchor-link" href="sqlalchemy-introduce.html#Transactions">¶</a>
 </h3>
 <p>我们不需要学习一堆数据库理论，可以把事务看成是一种确保多个数据库语句打包成一组运行成功或运行失败的处理方式。当启动一个事务的时候，我们记录数据库的状态，然后执行多条SQL语句。如果所有的SQL语句都能顺利执行，数据库就会不断的更新状态，忽略前面的状态，如下图所示。
-<img src="posts/transactions1.png" alt="">
+<img src="transactions1.png" alt="">
 但是，如果有一条语句运行失败了，整个数据库就要回退（rollback）到原来的状态，如下图所示。
-<img src="posts/transactions2.png" alt="">
+<img src="transactions2.png" alt="">
 举个我们可能会在之前建立的数据库里操作的例子。当客户买了我们的饼干之后，我们就需要把饼干邮寄给客户，同时更新库存量。但是，如果我们没有足够的饼干库存履行客户的订单需求，怎么办呢？我们就查检查库存，并且不邮寄订单。这就可以用事务解决。</p>
 <p>我们再新建一个Python Shell或Notebook，还用第三章的表，只是为<code>quantity</code>字段增加一个<code>CheckConstraint</code>限制条件，即库存量不能小于0。然后我们创建用户<em>cookiemon</em>，并设置<em>chocolate chip</em>和<em>dark chocolate chip cookie</em>的库存量，其中<em>chocolate chip</em>库存量为12，<em>dark chocolate chip cookie</em>库存量为1，具体程序如下所示。</p>
 
@@ -4369,348 +4396,39 @@ During handling of the above exception, another exception occurred:
   </div>
 
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/postgres-import-csv-cp936-error.html" class="u-url">Postgres Import CSV cp936 Error</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/postgres-import-csv-cp936-error.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-13T19:11:05+08:00" title="2015-12-13 19:11">2015-12-13 19:11</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/postgres-import-csv-cp936-error.html#disqus_thread" data-disqus-identifier="cache/posts/postgres-import-csv-cp936-error.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Postgres导入CSV中文编码错误">Postgres导入CSV中文编码错误<a class="anchor-link" href="posts/postgres-import-csv-cp936-error.html#Postgres%E5%AF%BC%E5%85%A5CSV%E4%B8%AD%E6%96%87%E7%BC%96%E7%A0%81%E9%94%99%E8%AF%AF">¶</a>
-</h2>
-<p>现在公司数据资源非常丰富，动辄要处理的csv就1E8行纪录，10G，分析起来相当爽。编码格式是cp936，用官方的COPY命令导入Postgres，一直出错，目前COPY的ENCODING不支持cp936。试着用Pandas读几行，保持csv为utf-8再COPY没问题。</p>
-<p>解决办法：通过Python3的Pandas读取CSV转换成utf－8，再利用sqlalchemy＋psycopg2（目前只支持到Python3.4，还不支持3.5）导入即可。</p>
-<blockquote>
-<p>这么多依赖推荐使用<a href="https://www.continuum.io/downloads">Anaconda</a>，十分方便，尤其适合解决在Windows平台编译C语言相关库（lxml，psycopg2，numpy，pandas）时的各种奇葩问题。</p>
-</blockquote>
-<p>具体方法如下：</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="k">import</span> <span class="n">create_engine</span>
-<span class="kn">import</span> <span class="nn">ipython_memory_usage.ipython_memory_usage</span> <span class="k">as</span> <span class="nn">imu</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">imu</span><span class="o">.</span><span class="n">start_watching_memory</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>In [2] used 0.0195 MiB RAM in 0.12s, peaked 0.00 MiB above current, total RAM usage 61.92 MiB
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">chunksize</span> <span class="o">=</span> <span class="mi">1</span><span class="n">E6</span>
-<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s">'postgresql+psycopg2://postgres:tianKong7@localhost:5432/postgres'</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>In [3] used 1.3125 MiB RAM in 0.16s, peaked 0.00 MiB above current, total RAM usage 63.23 MiB
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'c_全年库存结构变动_20151124122730.csv'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'cp936'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>In [4] used 4.0273 MiB RAM in 0.12s, peaked 0.00 MiB above current, total RAM usage 67.26 MiB
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
-    <span class="n">chunk</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s">"inventory"</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s">'append'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
-    <span class="k">del</span> <span class="n">chunk</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># CREATE TABLE inv (</span>
-<span class="c">#     stat_date	date,</span>
-<span class="c">#     store_src_cd	int,</span>
-<span class="c">#     sku_id	int,</span>
-<span class="c">#     stock_qty	int,</span>
-<span class="c">#     canuse_qty	int,</span>
-<span class="c">#     len	int,</span>
-<span class="c">#     width	int,</span>
-<span class="c">#     height	int,</span>
-<span class="c">#     item_first_cate_name	varchar(80),</span>
-<span class="c">#     item_second_cate_name	varchar(80),</span>
-<span class="c">#     item_third_cate_name	varchar(80)</span>
-<span class="c"># );</span>
-
-<span class="c"># COPY inv FROM 'D:\\reader\\dask-tutorial\\top200.csv' DELIMITER ',' CSV;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div>
-  </div>
-
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/dlott-15145-2015-12-12-report.html" class="u-url">大乐透15145期(2015-12-12)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/dlott-15145-2015-12-12-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-13T08:00:00+08:00" title="2015-12-13 08:00">2015-12-13 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/dlott-15145-2015-12-12-report.html#disqus_thread" data-disqus-identifier="cache/posts/dlott-15145-2015-12-12-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/dlott-15145-2015-12-12-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/slott-2015145-2015-12-10-report.html" class="u-url">双色球2015145期(2015-12-10)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/slott-2015145-2015-12-10-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-11T08:00:00+08:00" title="2015-12-11 08:00">2015-12-11 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/slott-2015145-2015-12-10-report.html#disqus_thread" data-disqus-identifier="cache/posts/slott-2015145-2015-12-10-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/slott-2015145-2015-12-10-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/dlott-15144-2015-12-09-report.html" class="u-url">大乐透15144期(2015-12-09)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/dlott-15144-2015-12-09-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-10T08:00:00+08:00" title="2015-12-10 08:00">2015-12-10 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/dlott-15144-2015-12-09-report.html#disqus_thread" data-disqus-identifier="cache/posts/dlott-15144-2015-12-09-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/dlott-15144-2015-12-09-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/slott-2015144-2015-12-08-report.html" class="u-url">双色球2015144期(2015-12-08)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/slott-2015144-2015-12-08-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-09T08:00:00+08:00" title="2015-12-09 08:00">2015-12-09 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/slott-2015144-2015-12-08-report.html#disqus_thread" data-disqus-identifier="cache/posts/slott-2015144-2015-12-08-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/slott-2015144-2015-12-08-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/dlott-15143-2015-12-07-report.html" class="u-url">大乐透15143期(2015-12-07)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/dlott-15143-2015-12-07-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-08T08:00:00+08:00" title="2015-12-08 08:00">2015-12-08 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/dlott-15143-2015-12-07-report.html#disqus_thread" data-disqus-identifier="cache/posts/dlott-15143-2015-12-07-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/dlott-15143-2015-12-07-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/slott-2015143-2015-12-06-report.html" class="u-url">双色球2015143期(2015-12-06)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/slott-2015143-2015-12-06-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-07T08:00:00+08:00" title="2015-12-07 08:00">2015-12-07 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/slott-2015143-2015-12-06-report.html#disqus_thread" data-disqus-identifier="cache/posts/slott-2015143-2015-12-06-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/slott-2015143-2015-12-06-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/dlott-15142-2015-12-05-report.html" class="u-url">大乐透15142期(2015-12-05)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/dlott-15142-2015-12-05-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-06T08:00:00+08:00" title="2015-12-06 08:00">2015-12-06 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/dlott-15142-2015-12-05-report.html#disqus_thread" data-disqus-identifier="cache/posts/dlott-15142-2015-12-05-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/dlott-15142-2015-12-05-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/slott-2015142-2015-12-03-report.html" class="u-url">双色球2015142期(2015-12-03)数据分析报告</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/slott-2015142-2015-12-03-report.html" rel="bookmark"><time class="published dt-published" datetime="2015-12-04T08:00:00+08:00" title="2015-12-04 08:00">2015-12-04 08:00</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/slott-2015142-2015-12-03-report.html#disqus_thread" data-disqus-identifier="cache/posts/slott-2015142-2015-12-03-report.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>如有雷同，纯属巧合</p>
-<p class="more"><a href="posts/slott-2015142-2015-12-03-report.html">Read more…</a></p>
-</div>
-    </div>
-    </article>
-</div>
-
-        <nav class="postindexpager"><ul class="pager">
-<li class="next">
-                <a href="index-196.html" rel="next">Older posts</a>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categories/ipython.html" rel="tag">ipython</a></li>
+            <li><a class="tag p-category" href="../categories/sql.html" rel="tag">sql</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="postgres-import-csv-cp936-error.html" rel="prev" title="Postgres Import CSV cp936 Error">Previous post</a>
             </li>
-        </ul></nav><script>var disqus_shortname="tj2";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="tj2",
+            disqus_url="https://muxuezi.github.io/posts/sqlalchemy-introduce.html",
+        disqus_title="SQLAlchemy Introduce",
+        disqus_identifier="cache/posts/sqlalchemy-introduce.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
             MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
-            </script>
+            </script></article><script>var disqus_shortname="tj2";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
         <!--End of body content-->
 
@@ -4724,7 +4442,7 @@ During handling of the above exception, another exception occurred:
 </div>
 
 
-            <script src="assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><script>
