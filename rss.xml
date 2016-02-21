@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间</title><link>https://muxuezi.github.io/</link><description>Tj2's Blog</description><atom:link type="application/rss+xml" rel="self" href="https://muxuezi.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Sat, 20 Feb 2016 00:36:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>双色球2016018期(2016-02-18)数据分析报告</title><link>https://muxuezi.github.io/posts/slott-2016018-2016-02-18-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>绿萝间</title><link>https://muxuezi.github.io/</link><description>Tj2's Blog</description><atom:link rel="self" type="application/rss+xml" href="https://muxuezi.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Sun, 21 Feb 2016 05:27:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Zen of Python</title><link>https://muxuezi.github.io/posts/zen-of-python.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;h2&gt;Python已经25岁&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;祝Python生日快乐！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1991年2月20日，荷兰人（Dutch）Guido van Rossum发布了Python的0.9.0版，至今25年。Python简洁优雅高效，应用极其广泛，在科学计算、机器学习、系统管理、网络开发等众多领域愈加光彩夺目。译Python设计哲学分享给大家：&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Python设计哲学，作者Tim Peters（The Zen of Python, by Tim Peters）
+
+美观优于丑陋（Beautiful is better than ugly.）
+显明胜过隐晦（Explicit is better than implicit.）
+复杂优于混乱（Complex is better than complicated.）
+扁平胜过嵌套（Flat is better than nested.）
+广泛优于深邃（Sparse is better than dense.）
+可读性不可或缺（Readability counts.）
+特例不能破坏规则（Special cases aren't special enough to break the rules.）
+即使复杂现实会打破纯粹规则（Although practicality beats purity.）
+异常不能不辞而别（Errors should never pass silently.）
+除非需要它悄然无声（Unless explicitly silenced.）
+模棱两可时，不要胡思乱想（In the face of ambiguity, refuse the temptation to guess.）
+应该有且仅有一种明确的方式解决问题（There should be one-- and preferably only one-- obvious way to do it.）
+虽然那种方式起初并非显而易见，除非你是Guido（Although that way may not be obvious at first unless you're Dutch.）
+现在做比不做好（Now is better than never.）
+虽然不做比急于求成好（Although never is often better than *right* now.）
+如果结果很难解释，一定不靠谱（If the implementation is hard to explain, it's a bad idea.）
+如果容易解释，也许行得通（If the implementation is easy to explain, it may be a good idea.）.
+命名空间是个非常好的理念——让我们继续努力吧！（Namespaces are one honking great idea -- let's do more of those!）
+&lt;/pre&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;原文在https://www.python.org/打开shell（黄色按钮），命令行里输入import this即可看到。&lt;/p&gt;
+&lt;p&gt;Guido大叔今年60岁（1956年1月31日），依然在为Python社区贡献力量，写代码，做演讲，宣传Python新特性，乐此不疲。人生苦短，Python当歌！&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;</description><category>Python</category><guid>https://muxuezi.github.io/posts/zen-of-python.html</guid><pubDate>Sun, 21 Feb 2016 05:20:52 GMT</pubDate></item><item><title>双色球2016018期(2016-02-18)数据分析报告</title><link>https://muxuezi.github.io/posts/slott-2016018-2016-02-18-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/slott-2016018-2016-02-18-report.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/slott-2016018-2016-02-18-report.html</guid><pubDate>Fri, 19 Feb 2016 00:00:00 GMT</pubDate></item><item><title>大乐透16018期(2016-02-17)数据分析报告</title><link>https://muxuezi.github.io/posts/dlott-16018-2016-02-17-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/dlott-16018-2016-02-17-report.html"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/dlott-16018-2016-02-17-report.html</guid><pubDate>Thu, 18 Feb 2016 00:00:00 GMT</pubDate></item><item><title>双色球2016017期(2016-02-16)数据分析报告</title><link>https://muxuezi.github.io/posts/slott-2016017-2016-02-16-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/slott-2016017-2016-02-16-report.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/slott-2016017-2016-02-16-report.html</guid><pubDate>Wed, 17 Feb 2016 00:00:00 GMT</pubDate></item><item><title>大乐透16017期(2016-02-15)数据分析报告</title><link>https://muxuezi.github.io/posts/dlott-16017-2016-02-15-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
@@ -8,5 +37,4 @@
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/dlott-16016-2016-02-06-report.html"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/dlott-16016-2016-02-06-report.html</guid><pubDate>Sun, 07 Feb 2016 00:00:00 GMT</pubDate></item><item><title>双色球2016015期(2016-02-04)数据分析报告</title><link>https://muxuezi.github.io/posts/slott-2016015-2016-02-04-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/slott-2016015-2016-02-04-report.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/slott-2016015-2016-02-04-report.html</guid><pubDate>Fri, 05 Feb 2016 00:00:00 GMT</pubDate></item><item><title>大乐透16015期(2016-02-03)数据分析报告</title><link>https://muxuezi.github.io/posts/dlott-16015-2016-02-03-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/dlott-16015-2016-02-03-report.html"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/dlott-16015-2016-02-03-report.html</guid><pubDate>Thu, 04 Feb 2016 00:00:00 GMT</pubDate></item><item><title>双色球2016014期(2016-02-02)数据分析报告</title><link>https://muxuezi.github.io/posts/slott-2016014-2016-02-02-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/slott-2016014-2016-02-02-report.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/slott-2016014-2016-02-02-report.html</guid><pubDate>Wed, 03 Feb 2016 00:00:00 GMT</pubDate></item><item><title>大乐透16014期(2016-02-01)数据分析报告</title><link>https://muxuezi.github.io/posts/dlott-16014-2016-02-01-report.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;如有雷同，纯属巧合&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/dlott-16014-2016-02-01-report.html"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/dlott-16014-2016-02-01-report.html</guid><pubDate>Tue, 02 Feb 2016 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/slott-2016014-2016-02-02-report.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Lottery</category><guid>https://muxuezi.github.io/posts/slott-2016014-2016-02-02-report.html</guid><pubDate>Wed, 03 Feb 2016 00:00:00 GMT</pubDate></item></channel></rss>
