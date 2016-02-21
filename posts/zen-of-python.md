@@ -29,6 +29,6 @@ Python设计哲学，作者Tim Peters（The Zen of Python, by Tim Peters）
 命名空间是个非常好的理念——让我们继续努力吧！（Namespaces are one honking great idea -- let's do more of those!）
 ```
 
-> 原文在(Pytyon官方网站）[https://www.python.org/]打开shell（黄色按钮），命令行里输入import this即可看到。
+> 原文在[Python官方网站](https://www.python.org/)打开shell（黄色按钮），命令行里输入import this即可看到。
 
 > Guido大叔今年60岁（1956年1月31日），依然在为Python社区贡献力量，写代码，做演讲，宣传Python新特性，乐此不疲。人生苦短，Python当歌！
