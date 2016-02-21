@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>绿萝间 (Python)</title><link>https://muxuezi.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="https://muxuezi.github.io/categories/python.xml"></atom:link><language>en</language><lastBuildDate>Sun, 21 Feb 2016 05:27:42 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Zen of Python</title><link>https://muxuezi.github.io/posts/zen-of-python.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;h2&gt;Python已经25岁&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>绿萝间 (Python)</title><link>https://muxuezi.github.io/</link><description></description><atom:link type="application/rss+xml" href="https://muxuezi.github.io/categories/python.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 21 Feb 2016 05:44:04 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Zen of Python</title><link>https://muxuezi.github.io/posts/zen-of-python.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;h2&gt;Python已经25岁&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;祝Python生日快乐！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="happy25" src="https://muxuezi.github.io/posts/happy25.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;1991年2月20日，荷兰人（Dutch）Guido van Rossum发布了Python的0.9.0版，至今25年。Python简洁优雅高效，应用极其广泛，在科学计算、机器学习、系统管理、网络开发等众多领域愈加光彩夺目。译Python设计哲学分享给大家：&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Python设计哲学，作者Tim Peters（The Zen of Python, by Tim Peters）
 
@@ -26,7 +27,7 @@
 
 
 &lt;blockquote&gt;
-&lt;p&gt;原文在https://www.python.org/打开shell（黄色按钮），命令行里输入import this即可看到。&lt;/p&gt;
+&lt;p&gt;原文在(Pytyon官方网站）[https://www.python.org/]打开shell（黄色按钮），命令行里输入import this即可看到。&lt;/p&gt;
 &lt;p&gt;Guido大叔今年60岁（1956年1月31日），依然在为Python社区贡献力量，写代码，做演讲，宣传Python新特性，乐此不疲。人生苦短，Python当歌！&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/div&gt;</description><category>Python</category><guid>https://muxuezi.github.io/posts/zen-of-python.html</guid><pubDate>Sun, 21 Feb 2016 05:20:52 GMT</pubDate></item><item><title>6.Utilizing Parallel Python</title><link>https://muxuezi.github.io/posts/6utilizing-parallel-python.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
@@ -105,84 +106,7 @@
 &lt;li&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;贝叶斯岭回归&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html"&gt;用梯度提升回归从误差中学习&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/2-working-with-linear-models.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/2-working-with-linear-models.html</guid><pubDate>Tue, 18 Aug 2015 05:07:14 GMT</pubDate></item><item><title>using-linear-methods-for-classification-logistic-regression</title><link>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="用线性方法处理分类问题——逻辑回归"&gt;用线性方法处理分类问题——逻辑回归&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html#%E7%94%A8%E7%BA%BF%E6%80%A7%E6%96%B9%E6%B3%95%E5%A4%84%E7%90%86%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;实际上线性模型也可以用于分类任务。方法是把一个线性模型拟合成某个类型的概率分布，然后用一个函数建立阈值来确定结果属于哪一类。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>evaluating-the-linear-regression-model</title><link>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="评估线性回归模型"&gt;评估线性回归模型&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html#%E8%AF%84%E4%BC%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;在这个主题中，我们将介绍回归模型拟合数据的效果。上一个主题我们拟合了数据，但是并没太关注拟合的效果。每当拟合工作做完之后，我们应该问的第一个问题就是“拟合的效果如何？”本主题将回答这个问题。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>optimizing-the-ridge-regression-parameter</title><link>https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="优化岭回归参数"&gt;优化岭回归参数&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html#%E4%BC%98%E5%8C%96%E5%B2%AD%E5%9B%9E%E5%BD%92%E5%8F%82%E6%95%B0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;当你使用岭回归模型进行建模时，需要考虑&lt;code&gt;Ridge&lt;/code&gt;的&lt;code&gt;alpha&lt;/code&gt;参数。&lt;/p&gt;
-&lt;p&gt;例如，用OLS（普通最小二乘法）做回归也许可以显示两个变量之间的某些关系；但是，当&lt;code&gt;alpha&lt;/code&gt;参数正则化之后，那些关系就会消失。做决策时，这些关系是否需要考虑就显得很重要了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>using-boosting-to-learn-from-errors</title><link>https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="用梯度提升回归从误差中学习"&gt;用梯度提升回归从误差中学习&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html#%E7%94%A8%E6%A2%AF%E5%BA%A6%E6%8F%90%E5%8D%87%E5%9B%9E%E5%BD%92%E4%BB%8E%E8%AF%AF%E5%B7%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;梯度提升回归（Gradient boosting regression，GBR）是一种从它的错误中进行学习的技术。它本质上就是集思广益，集成一堆较差的学习算法进行学习。有两点需要注意：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;每个学习算法准备率都不高，但是它们集成起来可以获得很好的准确率。&lt;/li&gt;
-&lt;li&gt;这些学习算法依次应用，也就是说每个学习算法都是在前一个学习算法的错误中学习&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>directly-applying-bayesian-ridge-regression</title><link>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/2-working-with-linear-models.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/2-working-with-linear-models.html</guid><pubDate>Tue, 18 Aug 2015 05:07:14 GMT</pubDate></item><item><title>directly-applying-bayesian-ridge-regression</title><link>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -201,4 +125,77 @@
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;在&lt;em&gt;用岭回归弥补线性回归的不足&lt;/em&gt;主题中，我们介绍了岭回归优化的限制条件。我们还介绍了相关系数的先验概率分布的贝叶斯解释，将很大程度地影响着先验概率分布，先验概率分布通常均值是0。&lt;/p&gt;
 &lt;p&gt;因此，现在我们就来演示如何scikit-learn来应用这种解释。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>evaluating-the-linear-regression-model</title><link>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="评估线性回归模型"&gt;评估线性回归模型&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html#%E8%AF%84%E4%BC%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;在这个主题中，我们将介绍回归模型拟合数据的效果。上一个主题我们拟合了数据，但是并没太关注拟合的效果。每当拟合工作做完之后，我们应该问的第一个问题就是“拟合的效果如何？”本主题将回答这个问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>using-ridge-regression-to-overcome-linear-regression-shortfalls</title><link>https://muxuezi.github.io/posts/using-ridge-regression-to-overcome-linear-regression-shortfalls.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="用岭回归弥补线性回归的不足"&gt;用岭回归弥补线性回归的不足&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/using-ridge-regression-to-overcome-linear-regression-shortfalls.html#%E7%94%A8%E5%B2%AD%E5%9B%9E%E5%BD%92%E5%BC%A5%E8%A1%A5%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%9A%84%E4%B8%8D%E8%B6%B3"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;本主题将介绍岭回归。和线性回归不同，它引入了正则化参数来“缩减”相关系数。当数据集中存在共线因素时，岭回归会很有用。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/using-ridge-regression-to-overcome-linear-regression-shortfalls.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/using-ridge-regression-to-overcome-linear-regression-shortfalls.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>using-linear-methods-for-classification-logistic-regression</title><link>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="用线性方法处理分类问题——逻辑回归"&gt;用线性方法处理分类问题——逻辑回归&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html#%E7%94%A8%E7%BA%BF%E6%80%A7%E6%96%B9%E6%B3%95%E5%A4%84%E7%90%86%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;实际上线性模型也可以用于分类任务。方法是把一个线性模型拟合成某个类型的概率分布，然后用一个函数建立阈值来确定结果属于哪一类。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>optimizing-the-ridge-regression-parameter</title><link>https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="优化岭回归参数"&gt;优化岭回归参数&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html#%E4%BC%98%E5%8C%96%E5%B2%AD%E5%9B%9E%E5%BD%92%E5%8F%82%E6%95%B0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;当你使用岭回归模型进行建模时，需要考虑&lt;code&gt;Ridge&lt;/code&gt;的&lt;code&gt;alpha&lt;/code&gt;参数。&lt;/p&gt;
+&lt;p&gt;例如，用OLS（普通最小二乘法）做回归也许可以显示两个变量之间的某些关系；但是，当&lt;code&gt;alpha&lt;/code&gt;参数正则化之后，那些关系就会消失。做决策时，这些关系是否需要考虑就显得很重要了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/optimizing-the-ridge-regression-parameter.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item></channel></rss>
