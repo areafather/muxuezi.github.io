@@ -76,7 +76,47 @@ MathJax.Hub.Config({
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/reducing-dimensionality-with-pca.html" class="u-url">reducing-dimensionality-with-pca</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/scaling-data-to-the-standard-normal.html" class="u-url">scaling-data-to-the-standard-normal</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/scaling-data-to-the-standard-normal.html" rel="bookmark"><time class="published dt-published" datetime="2015-07-27T14:58:39+08:00" title="2015-07-27 14:58">2015-07-27 14:58</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/scaling-data-to-the-standard-normal.html#disqus_thread" data-disqus-identifier="cache/posts/scaling-data-to-the-standard-normal.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="把数据调整为标准正态分布">把数据调整为标准正态分布<a class="anchor-link" href="posts/scaling-data-to-the-standard-normal.html#%E6%8A%8A%E6%95%B0%E6%8D%AE%E8%B0%83%E6%95%B4%E4%B8%BA%E6%A0%87%E5%87%86%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>经常需要将数据标准化调整（scaling）为标准正态分布（standard normal）。标准正态分布算得上是统计学中最重要的分布了。如果你学过统计，Z值表（z-scores）应该不陌生。实际上，Z值表的作用就是把服从某种分布的特征转换成标准正态分布的Z值。</p>
+<p class="more"><a href="posts/scaling-data-to-the-standard-normal.html">Read more…</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/reducing-dimensionality-with-pca.html" class="u-url">reducing-dimensionality-with-pca</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
@@ -435,46 +475,6 @@ MathJax.Hub.Config({
 <p>在前一个主题，我们介绍了数据转换成标准正态分布的方法。现在，我们看看另一种完全不同的转换方法。</p>
 <p>当不需要呈标准化分布的数据时，我们可以不处理它们直接使用；但是，如果有足够理由，直接使用也许是聪明的做法。通常，尤其是处理连续数据时，可以通过建立二元特征来分割数据。</p>
 <p class="more"><a href="posts/creating-binary-features-through-thresholding.html">Read more…</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/binarizing-label-features.html" class="u-url">binarizing-label-features</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/binarizing-label-features.html" rel="bookmark"><time class="published dt-published" datetime="2015-07-27T14:57:41+08:00" title="2015-07-27 14:57">2015-07-27 14:57</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/binarizing-label-features.html#disqus_thread" data-disqus-identifier="cache/posts/binarizing-label-features.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="标签特征二元化">标签特征二元化<a class="anchor-link" href="posts/binarizing-label-features.html#%E6%A0%87%E7%AD%BE%E7%89%B9%E5%BE%81%E4%BA%8C%E5%85%83%E5%8C%96">¶</a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>在这个主题中，我们将用另一种方式来演示分类变量。有些时候只有一两个分类特征是重要的，这时就要避免多余的维度，如果有多个分类变量就有可能会出现这些多余的维度。</p>
-<p class="more"><a href="posts/binarizing-label-features.html">Read more…</a></p>
 </div>
 </div>
 </div>
