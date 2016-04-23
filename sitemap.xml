@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://muxuezi.github.io/</loc>
-  <lastmod>2016-04-09T23:35:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/2010/</loc>
@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2016-04-12T05:45:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/chs.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/frequentism.html</loc>
@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/ipython.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/kivy.html</loc>
@@ -67,15 +67,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/linux.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2016-04-12T05:45:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/other.html</loc>
@@ -91,11 +91,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/python.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-cookbook.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-tutorial.html</loc>
@@ -111,7 +111,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/wordpress.html</loc>
-  <lastmod>2016-04-12T07:09:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/galleries/</loc>
@@ -595,7 +595,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-206.html</loc>
-  <lastmod>2016-04-12T05:45:00Z</lastmod>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/index-207.html</loc>
+  <lastmod>2016-04-23T18:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-21.html</loc>
@@ -4931,7 +4935,19 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/dlott-16041-2016-04-11-report.html</loc>
-  <lastmod>2016-04-12T05:45:00Z</lastmod>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16042-2016-04-13-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16043-2016-04-16-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16044-2016-04-18-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
@@ -9100,6 +9116,18 @@
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2016040-2016-04-10-report.html</loc>
   <lastmod>2016-04-12T05:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016041-2016-04-12-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016042-2016-04-14-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016043-2016-04-17-report.html</loc>
+  <lastmod>2016-04-23T18:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
