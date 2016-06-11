@@ -168,7 +168,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="n">iris_X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
@@ -196,7 +196,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">masking_array</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">masking_array</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -230,7 +230,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">iris_X</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_X</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -284,7 +284,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
 <span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">()</span>
 <span class="n">iris_X_prime</span> <span class="o">=</span> <span class="n">impute</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">iris_X</span><span class="p">)</span>
 <span class="n">iris_X_prime</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
@@ -331,7 +331,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">iris_X_prime</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_X_prime</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -361,7 +361,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">iris_X</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_X</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -420,7 +420,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s">'median'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">'median'</span><span class="p">)</span>
 <span class="n">iris_X_prime</span> <span class="o">=</span> <span class="n">impute</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">iris_X</span><span class="p">)</span>
 <span class="n">iris_X_prime</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
@@ -467,7 +467,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">iris_X</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">iris_X</span><span class="p">)]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_X</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">iris_X</span><span class="p">)]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="n">iris_X</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
@@ -512,7 +512,7 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">(</span><span class="n">missing_values</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">(</span><span class="n">missing_values</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">iris_X_prime</span> <span class="o">=</span> <span class="n">impute</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">iris_X</span><span class="p">)</span>
 <span class="n">iris_X_prime</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
@@ -568,10 +568,10 @@ scikit-learn有一些常见的计算方法，它可以对现有数据进行变�
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">iris_X</span><span class="p">[</span><span class="n">masking_array</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 <span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">iris_X</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="n">iris_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">mean</span><span class="p">())[</span><span class="s">'sepal length (cm)'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">iris_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">mean</span><span class="p">())[</span><span class="s1">'sepal length (cm)'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -616,7 +616,7 @@ Name: sepal length (cm), dtype: float64</pre>
 <div class="prompt input_prompt">In [13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">iris_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">max</span><span class="p">())[</span><span class="s">'sepal length (cm)'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">max</span><span class="p">())[</span><span class="s1">'sepal length (cm)'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>

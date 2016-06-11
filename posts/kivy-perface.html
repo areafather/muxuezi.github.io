@@ -426,12 +426,12 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 
 <span class="k">class</span> <span class="nc">HelloApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">pass</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">HelloApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -456,8 +456,8 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>布局文件是应用类名的去掉<code>App</code>的小写部分加<code>.kv</code>，也就是<code>hello.kv</code>，代码如下所示：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Hello,</span><span class="nv"> </span><span class="s">Kivy'</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Hello,</span><span class="nv"> </span><span class="s">Kivy'</span>
 </pre></div>
 <p>这里只用了一个Kivy标签部件<code>Label</code>，属性是<code>text</code>。布局文件用一种简洁、声明式的语言定义复杂的布局，后面会介绍。</p>
 <p>运行程序，看到的界面如下所示：</p>

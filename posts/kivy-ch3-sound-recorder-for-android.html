@@ -332,11 +332,11 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>现在开始吧，首先做个按钮<code>Button</code>类，就像我们在之前的应用里做的,这里我们重用第二章画图app的按钮：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;Button&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_normal</span><span class="p-Indicator">:</span> <span class="s">'button_normal.png'</span>
-    <span class="l-Scalar-Plain">background_down</span><span class="p-Indicator">:</span> <span class="s">'button_down.png'</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#95A5A6')</span>
-    <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">40</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;Button&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_normal</span><span class="p p-Indicator">:</span> <span class="s">'button_normal.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_down</span><span class="p p-Indicator">:</span> <span class="s">'button_down.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#95A5A6')</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
 </pre></div>
 <p>我们之前设计调色板时，把背景色成设置重白色。这里我们的<code>background_color</code>属性是一个底色，我们分配一个浅白色作为<code>background_color</code>。这次我们不要边框有颜色。</p>
 <p>之后就是按下按钮的颜色，<code>background_down</code>属性我们设置成25%透明白色。再在上面加上黑色，就可以获得一个深色的背景：
@@ -363,39 +363,39 @@ MathJax.Hub.Config({
 <p>布局有点小复杂。Kivy没有现成的Modern UI模板可用，我们要自己仿制一个<code>GridLayout</code>部件。它和<code>BoxLayout</code>部件类似，不过是二维的，所以没有<code>orientation: 'horizontal'</code>或<code>'vertical'</code>属性。</p>
 <p>如果没有其他需求，一个<code>GridLayout</code>部件就可以搞定，但是我们还想要不同尺寸的按钮。目前，<code>GridLayout</code>部件不支持通过网格的合并成更大的网格（HTML里面的<code>rowspan</code>和<code>colspan</code>属性更方便）。因此，我们换个思路，先用一个<code>GridLayout</code>部件作为根部件，用大网格，然后再在里面增加一个<code>GridLayout</code>部件，用小网格。</p>
 <p>因为Kivy可以完美支持嵌套布局，我们可以用下面的kv代码实现<code>recorder.kv</code>文件：</p>
-<div class="highlight"><pre><span class="c1">#:import C kivy.utils.get_color_from_hex</span>
+<div class="highlight"><pre><span></span><span class="c1">#:import C kivy.utils.get_color_from_hex</span>
 
-<span class="l-Scalar-Plain">GridLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">padding</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">15</span>
+<span class="l l-Scalar l-Scalar-Plain">GridLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">padding</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">15</span>
 
-    <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#3498DB')</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'aaa'</span>
+    <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#3498DB')</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'aaa'</span>
 
-    <span class="l-Scalar-Plain">GridLayout</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#2ECC71')</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'bbb1'</span>
+    <span class="l l-Scalar l-Scalar-Plain">GridLayout</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#2ECC71')</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'bbb1'</span>
 
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#1ABC9C')</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'bbb2'</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#1ABC9C')</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'bbb2'</span>
 
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#27AE60')</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'bbb3'</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#27AE60')</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'bbb3'</span>
 
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#16A085')</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'bbb4'</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#16A085')</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'bbb4'</span>
 
-    <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#E74C3C')</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'ccc'</span>
+    <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#E74C3C')</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'ccc'</span>
 
-    <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#95A5A6')</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'ddd'</span>
+    <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#95A5A6')</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'ddd'</span>
 </pre></div>
 <p>翻翻前面的章节，把<code>main.py</code>也做出来就可以运行了，自己试试吧。注意类的名称是<code>RecorderApp</code>，kv文件名大写，再加<code>App</code>，不清楚参考第一章命名相关内容。</p>
 <p>注意嵌套的<code>GridLayout</code>部件是怎么和同级的大按钮放在一起的。如果你记得前面那个WP系统主平面，还得继续改进代码：四个小按钮和一个大按钮一样大。嵌套的<code>GridLayout</code>部件是这些小按钮的容器。</p>
@@ -419,13 +419,13 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>在外面的网格里，<code>padding</code>属性是为了让部件离屏幕的四边有一定边距。把其他<code>GridLayout</code>部件的可视化属性都放到一个类中：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;GridLayout&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">cols</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2</span>
-    <span class="l-Scalar-Plain">spacing</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">10</span>
-    <span class="l-Scalar-Plain">row_default_height</span><span class="p-Indicator">:</span> 
-        <span class="l-Scalar-Plain">(0.5 * (self.width - self.spacing[0]) -</span>
-        <span class="l-Scalar-Plain">self.padding[0])</span>
-    <span class="l-Scalar-Plain">row_force_default</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;GridLayout&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">cols</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="l l-Scalar l-Scalar-Plain">spacing</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+    <span class="l l-Scalar l-Scalar-Plain">row_default_height</span><span class="p p-Indicator">:</span> 
+        <span class="l l-Scalar l-Scalar-Plain">(0.5 * (self.width - self.spacing[0]) -</span>
+        <span class="l l-Scalar l-Scalar-Plain">self.padding[0])</span>
+    <span class="l l-Scalar l-Scalar-Plain">row_force_default</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <blockquote>
 <p>要注意的是<code>padding</code>和<code>spacing</code>属性都是列表，不是数值。<code>spacing[0]</code>是水平间距，之后是垂直间距。但是，我们用一个数值初始化，就像前面的代码显示的；数值可以用在两个方向。</p>
@@ -538,15 +538,15 @@ $$行高 = 0.5 × (屏幕宽度 - 所有边距和间距)$$<p>如果我们不这�
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
-<span class="kn">from</span> <span class="nn">kivy.core.text</span> <span class="kn">import</span> <span class="n">LabelBase</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
+<span class="kn">from</span> <span class="nn">kivy.core.text</span> <span class="k">import</span> <span class="n">LabelBase</span>
 
 <span class="k">class</span> <span class="nc">RecorderApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">pass</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-    <span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Modern Pictograms'</span><span class="p">,</span>
-                       <span class="n">fn_regular</span><span class="o">=</span><span class="s">'modernpics.ttf'</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Modern Pictograms'</span><span class="p">,</span>
+                       <span class="n">fn_regular</span><span class="o">=</span><span class="s1">'modernpics.ttf'</span><span class="p">)</span>
     <span class="n">RecorderApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -561,20 +561,20 @@ $$行高 = 0.5 × (屏幕宽度 - 所有边距和间距)$$<p>如果我们不这�
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>这样<code>recorder.kv</code>文件就可以使用图标字体了。首先，我们把<code>Button</code>改进一下，方便后面改变字体。代码如下：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;Button&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_normal</span><span class="p-Indicator">:</span> <span class="s">'button_normal.png'</span>
-    <span class="l-Scalar-Plain">background_down</span><span class="p-Indicator">:</span> <span class="s">'button_down.png'</span>
-    <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">24</span>
-    <span class="l-Scalar-Plain">halign</span><span class="p-Indicator">:</span> <span class="s">'center'</span>
-    <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;Button&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_normal</span><span class="p p-Indicator">:</span> <span class="s">'button_normal.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_down</span><span class="p p-Indicator">:</span> <span class="s">'button_down.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">24</span>
+    <span class="l l-Scalar l-Scalar-Plain">halign</span><span class="p p-Indicator">:</span> <span class="s">'center'</span>
+    <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <p><code>halign: 'center'</code>表示我们希望每行文字都在按钮的正中间。<code>markup: True</code>是必须的，因为我们后面自定义按钮需要这样。</p>
 <p>现在，我们来升级所有按钮。这是一个例子：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#3498DB')</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">('[font=Modern Pictograms][size=120]'</span>
-        <span class="l-Scalar-Plain">'e[/size][/font]\nNew recording')</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#3498DB')</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">('[font=Modern Pictograms][size=120]'</span>
+        <span class="l l-Scalar l-Scalar-Plain">'e[/size][/font]\nNew recording')</span>
 </pre></div>
 <p>通常不需要为Kivy文件字符串加括号，这么做是为了显示成多行，这和一行长串是一样的。</p>
 <p>注意在<code>[font][size]</code>表情里面的<code>'e'</code>，这就是图标代码。每个按钮用一个图标，改变一个图标就是替换<code>recorder.kv</code>文件里面的一个字母。具体对应关系可以在Modern Pictograms字体网站查询。</p>
@@ -697,13 +697,13 @@ orientation=portrait</code></pre>
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">jnius</span> <span class="kn">import</span> <span class="n">autoclass</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">jnius</span> <span class="k">import</span> <span class="n">autoclass</span>
 
-<span class="n">Environment</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.os.Environment'</span><span class="p">)</span>
-<span class="n">MediaRecorder</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.media.MediaRecorder'</span><span class="p">)</span>
-<span class="n">AudioSource</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.media.MediaRecorder$AudioSource'</span><span class="p">)</span>
-<span class="n">OutputFormat</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.media.MediaRecorder$OutputFormat'</span><span class="p">)</span>
-<span class="n">AudioEncoder</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.media.MediaRecorder$AudioEncoder'</span><span class="p">)</span>
+<span class="n">Environment</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.os.Environment'</span><span class="p">)</span>
+<span class="n">MediaRecorder</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.media.MediaRecorder'</span><span class="p">)</span>
+<span class="n">AudioSource</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.media.MediaRecorder$AudioSource'</span><span class="p">)</span>
+<span class="n">OutputFormat</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.media.MediaRecorder$OutputFormat'</span><span class="p">)</span>
+<span class="n">AudioEncoder</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.media.MediaRecorder$AudioEncoder'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -748,7 +748,7 @@ orientation=portrait</code></pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>让我们演示一下Pyjnius这种混合语言使用API的过程。我们还可以通过Java检查SD卡是否已经挂载。</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">android.os.Environment</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">android.os.Environment</span><span class="o">;</span>
 <span class="n">String</span> <span class="n">path</span> <span class="o">=</span> <span class="n">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">().</span><span class="na">getAbsolutePath</span><span class="o">();</span>
 </pre></div>
 <p>翻译成Python就是：</p>
@@ -761,7 +761,7 @@ orientation=portrait</code></pre>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">Environment</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.os.Environment'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Environment</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.os.Environment'</span><span class="p">)</span>
 <span class="n">path</span> <span class="o">=</span> <span class="n">Environment</span><span class="o">.</span><span class="n">getExternalStorageDirectory</span><span class="p">()</span><span class="o">.</span><span class="n">getAbsolutePath</span><span class="p">()</span>
 </pre></div>
 
@@ -785,8 +785,8 @@ orientation=portrait</code></pre>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">kivy.logger</span> <span class="kn">import</span> <span class="n">Logger</span>
-<span class="n">Logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'App: storage path == "</span><span class="si">%s</span><span class="s">"'</span> <span class="o">%</span> <span class="n">path</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.logger</span> <span class="k">import</span> <span class="n">Logger</span>
+<span class="n">Logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'App: storage path == "</span><span class="si">%s</span><span class="s1">"'</span> <span class="o">%</span> <span class="n">path</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -854,8 +854,8 @@ orientation=portrait</code></pre>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">storage_path</span> <span class="o">=</span> <span class="p">(</span><span class="n">Environment</span><span class="o">.</span><span class="n">getExternalStorageDirectory</span><span class="p">()</span>
-                <span class="o">.</span><span class="n">getAbsolutePath</span><span class="p">()</span> <span class="o">+</span> <span class="s">'/kivy_recording.3gp'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">storage_path</span> <span class="o">=</span> <span class="p">(</span><span class="n">Environment</span><span class="o">.</span><span class="n">getExternalStorageDirectory</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">getAbsolutePath</span><span class="p">()</span> <span class="o">+</span> <span class="s1">'/kivy_recording.3gp'</span><span class="p">)</span>
 
 <span class="n">recorder</span> <span class="o">=</span> <span class="n">MediaRecorder</span><span class="p">()</span>
 
@@ -890,25 +890,25 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">class</span> <span class="nc">RecorderApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
-    <span class="n">is_recording</span> <span class="o">=</span> <span class="bp">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">RecorderApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+    <span class="n">is_recording</span> <span class="o">=</span> <span class="kc">False</span>
     
     <span class="k">def</span> <span class="nf">begin_end_recording</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_recording</span><span class="p">):</span>
             <span class="n">recorder</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
             <span class="n">recorder</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">is_recording</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">is_recording</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">begin_end_recording</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> \
-                <span class="p">(</span><span class="s">'[font=Modern Pictograms][size=120]'</span>
-                 <span class="s">'e[/size][/font]</span><span class="se">\n</span><span class="s">Begin recording'</span><span class="p">)</span>
+                <span class="p">(</span><span class="s1">'[font=Modern Pictograms][size=120]'</span>
+                 <span class="s1">'e[/size][/font]</span><span class="se">\n</span><span class="s1">Begin recording'</span><span class="p">)</span>
             <span class="k">return</span>
         
         <span class="n">init_recorder</span><span class="p">()</span>
         <span class="n">recorder</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">is_recording</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_recording</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">begin_end_recording</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> \
-            <span class="p">(</span><span class="s">'[font=Modern Pictograms][size=120]'</span>
-            <span class="s">'%[/size][/font]</span><span class="se">\n</span><span class="s">End recording'</span><span class="p">)</span>
+            <span class="p">(</span><span class="s1">'[font=Modern Pictograms][size=120]'</span>
+            <span class="s1">'%[/size][/font]</span><span class="se">\n</span><span class="s1">End recording'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -928,13 +928,13 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <li>升级按钮文字以反映当前状态。</li>
 </ol>
 <p>程序的最后一部分就是升级<code>recorder.kv</code>，我们要调整一下“开始/结束录音(Begin/End)”按钮代码来调用<code>begin_end_recording()</code>函数：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">begin_end_recording</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#3498DB')</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">('[font=Modern Pictograms][size=120]'</span>
-            <span class="l-Scalar-Plain">'e[/size][/font]\nBegin recording')</span>
-        <span class="l-Scalar-Plain">on_press</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app.begin_end_recording()</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">begin_end_recording</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#3498DB')</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">('[font=Modern Pictograms][size=120]'</span>
+            <span class="l l-Scalar l-Scalar-Plain">'e[/size][/font]\nBegin recording')</span>
+        <span class="l l-Scalar l-Scalar-Plain">on_press</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app.begin_end_recording()</span>
 </pre></div>
 <p>这就搞定了。现在运行程序就可以向SD卡里录音了。不过在这之前请先看看下节内容。按钮的节目如下所示：</p>
 <p><img src="kbpic/3.10begainendbutton.png" alt="begainendbutton"></p>
@@ -961,13 +961,13 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <p>当然有很多方法解决这个问题。首先，最容易的就是重新编译Kivy Launcher源代码，让应用获取录音权限，<a href="https://github.com/mvasilkov/kivy_launcher_hack">最新版在这里</a>。</p>
 <p>在安装<code>.apk</code>文件之前，请卸载原来的版本。另外如果你感受一下Android反编译，也可以用<a href="https://code.google.com/p/android-apktool/">**apktool</a>直接反编译apk文件。步骤如下：</p>
 <ol>
-<li>下载Kivy Launcher的app文件<code>KivyLauncher.apk</code>，用apktool文件命令：<div class="highlight"><pre>apktool d -b -s -d KivyLauncher.apk KivyLauncher
+<li>下载Kivy Launcher的app文件<code>KivyLauncher.apk</code>，用apktool文件命令：<div class="highlight"><pre><span></span>apktool d -b -s -d KivyLauncher.apk KivyLauncher
 </pre></div>
 </li>
-<li>向<code>AndroidManifest.xml</code>文件里增加权限：<div class="highlight"><pre><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.RECORD_AUDIO"</span> <span class="nt">/&gt;</span>
+<li>向<code>AndroidManifest.xml</code>文件里增加权限：<div class="highlight"><pre><span></span><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.RECORD_AUDIO"</span> <span class="nt">/&gt;</span>
 </pre></div>
 </li>
-<li>重新打包成<code>.apk</code>文件：<div class="highlight"><pre>apktool b KivyLauncher KivyLauncherWithChanges.apk
+<li>重新打包成<code>.apk</code>文件：<div class="highlight"><pre><span></span>apktool b KivyLauncher KivyLauncherWithChanges.apk
 </pre></div>
 </li>
 <li>用<code>jarsigner</code>工具为<code>.apk</code>文件签名。可以看看签名Android包的<a href="http://developer.android.com/tools/publishing/app-signing.%0Ahtml#signing-manually">官方文档</a>
@@ -1006,7 +1006,7 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">MediaPlayer</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'android.media.MediaPlayer'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MediaPlayer</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'android.media.MediaPlayer'</span><span class="p">)</span>
 <span class="n">player</span> <span class="o">=</span> <span class="n">MediaPlayer</span><span class="p">()</span>
 </pre></div>
 
@@ -1030,7 +1030,7 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">reset_player</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">reset_player</span><span class="p">():</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">isPlaying</span><span class="p">()):</span>
         <span class="n">player</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
     <span class="n">player</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -1088,7 +1088,7 @@ Coding</strong>标准，类似于MP3的一种编码标准）。这么改不是�
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">File</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s">'java.io.File'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">File</span> <span class="o">=</span> <span class="n">autoclass</span><span class="p">(</span><span class="s1">'java.io.File'</span><span class="p">)</span>
 <span class="k">class</span> <span class="nc">RecorderApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">delete_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">reset_player</span><span class="p">()</span>

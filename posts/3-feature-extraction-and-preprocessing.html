@@ -187,10 +187,10 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="kn">import</span> <span class="n">DictVectorizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
 <span class="n">onehot_encoder</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">()</span>
-<span class="n">instances</span> <span class="o">=</span> <span class="p">[{</span><span class="s">'city'</span><span class="p">:</span> <span class="s">'New York'</span><span class="p">},{</span><span class="s">'city'</span><span class="p">:</span> <span class="s">'San Francisco'</span><span class="p">},</span> <span class="p">{</span><span class="s">'city'</span><span class="p">:</span> <span class="s">'Chapel Hill'</span><span class="p">}]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">onehot_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">instances</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+<span class="n">instances</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">'city'</span><span class="p">:</span> <span class="s1">'New York'</span><span class="p">},{</span><span class="s1">'city'</span><span class="p">:</span> <span class="s1">'San Francisco'</span><span class="p">},</span> <span class="p">{</span><span class="s1">'city'</span><span class="p">:</span> <span class="s1">'Chapel Hill'</span><span class="p">}]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">onehot_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">instances</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -271,9 +271,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'UNC played Duke in basketball'</span><span class="p">,</span>
-    <span class="s">'Duke lost the basketball game'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'UNC played Duke in basketball'</span><span class="p">,</span>
+    <span class="s1">'Duke lost the basketball game'</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -298,14 +298,14 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
 <span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'UNC played Duke in basketball'</span><span class="p">,</span>
-    <span class="s">'Duke lost the basketball game'</span>
+    <span class="s1">'UNC played Duke in basketball'</span><span class="p">,</span>
+    <span class="s1">'Duke lost the basketball game'</span>
 <span class="p">]</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -345,14 +345,14 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'UNC played Duke in basketball'</span><span class="p">,</span>
-    <span class="s">'Duke lost the basketball game'</span><span class="p">,</span>
-    <span class="s">'I ate a sandwich'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'UNC played Duke in basketball'</span><span class="p">,</span>
+    <span class="s1">'Duke lost the basketball game'</span><span class="p">,</span>
+    <span class="s1">'I ate a sandwich'</span>
 <span class="p">]</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -405,11 +405,11 @@ $$<p>scikit-learn里面的<code>euclidean_distances</code>函数可以计算若�
 <div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">euclidean_distances</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="k">import</span> <span class="n">euclidean_distances</span>
 <span class="n">counts</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]]:</span>
     <span class="n">dist</span> <span class="o">=</span> <span class="n">euclidean_distances</span><span class="p">(</span><span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">],</span><span class="n">counts</span><span class="p">[</span><span class="n">y</span><span class="p">])</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'文档{}与文档{}的距离{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">dist</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'文档</span><span class="si">{}</span><span class="s1">与文档</span><span class="si">{}</span><span class="s1">的距离</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">dist</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -472,14 +472,14 @@ $$<p>scikit-learn里面的<code>euclidean_distances</code>函数可以计算若�
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'UNC played Duke in basketball'</span><span class="p">,</span>
-    <span class="s">'Duke lost the basketball game'</span><span class="p">,</span>
-    <span class="s">'I ate a sandwich'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'UNC played Duke in basketball'</span><span class="p">,</span>
+    <span class="s1">'Duke lost the basketball game'</span><span class="p">,</span>
+    <span class="s1">'I ate a sandwich'</span>
 <span class="p">]</span>
-<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -541,14 +541,14 @@ $$<p>scikit-learn里面的<code>euclidean_distances</code>函数可以计算若�
 <div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
 <span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'He ate the sandwiches'</span><span class="p">,</span>
-    <span class="s">'Every sandwich was eaten by him'</span>
+    <span class="s1">'He ate the sandwiches'</span><span class="p">,</span>
+    <span class="s1">'Every sandwich was eaten by him'</span>
 <span class="p">]</span>
-<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">binary</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">binary</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -589,9 +589,9 @@ $$<p>scikit-learn里面的<code>euclidean_distances</code>函数可以计算若�
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'I am gathering ingredients for the sandwich.'</span><span class="p">,</span>
-    <span class="s">'There were many wizards at the gathering.'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'I am gathering ingredients for the sandwich.'</span><span class="p">,</span>
+    <span class="s1">'There were many wizards at the gathering.'</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -616,7 +616,7 @@ Language Tool Kit）</a>库来处理。</p>
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">nltk</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
 <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
 </pre></div>
 
@@ -665,10 +665,10 @@ Language Tool Kit）</a>库来处理。</p>
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">nltk.stem.wordnet</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.stem.wordnet</span> <span class="k">import</span> <span class="n">WordNetLemmatizer</span>
 <span class="n">lemmatizer</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s">'gathering'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s">'gathering'</span><span class="p">,</span> <span class="s">'n'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s1">'gathering'</span><span class="p">,</span> <span class="s1">'v'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s1">'gathering'</span><span class="p">,</span> <span class="s1">'n'</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -707,18 +707,18 @@ gathering
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
-<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">PorterStemmer</span>
-<span class="kn">from</span> <span class="nn">nltk.stem.wordnet</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
-<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">pos_tag</span>
-<span class="n">wordnet_tags</span> <span class="o">=</span> <span class="p">[</span><span class="s">'n'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk</span> <span class="k">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="k">import</span> <span class="n">PorterStemmer</span>
+<span class="kn">from</span> <span class="nn">nltk.stem.wordnet</span> <span class="k">import</span> <span class="n">WordNetLemmatizer</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="k">import</span> <span class="n">pos_tag</span>
+<span class="n">wordnet_tags</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'n'</span><span class="p">,</span> <span class="s1">'v'</span><span class="p">]</span>
 <span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'He ate the sandwiches'</span><span class="p">,</span>
-    <span class="s">'Every sandwich was eaten by him'</span>
+    <span class="s1">'He ate the sandwiches'</span><span class="p">,</span>
+    <span class="s1">'Every sandwich was eaten by him'</span>
 <span class="p">]</span>
 
 <span class="n">stemmer</span> <span class="o">=</span> <span class="n">PorterStemmer</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'Stemmed:'</span><span class="p">,</span> <span class="p">[[</span><span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">)]</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">corpus</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Stemmed:'</span><span class="p">,</span> <span class="p">[[</span><span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">)]</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">corpus</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -746,14 +746,14 @@ gathering
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">lemmatize</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'n'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">]:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">lemmatize</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'n'</span><span class="p">,</span> <span class="s1">'v'</span><span class="p">]:</span>
         <span class="k">return</span> <span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
     <span class="k">return</span> <span class="n">token</span>
 
 <span class="n">lemmatizer</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span>
 <span class="n">tagged_corpus</span> <span class="o">=</span> <span class="p">[</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">))</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">corpus</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'Lemmatized:'</span><span class="p">,</span> <span class="p">[[</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span> <span class="k">for</span> <span class="n">token</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">document</span><span class="p">]</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">tagged_corpus</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Lemmatized:'</span><span class="p">,</span> <span class="p">[[</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span> <span class="k">for</span> <span class="n">token</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">document</span><span class="p">]</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">tagged_corpus</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -812,11 +812,11 @@ gathering
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
-<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="s">'The dog ate a sandwich, the wizard transfigured a sandwich, and I ate a sandwich'</span><span class="p">]</span>
-<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'The dog ate a sandwich, the wizard transfigured a sandwich, and I ate a sandwich'</span><span class="p">]</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -862,14 +862,14 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s">'The dog ate a sandwich and I ate a sandwich'</span><span class="p">,</span>
-    <span class="s">'The wizard transfigured a sandwich'</span>
+    <span class="s1">'The dog ate a sandwich and I ate a sandwich'</span><span class="p">,</span>
+    <span class="s1">'The wizard transfigured a sandwich'</span>
 <span class="p">]</span>
-<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">vocabulary_</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -929,10 +929,10 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">HashingVectorizer</span>
-<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="s">'the'</span><span class="p">,</span> <span class="s">'ate'</span><span class="p">,</span> <span class="s">'bacon'</span><span class="p">,</span> <span class="s">'cat'</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">HashingVectorizer</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'the'</span><span class="p">,</span> <span class="s1">'ate'</span><span class="p">,</span> <span class="s1">'bacon'</span><span class="p">,</span> <span class="s1">'cat'</span><span class="p">]</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">HashingVectorizer</span><span class="p">(</span><span class="n">n_features</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -1015,15 +1015,15 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'Digit:'</span><span class="p">,</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Digit:'</span><span class="p">,</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">gray_r</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s">'nearest'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">gray_r</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">'nearest'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -1080,8 +1080,8 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'Feature vector:</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Feature vector:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -1145,13 +1145,13 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">skimage.feature</span> <span class="kn">import</span> <span class="n">corner_harris</span><span class="p">,</span> <span class="n">corner_peaks</span>
-<span class="kn">from</span> <span class="nn">skimage.color</span> <span class="kn">import</span> <span class="n">rgb2gray</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">skimage.io</span> <span class="kn">as</span> <span class="nn">io</span>
-<span class="kn">from</span> <span class="nn">skimage.exposure</span> <span class="kn">import</span> <span class="n">equalize_hist</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">skimage.feature</span> <span class="k">import</span> <span class="n">corner_harris</span><span class="p">,</span> <span class="n">corner_peaks</span>
+<span class="kn">from</span> <span class="nn">skimage.color</span> <span class="k">import</span> <span class="n">rgb2gray</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">skimage.io</span> <span class="k">as</span> <span class="nn">io</span>
+<span class="kn">from</span> <span class="nn">skimage.exposure</span> <span class="k">import</span> <span class="n">equalize_hist</span>
 
 
 <span class="k">def</span> <span class="nf">show_corners</span><span class="p">(</span><span class="n">corners</span><span class="p">,</span> <span class="n">image</span><span class="p">):</span>
@@ -1159,13 +1159,13 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
     <span class="n">plt</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
     <span class="n">y_corner</span><span class="p">,</span> <span class="n">x_corner</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">corners</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_corner</span><span class="p">,</span> <span class="n">y_corner</span><span class="p">,</span> <span class="s">'or'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_corner</span><span class="p">,</span> <span class="n">y_corner</span><span class="p">,</span> <span class="s1">'or'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">get_size_inches</span><span class="p">())</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="n">mandrill</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'mlslpic/3.1 mandrill.png'</span><span class="p">)</span>
+<span class="n">mandrill</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'mlslpic/3.1 mandrill.png'</span><span class="p">)</span>
 <span class="n">mandrill</span> <span class="o">=</span> <span class="n">equalize_hist</span><span class="p">(</span><span class="n">rgb2gray</span><span class="p">(</span><span class="n">mandrill</span><span class="p">))</span>
 <span class="n">corners</span> <span class="o">=</span> <span class="n">corner_peaks</span><span class="p">(</span><span class="n">corner_harris</span><span class="p">(</span><span class="n">mandrill</span><span class="p">),</span> <span class="n">min_distance</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">show_corners</span><span class="p">(</span><span class="n">corners</span><span class="p">,</span> <span class="n">mandrill</span><span class="p">)</span>
@@ -1231,12 +1231,12 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">mahotas</span> <span class="kn">as</span> <span class="nn">mh</span>
-<span class="kn">from</span> <span class="nn">mahotas.features</span> <span class="kn">import</span> <span class="n">surf</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">mahotas</span> <span class="k">as</span> <span class="nn">mh</span>
+<span class="kn">from</span> <span class="nn">mahotas.features</span> <span class="k">import</span> <span class="n">surf</span>
 
-<span class="n">image</span> <span class="o">=</span> <span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'mlslpic/3.2 xiaobao.png'</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'第一个SURF描述符：</span><span class="se">\n</span><span class="s">{}</span><span class="se">\n</span><span class="s">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">surf</span><span class="o">.</span><span class="n">surf</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'抽取了</span><span class="si">%s</span><span class="s">个SURF描述符'</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">surf</span><span class="o">.</span><span class="n">surf</span><span class="p">(</span><span class="n">image</span><span class="p">)))</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'mlslpic/3.2 xiaobao.png'</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'第一个SURF描述符：</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">surf</span><span class="o">.</span><span class="n">surf</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'抽取了</span><span class="si">%s</span><span class="s1">个SURF描述符'</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">surf</span><span class="o">.</span><span class="n">surf</span><span class="p">(</span><span class="n">image</span><span class="p">)))</span>
 </pre></div>
 
 </div>
@@ -1304,14 +1304,14 @@ $$idf(t,D)= log(\frac N {1+|d \in D:t \in d|})$$<p>其中，$N$是文集中文�
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
     <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">13.</span><span class="p">,</span> <span class="mf">9.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">13.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">11.</span><span class="p">]</span>
 <span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
 </pre></div>
 
 </div>

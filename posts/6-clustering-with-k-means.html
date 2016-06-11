@@ -264,10 +264,10 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib.font_manager</span> <span class="k">import</span> <span class="n">FontProperties</span>
-<span class="n">font</span> <span class="o">=</span> <span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s">r"c:\windows\fonts\msyh.ttc"</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s2">r"c:\windows\fonts\msyh.ttc"</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -280,13 +280,13 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">X0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">X1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0</span><span class="p">,</span> <span class="n">X1</span><span class="p">,</span> <span class="s">'k.'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0</span><span class="p">,</span> <span class="n">X1</span><span class="p">,</span> <span class="s1">'k.'</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -480,18 +480,18 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [70]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 <span class="n">C2</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">C1</span><span class="p">))</span>
 <span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C1</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C1</span><span class="p">]</span>
 <span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C2</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C2</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'第一次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'第一次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s">'rx'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s">'g.'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="s">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s1">'rx'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s1">'g.'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="s1">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s1">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -686,18 +686,18 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [73]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 <span class="n">C2</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">C1</span><span class="p">))</span>
 <span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C1</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C1</span><span class="p">]</span>
 <span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C2</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C2</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'第二次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'第二次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s">'rx'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s">'g.'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span><span class="mf">6.4</span><span class="p">,</span><span class="s">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">4.57</span><span class="p">,</span><span class="mf">4.14</span><span class="p">,</span><span class="s">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s1">'rx'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s1">'g.'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span><span class="mf">6.4</span><span class="p">,</span><span class="s1">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">4.57</span><span class="p">,</span><span class="mf">4.14</span><span class="p">,</span><span class="s1">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -892,18 +892,18 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [76]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 <span class="n">C2</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">C1</span><span class="p">))</span>
 <span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C1</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C1</span><span class="p">]</span>
 <span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span> <span class="o">=</span> <span class="n">X0</span><span class="p">[</span><span class="n">C2</span><span class="p">],</span> <span class="n">X1</span><span class="p">[</span><span class="n">C2</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'第三次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'第三次迭代后聚类结果'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s">'rx'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s">'g.'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mf">7.0</span><span class="p">,</span><span class="s">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span><span class="mf">2.8</span><span class="p">,</span><span class="s">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C1</span><span class="p">,</span> <span class="n">X1C1</span><span class="p">,</span> <span class="s1">'rx'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X0C2</span><span class="p">,</span> <span class="n">X1C2</span><span class="p">,</span> <span class="s1">'g.'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mf">7.0</span><span class="p">,</span><span class="s1">'rx'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span><span class="mf">2.8</span><span class="p">,</span><span class="s1">'g.'</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mf">12.0</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -986,14 +986,14 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [103]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">cluster1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 <span class="n">cluster2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">cluster1</span><span class="p">,</span> <span class="n">cluster2</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s">'k.'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s1">'k.'</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -1033,18 +1033,18 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [104]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="k">import</span> <span class="n">cdist</span>
 <span class="n">K</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="n">meandistortions</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">K</span><span class="p">:</span>
     <span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
     <span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-    <span class="n">meandistortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">cdist</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">,</span> <span class="s">'euclidean'</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">meandistortions</span><span class="p">,</span> <span class="s">'bx-'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'k'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'平均畸变程度'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'用肘部法则来确定最佳的K值'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">);</span>
+    <span class="n">meandistortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">cdist</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">,</span> <span class="s1">'euclidean'</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">meandistortions</span><span class="p">,</span> <span class="s1">'bx-'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'k'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'平均畸变程度'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'用肘部法则来确定最佳的K值'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -1084,14 +1084,14 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [136]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
 <span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x1</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s">'k.'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s1">'k.'</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -1121,18 +1121,18 @@ $$J = \sum_{k=1}^k\sum_{i \in {C_k}}{|x_i-\mu_k|}^2$$<p>$\mu_k$是第$k$个类�
 <div class="prompt input_prompt">In [137]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="k">import</span> <span class="n">cdist</span>
 <span class="n">K</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="n">meandistortions</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">K</span><span class="p">:</span>
     <span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
     <span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-    <span class="n">meandistortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">cdist</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">,</span> <span class="s">'euclidean'</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">meandistortions</span><span class="p">,</span> <span class="s">'bx-'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'k'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'平均畸变程度'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'用肘部法则来确定最佳的K值'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">);</span>
+    <span class="n">meandistortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">cdist</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">,</span> <span class="s1">'euclidean'</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">meandistortions</span><span class="p">,</span> <span class="s1">'bx-'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'k'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'平均畸变程度'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'用肘部法则来确定最佳的K值'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -1193,7 +1193,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [134]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">metrics</span>
 
@@ -1204,10 +1204,10 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x1</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'样本'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'样本'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s">'b'</span><span class="p">,</span> <span class="s">'g'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'m'</span><span class="p">,</span> <span class="s">'y'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">]</span>
-<span class="n">markers</span> <span class="o">=</span> <span class="p">[</span><span class="s">'o'</span><span class="p">,</span> <span class="s">'s'</span><span class="p">,</span> <span class="s">'D'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">,</span> <span class="s">'^'</span><span class="p">,</span> <span class="s">'p'</span><span class="p">,</span> <span class="s">'*'</span><span class="p">,</span> <span class="s">'+'</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'b'</span><span class="p">,</span> <span class="s1">'g'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'m'</span><span class="p">,</span> <span class="s1">'y'</span><span class="p">,</span> <span class="s1">'k'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">]</span>
+<span class="n">markers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'o'</span><span class="p">,</span> <span class="s1">'s'</span><span class="p">,</span> <span class="s1">'D'</span><span class="p">,</span> <span class="s1">'v'</span><span class="p">,</span> <span class="s1">'^'</span><span class="p">,</span> <span class="s1">'p'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">]</span>
 <span class="n">tests</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 <span class="n">subplot_counter</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
@@ -1215,10 +1215,10 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">subplot_counter</span><span class="p">)</span>
     <span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">t</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span><span class="p">):</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x2</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="n">markers</span><span class="p">[</span><span class="n">l</span><span class="p">],</span><span class="n">ls</span><span class="o">=</span><span class="s">'None'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x2</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="n">markers</span><span class="p">[</span><span class="n">l</span><span class="p">],</span><span class="n">ls</span><span class="o">=</span><span class="s1">'None'</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'K = %s, 轮廓系数 = %.03f'</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span><span class="n">metric</span><span class="o">=</span><span class="s">'euclidean'</span><span class="p">)),</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'K = </span><span class="si">%s</span><span class="s1">, 轮廓系数 = </span><span class="si">%.03f</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span><span class="n">metric</span><span class="o">=</span><span class="s1">'euclidean'</span><span class="p">)),</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1287,7 +1287,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">shuffle</span>
 <span class="kn">import</span> <span class="nn">mahotas</span> <span class="k">as</span> <span class="nn">mh</span>
@@ -1313,7 +1313,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">original_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'mlslpic</span><span class="se">\6</span><span class="s">.6 tree.png'</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">original_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'mlslpic</span><span class="se">\6</span><span class="s1">.6 tree.png'</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span>
 <span class="n">original_dimensions</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">original_img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">depth</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">original_img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">image_flattened</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">original_img</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">height</span><span class="p">,</span> <span class="n">depth</span><span class="p">))</span>
@@ -1339,7 +1339,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">image_array_sample</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">image_flattened</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)[:</span><span class="mi">1000</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_array_sample</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">image_flattened</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)[:</span><span class="mi">1000</span><span class="p">]</span>
 <span class="n">estimator</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">image_array_sample</span><span class="p">)</span>
 </pre></div>
@@ -1383,7 +1383,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">cluster_assignments</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">image_flattened</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cluster_assignments</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">image_flattened</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1406,7 +1406,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">compressed_palette</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">cluster_centers_</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">compressed_palette</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">cluster_centers_</span>
 <span class="n">compressed_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">compressed_palette</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 <span class="n">label_idx</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
@@ -1414,13 +1414,13 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
         <span class="n">compressed_img</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">compressed_palette</span><span class="p">[</span><span class="n">cluster_assignments</span><span class="p">[</span><span class="n">label_idx</span><span class="p">]]</span>
         <span class="n">label_idx</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'Original Image'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Original Image'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">original_img</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'Compressed Image'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Compressed Image'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">compressed_img</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -1473,7 +1473,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">mahotas</span> <span class="k">as</span> <span class="nn">mh</span>
 <span class="kn">from</span> <span class="nn">mahotas.features</span> <span class="k">import</span> <span class="n">surf</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
@@ -1502,17 +1502,17 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">all_instance_filenames</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_instance_filenames</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">all_instance_targets</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'cats-and-dogs-img/*.jpg'</span><span class="p">):</span>
-    <span class="n">target</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="s">'cat'</span> <span class="ow">in</span> <span class="n">f</span> <span class="k">else</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'cats-and-dogs-img/*.jpg'</span><span class="p">):</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="s1">'cat'</span> <span class="ow">in</span> <span class="n">f</span> <span class="k">else</span> <span class="mi">0</span>
     <span class="n">all_instance_filenames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
     <span class="n">all_instance_targets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
 <span class="n">surf_features</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">all_instance_filenames</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">'Reading image:'</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-    <span class="n">image</span> <span class="o">=</span> <span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Reading image:'</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">surf_features</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">surf</span><span class="o">.</span><span class="n">surf</span><span class="p">(</span><span class="n">image</span><span class="p">)[:,</span> <span class="mi">5</span><span class="p">:])</span>
     
 <span class="n">train_len</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_instance_filenames</span><span class="p">)</span> <span class="o">*</span> <span class="o">.</span><span class="mi">60</span><span class="p">)</span>
@@ -1542,8 +1542,8 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">300</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'Clustering'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train_surf_features</span><span class="p">),</span> <span class="s">'features'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Clustering'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train_surf_features</span><span class="p">),</span> <span class="s1">'features'</span><span class="p">)</span>
 <span class="n">estimator</span> <span class="o">=</span> <span class="n">MiniBatchKMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">)</span>
 <span class="n">estimator</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_surf_features</span><span class="p">)</span>
 </pre></div>
@@ -1568,7 +1568,7 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X_train</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">surf_features</span><span class="p">[:</span><span class="n">train_len</span><span class="p">]:</span>
     <span class="n">clusters</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
     <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span>
@@ -1605,13 +1605,13 @@ $$s = \frac {ba} {max(a,b)}$$<p>$a$是每一个类中样本彼此距离的均值
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">clf</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s">'l2'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s1">'l2'</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'Precision: '</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'Recall: '</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'Accuracy: '</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Precision: '</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Recall: '</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Accuracy: '</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
 </pre></div>
 
 </div>

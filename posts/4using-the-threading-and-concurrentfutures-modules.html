@@ -240,14 +240,14 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c">#coding: utf-8</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#coding: utf-8</span>
 <span class="kn">import</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">threading</span>
 
 <span class="kn">from</span> <span class="nn">queue</span> <span class="k">import</span> <span class="n">Queue</span>
 
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
-<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s">'%(asctime)s - %(message)s'</span><span class="p">)</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s1">'</span><span class="si">%(asctime)s</span><span class="s1"> - </span><span class="si">%(message)s</span><span class="s1">'</span><span class="p">)</span>
 
 <span class="n">ch</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">()</span>
 <span class="n">ch</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
@@ -283,7 +283,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">queue_condition</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Condition</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">queue_condition</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Condition</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -307,10 +307,10 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">fibonacci_task</span><span class="p">(</span><span class="n">condition</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fibonacci_task</span><span class="p">(</span><span class="n">condition</span><span class="p">):</span>
     <span class="k">with</span> <span class="n">condition</span><span class="p">:</span>
         <span class="k">while</span> <span class="n">shared_queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">"[%s] - waiting for elements in queue.."</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"[</span><span class="si">%s</span><span class="s2">] - waiting for elements in queue.."</span>
                 <span class="o">%</span> <span class="n">threading</span><span class="o">.</span><span class="n">current_thread</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
             <span class="n">condition</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
@@ -320,7 +320,7 @@ threading和_thread的选择
                 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
                 <span class="n">fibo_dict</span><span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
         <span class="n">shared_queue</span><span class="o">.</span><span class="n">task_done</span><span class="p">()</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">"[%s] fibonacci of key [%d] with result [%d]"</span> <span class="o">%</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"[</span><span class="si">%s</span><span class="s2">] fibonacci of key [</span><span class="si">%d</span><span class="s2">] with result [</span><span class="si">%d</span><span class="s2">]"</span> <span class="o">%</span>
             <span class="p">(</span><span class="n">threading</span><span class="o">.</span><span class="n">current_thread</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">fibo_dict</span><span class="p">[</span><span class="n">value</span><span class="p">]))</span>
 </pre></div>
 
@@ -345,12 +345,12 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">queue_task</span><span class="p">(</span><span class="n">condition</span><span class="p">):</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">'Starting queue_task...'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">queue_task</span><span class="p">(</span><span class="n">condition</span><span class="p">):</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Starting queue_task...'</span><span class="p">)</span>
     <span class="k">with</span> <span class="n">condition</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
             <span class="n">shared_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">"Notifying fibonacci_task threads that the queue is ready to consume.."</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Notifying fibonacci_task threads that the queue is ready to consume.."</span><span class="p">)</span>
         <span class="n">condition</span><span class="o">.</span><span class="n">notifyAll</span><span class="p">()</span>
 </pre></div>
 
@@ -374,7 +374,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">threads</span> <span class="o">=</span> <span class="p">[</span><span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">daemon</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="n">fibonacci_task</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">threads</span> <span class="o">=</span> <span class="p">[</span><span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="n">fibonacci_task</span><span class="p">,</span>
                             <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">queue_condition</span><span class="p">,))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
 </pre></div>
 
@@ -398,7 +398,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="p">[</span><span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -421,7 +421,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">prod</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'queue_task_thread'</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prod</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'queue_task_thread'</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
                         <span class="n">target</span><span class="o">=</span><span class="n">queue_task</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">queue_condition</span><span class="p">,))</span>
 <span class="n">prod</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 </pre></div>
@@ -446,7 +446,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="p">[</span><span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span> <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span> <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -487,7 +487,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">html_link_regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">'&lt;a\s(?:.*?\s)*?href=[</span><span class="se">\'</span><span class="s">"](.*?)[</span><span class="se">\'</span><span class="s">"].*?&gt;'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_link_regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'&lt;a\s(?:.*?\s)*?href=[</span><span class="se">\'</span><span class="s1">"](.*?)[</span><span class="se">\'</span><span class="s1">"].*?&gt;'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -510,12 +510,12 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">urls</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
-<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'http://www.sina.com'</span><span class="p">)</span>
-<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'http://cn.bing.com/'</span><span class="p">)</span>
-<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://coding.net/'</span><span class="p">)</span>
-<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'http://github.com/'</span><span class="p">)</span>
-<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s">'http://mail.126.com/'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">urls</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'http://www.sina.com'</span><span class="p">)</span>
+<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'http://cn.bing.com/'</span><span class="p">)</span>
+<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'https://coding.net/'</span><span class="p">)</span>
+<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'http://github.com/'</span><span class="p">)</span>
+<span class="n">urls</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'http://mail.126.com/'</span><span class="p">)</span>
 
 <span class="n">result_dict</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
@@ -540,14 +540,14 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">group_urls_task</span><span class="p">(</span><span class="n">urls</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">group_urls_task</span><span class="p">(</span><span class="n">urls</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">url</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="k">True</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
-        <span class="n">result_dict</span><span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="k">None</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">"[%s] putting url [%s] in dictionary..."</span> <span class="o">%</span> <span class="p">(</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
+        <span class="n">result_dict</span><span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"[</span><span class="si">%s</span><span class="s2">] putting url [</span><span class="si">%s</span><span class="s2">] in dictionary..."</span> <span class="o">%</span> <span class="p">(</span>
             <span class="n">threading</span><span class="o">.</span><span class="n">current_thread</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">url</span><span class="p">))</span>
     <span class="k">except</span> <span class="n">queue</span><span class="o">.</span><span class="n">Empty</span><span class="p">:</span>
-        <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">'Nothing to be done, queue is empty'</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">'Nothing to be done, queue is empty'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -570,11 +570,11 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">crawl_task</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">crawl_task</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="n">links</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">request_data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">"[%s] crawling url [%s] ..."</span> <span class="o">%</span> <span class="p">(</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"[</span><span class="si">%s</span><span class="s2">] crawling url [</span><span class="si">%s</span><span class="s2">] ..."</span> <span class="o">%</span> <span class="p">(</span>
             <span class="n">threading</span><span class="o">.</span><span class="n">current_thread</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">url</span><span class="p">))</span>
         <span class="n">links</span> <span class="o">=</span> <span class="n">html_link_regex</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">request_data</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">except</span><span class="p">:</span>
@@ -604,7 +604,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">group_link_threads</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">group_link_threads</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">urls</span><span class="o">.</span><span class="n">qsize</span><span class="p">()):</span>
         <span class="n">group_link_threads</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">group_urls_task</span><span class="p">,</span> <span class="n">urls</span><span class="p">)</span>
 </pre></div>
@@ -629,7 +629,7 @@ threading和_thread的选择
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">crawler_link_threads</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">crawler_link_threads</span><span class="p">:</span>
     <span class="n">future_tasks</span> <span class="o">=</span> <span class="p">{</span><span class="n">crawler_link_threads</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">crawl_task</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span> <span class="n">url</span> <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">result_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()}</span>
     <span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">as_completed</span><span class="p">(</span><span class="n">future_tasks</span><span class="p">):</span>
         <span class="n">result_dict</span><span class="p">[</span><span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>

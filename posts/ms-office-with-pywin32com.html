@@ -150,8 +150,8 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">Image</span>
-<span class="n">pic</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span> <span class="p">:</span> <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">'./resPPT/%s'</span> <span class="o">%</span> <span class="n">p</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">pic</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span> <span class="p">:</span> <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">'./resPPT/</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">p</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -183,18 +183,18 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">win32com.client</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">win32com.client</span>
 
-<span class="c"># Open PowerPoint</span>
-<span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s">"PowerPoint.Application"</span><span class="p">)</span>
+<span class="c1"># Open PowerPoint</span>
+<span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s2">"PowerPoint.Application"</span><span class="p">)</span>
 
-<span class="c"># Add a presentation</span>
+<span class="c1"># Add a presentation</span>
 <span class="n">Presentation</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Presentations</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
 
-<span class="c"># Add a slide with a blank layout (12 stands for blank layout)</span>
+<span class="c1"># Add a slide with a blank layout (12 stands for blank layout)</span>
 <span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 
-<span class="c"># Add an oval. Shape 9 is an oval.</span>
+<span class="c1"># Add an oval. Shape 9 is an oval.</span>
 <span class="n">oval</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </pre></div>
 
@@ -208,7 +208,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt0.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt0.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -251,23 +251,23 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Open Excel</span>
-<span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s">"Excel.Application"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Open Excel</span>
+<span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s2">"Excel.Application"</span><span class="p">)</span>
 
-<span class="c"># Show Excel. Unlike PPT, Word &amp; Excel open up "hidden"</span>
+<span class="c1"># Show Excel. Unlike PPT, Word &amp; Excel open up "hidden"</span>
 <span class="n">Application</span><span class="o">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="mi">1</span>
 
-<span class="c"># Add a workbook</span>
+<span class="c1"># Add a workbook</span>
 <span class="n">Workbook</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Workbooks</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
 
-<span class="c"># Take the active sheet</span>
+<span class="c1"># Take the active sheet</span>
 <span class="n">Base</span> <span class="o">=</span> <span class="n">Workbook</span><span class="o">.</span><span class="n">ActiveSheet</span>
 
-<span class="c"># Add an oval. Shape 9 is an oval.</span>
+<span class="c1"># Add an oval. Shape 9 is an oval.</span>
 <span class="n">oval</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 
-<span class="c"># In the first row, add Values: 0.0, 0.5, 1.0</span>
-<span class="n">Base</span><span class="o">.</span><span class="n">Cells</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="s">'Values'</span>
+<span class="c1"># In the first row, add Values: 0.0, 0.5, 1.0</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">Cells</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="s1">'Values'</span>
 <span class="n">Base</span><span class="o">.</span><span class="n">Cells</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="mf">0.0</span>
 <span class="n">Base</span><span class="o">.</span><span class="n">Cells</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="mf">0.5</span>
 <span class="n">Base</span><span class="o">.</span><span class="n">Cells</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -283,7 +283,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt1.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt1.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -340,10 +340,10 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">lxml.html</span> <span class="k">import</span> <span class="n">parse</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">lxml.html</span> <span class="k">import</span> <span class="n">parse</span>
 
-<span class="n">tree</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s">'http://www.imdb.com/chart/top'</span><span class="p">)</span>
-<span class="n">movies</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s">'.//table[@class="chart"]//td[@class="titleColumn"]//a'</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s1">'http://www.imdb.com/chart/top'</span><span class="p">)</span>
+<span class="n">movies</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">'.//table[@class="chart"]//td[@class="titleColumn"]//a'</span><span class="p">)</span>
 <span class="n">movies</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span>
 </pre></div>
 
@@ -385,7 +385,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [79]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># 使用win32com里面的makepy -d生成MSO, MSPPT</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 使用win32com里面的makepy -d生成MSO, MSPPT</span>
 <span class="kn">import</span> <span class="nn">MSO</span><span class="o">,</span> <span class="nn">MSPPT</span>
 <span class="n">g</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">MSO</span><span class="o">.</span><span class="n">constants</span><span class="p">):</span>    <span class="n">g</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">MSO</span><span class="o">.</span><span class="n">constants</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
@@ -413,16 +413,16 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ppLayoutBlank</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ppLayoutBlank</span><span class="p">)</span>
 
 <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">41</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">movie</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">movies</span><span class="p">):</span>
-    <span class="c"># 25 columns one row, column step is 28</span>
+    <span class="c1"># 25 columns one row, column step is 28</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">width</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">25</span><span class="p">)</span>
-    <span class="c"># 10 rows one column, row step is 41</span>
+    <span class="c1"># 10 rows one column, row step is 41</span>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span>
-            <span class="mi">5</span><span class="p">,</span> <span class="c"># Shape Rectangle</span>
+            <span class="mi">5</span><span class="p">,</span> <span class="c1"># Shape Rectangle</span>
             <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span>
             <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
 </pre></div>
@@ -437,7 +437,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt2.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt2.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -478,28 +478,28 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">urlparse</span> <span class="k">import</span> <span class="n">urljoin</span>
 <span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">urlretrieve</span>
 <span class="kn">from</span> <span class="nn">hashlib</span> <span class="k">import</span> <span class="n">md5</span>
 
-<span class="c"># We'll keep the files under an img/ folder</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s">'img'</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s">'img'</span><span class="p">)</span>
+<span class="c1"># We'll keep the files under an img/ folder</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">'img'</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">'img'</span><span class="p">)</span>
     
 <span class="k">def</span> <span class="nf">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">):</span>
     <span class="sd">'''Filename = MD5 hash of its title in UTF8'''</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">md5</span><span class="p">(</span><span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf8'</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s">'img'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s">'.jpg'</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">md5</span><span class="p">(</span><span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'utf8'</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'img'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">'.jpg'</span><span class="p">)</span>
     
 <span class="k">for</span> <span class="n">movie</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">)):</span>
         <span class="k">continue</span>
         
-    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s1">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'href'</span><span class="p">))</span>
     <span class="n">tree</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'.//td[@id="img_primary"]//img'</span><span class="p">)</span>
-    <span class="n">urlretrieve</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'src'</span><span class="p">),</span> <span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">))</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'.//td[@id="img_primary"]//img'</span><span class="p">)</span>
+    <span class="n">urlretrieve</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'src'</span><span class="p">),</span> <span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -523,7 +523,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 
 <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">41</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">movie</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">movies</span><span class="p">):</span>
@@ -531,8 +531,8 @@ Automating Microsoft ">
     <span class="n">y</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span>
     <span class="n">image</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddPicture</span><span class="p">(</span>
         <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">)),</span>
-        <span class="n">LinkToFile</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="k">False</span><span class="p">,</span>
+        <span class="n">LinkToFile</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
         <span class="n">Left</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">Top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
         <span class="n">Width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">Height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
 </pre></div>
@@ -547,7 +547,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt3.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt3.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -588,7 +588,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 
 <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">41</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">movie</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">movies</span><span class="p">):</span>
@@ -596,14 +596,14 @@ Automating Microsoft ">
     <span class="n">y</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span>
     <span class="n">image</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddPicture</span><span class="p">(</span>
         <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">)),</span>
-        <span class="n">LinkToFile</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="k">False</span><span class="p">,</span>
+        <span class="n">LinkToFile</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
         <span class="n">Left</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">Top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
         <span class="n">Width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">Height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s1">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'href'</span><span class="p">))</span>
     <span class="n">link</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">ActionSettings</span><span class="p">(</span><span class="n">ppMouseClick</span><span class="p">)</span><span class="o">.</span><span class="n">Hyperlink</span>
     <span class="n">link</span><span class="o">.</span><span class="n">Address</span> <span class="o">=</span> <span class="n">url</span>
-    <span class="n">link</span><span class="o">.</span><span class="n">ScreenTip</span> <span class="o">=</span> <span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'cp1252'</span><span class="p">)</span>
+    <span class="n">link</span><span class="o">.</span><span class="n">ScreenTip</span> <span class="o">=</span> <span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'cp1252'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -631,16 +631,16 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
 
-<span class="c"># Add two buttons: alphabetical and by rating</span>
+<span class="c1"># Add two buttons: alphabetical and by rating</span>
 <span class="n">button_alpha</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
-<span class="n">button_alpha</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">'Alphabetical'</span>
+<span class="n">button_alpha</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s1">'Alphabetical'</span>
 
 <span class="n">button_rating</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">560</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
-<span class="n">button_rating</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">'By rating'</span>
+<span class="n">button_rating</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s1">'By rating'</span>
 
-<span class="c"># Get the index position when sorted alphabetically</span>
+<span class="c1"># Get the index position when sorted alphabetically</span>
 <span class="n">movies_alpha</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">movies</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">text_content</span><span class="p">())</span>
 <span class="n">index_alpha</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">(),</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">movie</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">movies_alpha</span><span class="p">))</span>
 </pre></div>
@@ -666,7 +666,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">1.5</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">1.5</span><span class="p">):</span>
     <span class="sd">'''Move image along path when trigger is clicked'''</span>
     <span class="n">effect</span> <span class="o">=</span> <span class="n">seq</span><span class="o">.</span><span class="n">AddEffect</span><span class="p">(</span>
        <span class="n">Shape</span><span class="o">=</span><span class="n">image</span><span class="p">,</span>
@@ -701,7 +701,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">seq_alpha</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">TimeLine</span><span class="o">.</span><span class="n">InteractiveSequences</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">seq_alpha</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">TimeLine</span><span class="o">.</span><span class="n">InteractiveSequences</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
 <span class="n">seq_rating</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">TimeLine</span><span class="o">.</span><span class="n">InteractiveSequences</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
 <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">41</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">movie</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">movies</span><span class="p">):</span>
@@ -709,24 +709,24 @@ Automating Microsoft ">
     <span class="n">y</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span>
     <span class="n">image</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddPicture</span><span class="p">(</span>
         <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">filename</span><span class="p">(</span><span class="n">movie</span><span class="p">)),</span>
-        <span class="n">LinkToFile</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="k">False</span><span class="p">,</span>
+        <span class="n">LinkToFile</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
         <span class="n">Left</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">Top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
         <span class="n">Width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">Height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">urljoin</span><span class="p">(</span><span class="s1">'http://www.imdb.com/'</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'href'</span><span class="p">))</span>
     <span class="n">link</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">ActionSettings</span><span class="p">(</span><span class="n">ppMouseClick</span><span class="p">)</span><span class="o">.</span><span class="n">Hyperlink</span>
     <span class="n">link</span><span class="o">.</span><span class="n">Address</span> <span class="o">=</span> <span class="n">url</span>
-    <span class="n">link</span><span class="o">.</span><span class="n">ScreenTip</span> <span class="o">=</span> <span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'cp1252'</span><span class="p">)</span>
+    <span class="n">link</span><span class="o">.</span><span class="n">ScreenTip</span> <span class="o">=</span> <span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'cp1252'</span><span class="p">)</span>
     
-    <span class="c"># Alphabetical </span>
+    <span class="c1"># Alphabetical </span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">index_alpha</span><span class="p">[</span><span class="n">movie</span><span class="o">.</span><span class="n">text_content</span><span class="p">()]</span>
-    <span class="n">animate</span><span class="p">(</span><span class="n">seq_alpha</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="o">=</span><span class="n">button_alpha</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="s">'M0,0 L{:.3f},{:.3f}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="n">animate</span><span class="p">(</span><span class="n">seq_alpha</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="o">=</span><span class="n">button_alpha</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="s1">'M0,0 L</span><span class="si">{:.3f}</span><span class="s1">,</span><span class="si">{:.3f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
         <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="n">width</span> <span class="o">*</span> <span class="p">(</span><span class="n">index</span> <span class="o">%</span> <span class="mi">25</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="mf">720.</span><span class="p">,</span>
         <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">index</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="mf">540.</span><span class="p">,</span>
     <span class="p">))</span>
     
-    <span class="c"># By rating</span>
-    <span class="n">animate</span><span class="p">(</span><span class="n">seq_rating</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="o">=</span><span class="n">button_rating</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="s">'M{:.3f},{:.3f} L0,0'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="c1"># By rating</span>
+    <span class="n">animate</span><span class="p">(</span><span class="n">seq_rating</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">trigger</span><span class="o">=</span><span class="n">button_rating</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="s1">'M</span><span class="si">{:.3f}</span><span class="s1">,</span><span class="si">{:.3f}</span><span class="s1"> L0,0'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
         <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="n">width</span> <span class="o">*</span> <span class="p">(</span><span class="n">index</span> <span class="o">%</span> <span class="mi">25</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="mf">720.</span><span class="p">,</span>
         <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="n">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">index</span> <span class="o">//</span> <span class="mi">25</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="mf">540.</span><span class="p">,</span>
     <span class="p">))</span>
@@ -742,7 +742,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt4.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt4.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -797,8 +797,8 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s">"PowerPoint.Application"</span><span class="p">)</span>
-<span class="n">Application</span><span class="o">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="k">True</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Application</span> <span class="o">=</span> <span class="n">win32com</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">Dispatch</span><span class="p">(</span><span class="s2">"PowerPoint.Application"</span><span class="p">)</span>
+<span class="n">Application</span><span class="o">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">Presentation</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Presentations</span><span class="o">.</span><span class="n">Add</span><span class="p">()</span>
 <span class="n">Slide</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ppLayoutBlank</span><span class="p">)</span>
 </pre></div>
@@ -824,10 +824,10 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [86]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span> <span class="nn">csv</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">'http://spreadsheets.google.com/pub?key=phNtm3LmDZEOoyu8eDzdSXw&amp;output=csv&amp;range=B2:C51'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span> <span class="nn">csv</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">'http://spreadsheets.google.com/pub?key=phNtm3LmDZEOoyu8eDzdSXw&amp;output=csv&amp;range=B2:C51'</span>
 <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
-<span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">size</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">','</span><span class="p">,</span><span class="s">''</span><span class="p">)),</span> <span class="n">bank</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf8'</span><span class="p">))</span> <span class="k">for</span> <span class="n">bank</span><span class="p">,</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">size</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">','</span><span class="p">,</span><span class="s1">''</span><span class="p">)),</span> <span class="n">bank</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf8'</span><span class="p">))</span> <span class="k">for</span> <span class="n">bank</span><span class="p">,</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -851,7 +851,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [87]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Treemap</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Treemap</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">draw</span><span class="p">):</span>
         <span class="sd">'''Treemap(width, height, data, fn) '''</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span>
@@ -913,9 +913,9 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">shape</span> <span class="o">=</span> <span class="n">Slide</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="n">msoShapeRectangle</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
-    <span class="n">shape</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">' ('</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1000</span> <span class="o">+</span> <span class="mi">500</span><span class="p">))</span> <span class="o">+</span> <span class="s">'M)'</span>
+    <span class="n">shape</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">' ('</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1000</span> <span class="o">+</span> <span class="mi">500</span><span class="p">))</span> <span class="o">+</span> <span class="s1">'M)'</span>
     <span class="n">shape</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">MarginLeft</span> <span class="o">=</span> <span class="n">shape</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">MarginRight</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">shape</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Font</span><span class="o">.</span><span class="n">Size</span> <span class="o">=</span> <span class="mi">12</span>
 <span class="n">Treemap</span><span class="p">(</span><span class="mi">720</span><span class="p">,</span> <span class="mi">540</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span>
@@ -948,7 +948,7 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pic</span><span class="p">(</span><span class="s">'ppt5.png'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pic</span><span class="p">(</span><span class="s1">'ppt5.png'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1042,9 +1042,9 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [60]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">TwitterAPI</span> <span class="k">import</span> <span class="n">TwitterAPI</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">TwitterAPI</span> <span class="k">import</span> <span class="n">TwitterAPI</span>
 
-<span class="c"># I'm keeping my keys and secrets in a secret file.</span>
+<span class="c1"># I'm keeping my keys and secrets in a secret file.</span>
 <span class="kn">from</span> <span class="nn">secret_twitter</span> <span class="k">import</span> <span class="n">consumer_key</span><span class="p">,</span> <span class="n">consumer_secret</span><span class="p">,</span> <span class="n">access_token_key</span><span class="p">,</span> <span class="n">access_token_secret</span>
 <span class="n">api</span> <span class="o">=</span> <span class="n">TwitterAPI</span><span class="p">(</span><span class="n">consumer_key</span><span class="p">,</span> <span class="n">consumer_secret</span><span class="p">,</span> <span class="n">access_token_key</span><span class="p">,</span> <span class="n">access_token_secret</span><span class="p">)</span>
 </pre></div>
@@ -1070,21 +1070,21 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">draw_tweet</span><span class="p">(</span><span class="n">Base</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">draw_tweet</span><span class="p">(</span><span class="n">Base</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">40</span> <span class="o">+</span> <span class="p">(</span><span class="n">pos</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">120</span>
     
     <span class="n">image</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddPicture</span><span class="p">(</span>
-        <span class="c"># To get the larger resolution image, just remove _normal from the URL</span>
-        <span class="n">item</span><span class="p">[</span><span class="s">'user'</span><span class="p">][</span><span class="s">'profile_image_url'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'_normal'</span><span class="p">,</span> <span class="s">''</span><span class="p">),</span>
-        <span class="n">LinkToFile</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="k">False</span><span class="p">,</span>
+        <span class="c1"># To get the larger resolution image, just remove _normal from the URL</span>
+        <span class="n">item</span><span class="p">[</span><span class="s1">'user'</span><span class="p">][</span><span class="s1">'profile_image_url'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'_normal'</span><span class="p">,</span> <span class="s1">''</span><span class="p">),</span>
+        <span class="n">LinkToFile</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">SaveWithDocument</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
         <span class="n">Left</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">Top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
         <span class="n">Width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">Height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
     
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">status</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">'text'</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'cp1252'</span><span class="p">)</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'cp1252'</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">UnicodeEncodeError</span><span class="p">:</span>
-        <span class="n">status</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">'text'</span><span class="p">]</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">460</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
     <span class="n">text</span><span class="o">.</span><span class="n">Fill</span><span class="o">.</span><span class="n">ForeColor</span><span class="o">.</span><span class="n">ObjectThemeColor</span> <span class="o">=</span> <span class="n">msoThemeColorText1</span>
     <span class="n">text</span><span class="o">.</span><span class="n">Fill</span><span class="o">.</span><span class="n">ForeColor</span><span class="o">.</span><span class="n">Brightness</span> <span class="o">=</span> <span class="o">+</span><span class="mf">0.95</span>
@@ -1095,8 +1095,8 @@ Automating Microsoft ">
     
     <span class="n">user</span> <span class="o">=</span> <span class="n">Base</span><span class="o">.</span><span class="n">Shapes</span><span class="o">.</span><span class="n">AddShape</span><span class="p">(</span><span class="n">msoShapeRectangle</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
     <span class="n">user</span><span class="o">.</span><span class="n">Fill</span><span class="o">.</span><span class="n">ForeColor</span><span class="o">.</span><span class="n">ObjectThemeColor</span> <span class="o">=</span> <span class="n">msoThemeColorAccent6</span>
-    <span class="n">user</span><span class="o">.</span><span class="n">Line</span><span class="o">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="k">False</span>
-    <span class="n">user</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">'@'</span> <span class="o">+</span> <span class="n">item</span><span class="p">[</span><span class="s">'user'</span><span class="p">][</span><span class="s">'screen_name'</span><span class="p">]</span>
+    <span class="n">user</span><span class="o">.</span><span class="n">Line</span><span class="o">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">user</span><span class="o">.</span><span class="n">TextFrame</span><span class="o">.</span><span class="n">TextRange</span><span class="o">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s1">'@'</span> <span class="o">+</span> <span class="n">item</span><span class="p">[</span><span class="s1">'user'</span><span class="p">][</span><span class="s1">'screen_name'</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1120,8 +1120,8 @@ Automating Microsoft ">
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ppLayoutBlank</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s">'statuses/filter'</span><span class="p">,</span> <span class="p">{</span><span class="s">'track'</span><span class="p">:</span> <span class="s">'1'</span><span class="p">})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Base</span> <span class="o">=</span> <span class="n">Presentation</span><span class="o">.</span><span class="n">Slides</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ppLayoutBlank</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">'statuses/filter'</span><span class="p">,</span> <span class="p">{</span><span class="s1">'track'</span><span class="p">:</span> <span class="s1">'1'</span><span class="p">})</span>
 
 <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">get_iterator</span><span class="p">()):</span>
     <span class="n">draw_tweet</span><span class="p">(</span><span class="n">Base</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>

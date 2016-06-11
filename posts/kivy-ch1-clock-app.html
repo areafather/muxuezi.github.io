@@ -205,14 +205,14 @@ Kivy布局方式
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># %load ../0_Hello/main.py</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load ../0_Hello/main.py</span>
 <span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 
 
 <span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">pass</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -226,12 +226,12 @@ Kivy布局方式
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span class="c1"># clock.kv</span>
-<span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'vertical'</span>
+<div class="highlight"><pre><span></span><span class="c1"># clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'vertical'</span>
 
-    <span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'00:00:00'</span>
+    <span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'00:00:00'</span>
 </pre></div>
 
 </div>
@@ -330,9 +330,9 @@ Kivy布局方式
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span class="c1"># clock.kv</span>
-<span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Loster.ttf'</span>
+<div class="highlight"><pre><span></span><span class="c1"># clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Loster.ttf'</span>
 </pre></div>
 
 </div>
@@ -353,11 +353,11 @@ Kivy布局方式
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"Roboto"</span><span class="p">,</span>
-    <span class="n">fn_regular</span><span class="o">=</span><span class="s">"Roboto-Regular.ttf"</span><span class="p">,</span>
-    <span class="n">fn_bold</span><span class="o">=</span><span class="s">"Roboto-Bold.ttf"</span><span class="p">,</span>
-    <span class="n">fn_italic</span><span class="o">=</span><span class="s">"Roboto-Italic.ttf"</span><span class="p">,</span>
-    <span class="n">fn_bolditalic</span><span class="o">=</span><span class="s">"Roboto-BoldItalic.ttf"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Roboto"</span><span class="p">,</span>
+    <span class="n">fn_regular</span><span class="o">=</span><span class="s2">"Roboto-Regular.ttf"</span><span class="p">,</span>
+    <span class="n">fn_bold</span><span class="o">=</span><span class="s2">"Roboto-Bold.ttf"</span><span class="p">,</span>
+    <span class="n">fn_italic</span><span class="o">=</span><span class="s2">"Roboto-Italic.ttf"</span><span class="p">,</span>
+    <span class="n">fn_bolditalic</span><span class="o">=</span><span class="s2">"Roboto-BoldItalic.ttf"</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -386,11 +386,11 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.text</span> <span class="k">import</span> <span class="n">LabelBase</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.text</span> <span class="k">import</span> <span class="n">LabelBase</span>
 
-<span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Roboto'</span><span class="p">,</span>
-    <span class="n">fn_regular</span><span class="o">=</span><span class="s">'Roboto-Thin.ttf'</span><span class="p">,</span>
-    <span class="n">fn_bold</span><span class="o">=</span><span class="s">'Roboto-Medium.ttf'</span><span class="p">)</span>
+<span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Roboto'</span><span class="p">,</span>
+    <span class="n">fn_regular</span><span class="o">=</span><span class="s1">'Roboto-Thin.ttf'</span><span class="p">,</span>
+    <span class="n">fn_bold</span><span class="o">=</span><span class="s1">'Roboto-Medium.ttf'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -413,11 +413,11 @@ Kivy布局方式
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span class="c1"># clock.kv</span>
-<span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'00:00:00'</span>
-    <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-    <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">60</span>
+<div class="highlight"><pre><span></span><span class="c1"># clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'00:00:00'</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
 </pre></div>
 
 </div>
@@ -492,10 +492,10 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>再看看图2，我们要实现小时数字加粗的效果就easy了。</p>
-<div class="highlight"><pre><span class="c1"># clock.kv</span>
-<span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
-    <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="c1"># clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
+    <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <p>Kivy的BBCode需要将markup属性设置为True。</p>
 <blockquote>
@@ -530,10 +530,10 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
 <span class="kn">from</span> <span class="nn">kivy.utils</span> <span class="k">import</span> <span class="n">get_color_from_hex</span>
 
-<span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#101216'</span><span class="p">)</span>
+<span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#101216'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -577,9 +577,9 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Don't do this</span>
-<span class="k">while</span> <span class="k">True</span><span class="p">:</span>
-    <span class="n">update_time</span><span class="p">()</span> <span class="c"># some function that displays time</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Don't do this</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">update_time</span><span class="p">()</span> <span class="c1"># some function that displays time</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -627,9 +627,9 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>要接入显示时间的<code>Label</code>部件，需要给它一个<code>id</code>，通过<code>id</code>属性来获取部件，这和Web开发类似。</p>
-<div class="highlight"><pre><span class="c1"># clock.kv</span>
-<span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">time</span>
+<div class="highlight"><pre><span></span><span class="c1"># clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">time</span>
 </pre></div>
 <p>之后就可以通过<code>root.ids.time</code>来接入<code>Label</code>部件了。这里<code>root</code>就是<code>BoxLayout</code>。</p>
 <p>给<code>ClockApp</code>类增加一个<code>update_time</code>方法来更新时间：</p>
@@ -642,8 +642,8 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s1">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -666,7 +666,7 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -690,7 +690,7 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># %load main.py</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load main.py</span>
 <span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.clock</span> <span class="k">import</span> <span class="n">Clock</span>
 <span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
@@ -701,14 +701,14 @@ Kivy布局方式
 <span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s1">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
 
-    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#301216'</span><span class="p">)</span>
+    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#301216'</span><span class="p">)</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -723,14 +723,14 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>看看python的<code>time</code>标准库<code>strftime</code>函数是如何与Kivy的BBCode组合成C语言字符串的。</p>
-<div class="highlight"><pre><span class="c1"># %load clock.kv</span>
-<span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'vertical'</span>
+<div class="highlight"><pre><span></span><span class="c1"># %load clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'vertical'</span>
 
-    <span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
-        <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">time</span>
+    <span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
+        <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">time</span>
 </pre></div>
 
 </div>
@@ -761,12 +761,12 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># In main.py</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># In main.py</span>
 <span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="k">import</span> <span class="n">ObjectProperty</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.boxlayout</span> <span class="k">import</span> <span class="n">BoxLayout</span>
 
 <span class="k">class</span> <span class="nc">ClockLayout</span><span class="p">(</span><span class="n">BoxLayout</span><span class="p">):</span>
-    <span class="n">time_prop</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
+    <span class="n">time_prop</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -781,12 +781,12 @@ Kivy布局方式
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>我们在这段代码用<code>BoxLayout</code>写了个新root部件类，它有一个自定义属性<code>time_prop</code>，将连接<code>Label</code>部件。</p>
 <p>在<code>clock.kv</code>文件里，我们把属性绑定<code>id</code>，自定义属性和默认属性语法一致：</p>
-<div class="highlight"><pre><span class="c1"># %load clock.kv</span>
-<span class="l-Scalar-Plain">ClockLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">time_prop</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">time</span>
+<div class="highlight"><pre><span></span><span class="c1"># %load clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">ClockLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">time_prop</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">time</span>
 
-    <span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">time</span>
+    <span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">time</span>
 </pre></div>
 <p>这样，Python代码不需要知道<code>id</code>就可以连接<code>Label</code>部件，用新属性<code>root.time_prop.text = "demo"</code>。</p>
 <p>这样做使代码的可移植性更好，消除了反射（refactor）时Python代码同步的问题。靠属性还是<code>root.ids</code>去连接Python代码这事儿，只是代码风格问题，不重要。后面还会介绍其他Kivy属性的用法，让数据绑定更容易。</p>
@@ -844,37 +844,37 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>由于中间这块是按钮，不应该比时间还大，可以增加一个<code>height</code>属性，然后设置<code>size_hint</code>属性为<code>None</code>。<code>size_hint</code>属性是一个元组<code>(宽, 高)</code>，影响部件的宽和高。如果你想用绝对高度和宽度，就要设置<code>size_hint</code>属性为<code>None</code>，否则高度和宽度设置无效，部件会自动计算尺寸。代码如下：</p>
-<div class="highlight"><pre><span class="c1"># %load clock.kv</span>
-<span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'vertical'</span>
-    <span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">time</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
-        <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-        <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">60</span>
-        <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
-    <span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">90</span>
-        <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'horizontal'</span>
-        <span class="l-Scalar-Plain">padding</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">20</span>
-        <span class="l-Scalar-Plain">spacing</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">20</span>
-        <span class="l-Scalar-Plain">size_hint</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(1, None)</span>
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Start'</span>
-            <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-            <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">25</span>
-            <span class="l-Scalar-Plain">bold</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
-        <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Reset'</span>
-            <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-            <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">25</span>
-            <span class="l-Scalar-Plain">bold</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
-    <span class="l-Scalar-Plain">Label</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">stopwatch</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'00:00.[size=40]00[/size]'</span>
-        <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-        <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">60</span>
-        <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="c1"># %load clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'vertical'</span>
+    <span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">time</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'[b]00[/b]:00:00'</span>
+        <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+        <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+        <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">height</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">90</span>
+        <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'horizontal'</span>
+        <span class="l l-Scalar l-Scalar-Plain">padding</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
+        <span class="l l-Scalar l-Scalar-Plain">spacing</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
+        <span class="l l-Scalar l-Scalar-Plain">size_hint</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(1, None)</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Start'</span>
+            <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+            <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">25</span>
+            <span class="l l-Scalar l-Scalar-Plain">bold</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Reset'</span>
+            <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+            <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">25</span>
+            <span class="l l-Scalar l-Scalar-Plain">bold</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="l l-Scalar l-Scalar-Plain">Label</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">stopwatch</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'00:00.[size=40]00[/size]'</span>
+        <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+        <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+        <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <p>运行代码，会发现按钮没有完全填充<code>BoxLayout</code>，因为用了<code>padding</code>和<code>spacing</code>属性，与CSS类似。<code>main.py</code>代码如下：</p>
 
@@ -886,7 +886,7 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># %load main.py</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load main.py</span>
 <span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.clock</span> <span class="k">import</span> <span class="n">Clock</span>
 <span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
@@ -895,22 +895,22 @@ Kivy布局方式
 
 <span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">strftime</span>
 
-<span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Roboto'</span><span class="p">,</span>
-    <span class="n">fn_regular</span><span class="o">=</span><span class="s">'Roboto-Thin.ttf'</span><span class="p">,</span>
-    <span class="n">fn_bold</span><span class="o">=</span><span class="s">'Roboto-Medium.ttf'</span><span class="p">)</span>
+<span class="n">LabelBase</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Roboto'</span><span class="p">,</span>
+    <span class="n">fn_regular</span><span class="o">=</span><span class="s1">'Roboto-Thin.ttf'</span><span class="p">,</span>
+    <span class="n">fn_bold</span><span class="o">=</span><span class="s1">'Roboto-Medium.ttf'</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s1">'[b]%H[/b]:%M:%S'</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
 
-    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#123456'</span><span class="p">)</span>
+    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#123456'</span><span class="p">)</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -935,11 +935,11 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>之前的kv代码一堆重复，其实可以借助CSS的方法是代码更精炼，更DRY。在<code>BoxLayout</code>外面增加一个新定义：</p>
-<div class="highlight"><pre><span class="c1"># %load clock.kv</span>
-<span class="l-Scalar-Plain">&lt;Label&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-    <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">60</span>
-    <span class="l-Scalar-Plain">markup</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="c1"># %load clock.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;Label&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+    <span class="l l-Scalar l-Scalar-Plain">markup</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <p>这是一个类，与CSS的selector类似。每个<code>Label</code>都会带<code>&lt;Label&gt;</code>类特性。</p>
 <p>这样就可以把<code>clock.kv</code>里面每个<code>Label</code>的<code>font_name</code>，<code>font_size</code>和<code>markup</code>属性都删掉了。如果想改变一个属性的值，就直接写上，会覆盖原来的值，与CSS完全一样。</p>
@@ -966,14 +966,14 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>前面kv代码里类的处理有点问题，类只能有一个名字叫<code>Label</code>。当我们要为同一种部件加不同的属性定义类时，可以自定义类。如果直接改写<code>Label</code>和<code>Button</code>这些标准类，之后再用到通过类部件时改前改后一堆麻烦。所幸，命名类可以解决这一问题，<code>RobotoButton</code>是一种<code>Button</code>：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;RobotoButton@Button&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">font_name</span><span class="p-Indicator">:</span> <span class="s">'Roboto'</span>
-    <span class="l-Scalar-Plain">font_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">25</span>
-    <span class="l-Scalar-Plain">bold</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">True</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;RobotoButton@Button&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_name</span><span class="p p-Indicator">:</span> <span class="s">'Roboto'</span>
+    <span class="l l-Scalar l-Scalar-Plain">font_size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">25</span>
+    <span class="l l-Scalar l-Scalar-Plain">bold</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 <p><code>@</code>前面是新类的名称，后面是部件类型，本质是面向对象的子类<code>class RobotoButton(Button)</code>，在kv代码里使用时，可以直接用命名类代替原来的<code>Button</code>类：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">RobotoButton</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Start'</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RobotoButton</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Start'</span>
 </pre></div>
 <p>命名类可以精简代码，而且可以改良部件。</p>
 
@@ -1065,10 +1065,10 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>现在在<code>clock.kv</code>中添加9-patch图，我们需要告诉Kivy图像边的像素，因为默认是等比变化的。</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;RobotoButton@Button&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">background_normal</span><span class="p-Indicator">:</span> <span class="s">'button_normal.png'</span>
-    <span class="l-Scalar-Plain">background_down</span><span class="p-Indicator">:</span> <span class="s">'button_down.png'</span>
-    <span class="l-Scalar-Plain">border</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(2, 2, 2, 2)</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;RobotoButton@Button&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_normal</span><span class="p p-Indicator">:</span> <span class="s">'button_normal.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_down</span><span class="p p-Indicator">:</span> <span class="s">'button_down.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">border</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(2, 2, 2, 2)</span>
 </pre></div>
 <p><code>border</code>属性与CSS一致是顺时针：上，右，下，左。不过，不能像CSS里面直接写统一值<code>border: 2</code>，暂时还不行。</p>
 <blockquote>
@@ -1084,10 +1084,10 @@ Kivy布局方式
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>前面说过，与CSS类似，后面的属性会覆盖前面同名的属性，比如新建<code>Reset</code>按钮，就可以在<code>RobotoButton</code>下修改：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">RobotoButton</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Reset'</span>
-    <span class="l-Scalar-Plain">background_normal</span><span class="p-Indicator">:</span> <span class="s">'red_button_normal.png'</span>
-    <span class="l-Scalar-Plain">background_down</span><span class="p-Indicator">:</span> <span class="s">'red_button_down.png'</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RobotoButton</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Reset'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_normal</span><span class="p p-Indicator">:</span> <span class="s">'red_button_normal.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_down</span><span class="p p-Indicator">:</span> <span class="s">'red_button_down.png'</span>
 </pre></div>
 <p>这样按钮就搞定了，但是还不能运行，下面我们来实现秒表功能。</p>
 
@@ -1120,7 +1120,7 @@ Kivy布局方式
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">,</span> <span class="mf">0.016</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
     <span class="k">pass</span> 
@@ -1148,7 +1148,7 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="n">sw_seconds</span> <span class="o">=</span> <span class="mi">0</span>
     
     <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
@@ -1220,7 +1220,7 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">minutes</span><span class="p">,</span> <span class="n">seconds</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sw_seconds</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">minutes</span><span class="p">,</span> <span class="n">seconds</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sw_seconds</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span> 
 </pre></div>
 
 </div>
@@ -1248,7 +1248,7 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">int</span><span class="p">(</span><span class="n">seconds</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="n">seconds</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> 
 </pre></div>
 
 </div>
@@ -1281,11 +1281,11 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">sw_seconds</span> <span class="o">+=</span> <span class="n">nap</span>
     <span class="n">minutes</span><span class="p">,</span> <span class="n">seconds</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sw_seconds</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">stopwatch</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="s">'%02d:%02d.[size=40]%02d[/size]'</span> <span class="o">%</span>
+        <span class="s1">'</span><span class="si">%02d</span><span class="s1">:</span><span class="si">%02d</span><span class="s1">.[size=40]</span><span class="si">%02d</span><span class="s1">[/size]'</span> <span class="o">%</span>
         <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">minutes</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">seconds</span><span class="p">),</span>
         <span class="nb">int</span><span class="p">(</span><span class="n">seconds</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)))</span> 
 </pre></div>
@@ -1310,7 +1310,7 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1357,15 +1357,15 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">start_stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">start_stop</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Start'</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span> <span class="k">else</span> <span class="s">'Stop'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">start_stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">start_stop</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Start'</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span> <span class="k">else</span> <span class="s1">'Stop'</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span> <span class="o">=</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span>
 
 <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">start_stop</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">'Start'</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span> <span class="o">=</span> <span class="k">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">start_stop</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">'Start'</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sw_started</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">sw_seconds</span> <span class="o">=</span> <span class="mi">0</span> 
 </pre></div>
 
@@ -1390,8 +1390,8 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
-    <span class="n">sw_started</span> <span class="o">=</span> <span class="k">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+    <span class="n">sw_started</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="n">sw_seconds</span> <span class="o">=</span> <span class="mi">0</span>
     
     <span class="k">def</span> <span class="nf">update_clock</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
@@ -1411,15 +1411,15 @@ $$\frac{1}{60} = 0.016(6)$$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>我们改变<code>update_clock</code>函数只有秒表开始<code>sw_started</code>为<code>True</code>才更新，秒表开始默认为停止状态。</p>
 <p>在<code>clock.kv</code>文件里，我们把方法绑定到<code>on_press</code>事件上：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">RobotoButton</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">start_stop</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Start'</span>
-    <span class="l-Scalar-Plain">on_press</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app.start_stop()</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RobotoButton</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">start_stop</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Start'</span>
+    <span class="l l-Scalar l-Scalar-Plain">on_press</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app.start_stop()</span>
 
-<span class="l-Scalar-Plain">RobotoButton</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">reset</span>
-    <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Reset'</span>
-    <span class="l-Scalar-Plain">on_press</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app.reset()</span>
+<span class="l l-Scalar l-Scalar-Plain">RobotoButton</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">reset</span>
+    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Reset'</span>
+    <span class="l l-Scalar l-Scalar-Plain">on_press</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app.reset()</span>
 </pre></div>
 <blockquote>
 <p>在Kivy语言里面，有几个上下文相关的参考：</p>

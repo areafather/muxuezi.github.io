@@ -186,7 +186,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">mat</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">make_spd_matrix</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">masking_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
@@ -244,7 +244,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
 <span class="n">impute</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">Imputer</span><span class="p">()</span>
 <span class="n">scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">()</span>
 <span class="n">mat_imputed</span> <span class="o">=</span> <span class="n">impute</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
@@ -281,7 +281,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">mat_imp_and_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">mat_imputed</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mat_imp_and_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">mat_imputed</span><span class="p">)</span>
 <span class="n">mat_imp_and_scaled</span><span class="p">[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
@@ -329,8 +329,8 @@ Getting ready¶
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">pipeline</span>
-<span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">Pipeline</span><span class="p">([(</span><span class="s">'impute'</span><span class="p">,</span> <span class="n">impute</span><span class="p">),</span> <span class="p">(</span><span class="s">'scaler'</span><span class="p">,</span> <span class="n">scaler</span><span class="p">)])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">pipeline</span>
+<span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">Pipeline</span><span class="p">([(</span><span class="s1">'impute'</span><span class="p">,</span> <span class="n">impute</span><span class="p">),</span> <span class="p">(</span><span class="s1">'scaler'</span><span class="p">,</span> <span class="n">scaler</span><span class="p">)])</span>
 </pre></div>
 
 </div>
@@ -353,7 +353,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pipe</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pipe</span>
 </pre></div>
 
 </div>
@@ -393,7 +393,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">new_mat</span> <span class="o">=</span> <span class="n">pipe</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_mat</span> <span class="o">=</span> <span class="n">pipe</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
 <span class="n">new_mat</span><span class="p">[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
@@ -441,7 +441,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">new_mat</span><span class="p">,</span> <span class="n">mat_imp_and_scaled</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">new_mat</span><span class="p">,</span> <span class="n">mat_imp_and_scaled</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -508,7 +508,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">pipe</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">new_mat</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pipe</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">new_mat</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -523,26 +523,26 @@ Getting ready¶
 <div class="prompt"></div>
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-12-62edd2667cae&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>pipe<span class="ansiyellow">.</span>inverse_transform<span class="ansiyellow">(</span>new_mat<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-12-62edd2667cae&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>pipe<span class="ansi-yellow-intense-fg ansi-bold">.</span>inverse_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>new_mat<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansigreen">d:\programfiles\Miniconda3\lib\site-packages\sklearn\utils\metaestimators.py</span> in <span class="ansicyan">&lt;lambda&gt;</span><span class="ansiblue">(*args, **kwargs)</span>
-<span class="ansigreen">     35</span>             self<span class="ansiyellow">.</span>get_attribute<span class="ansiyellow">(</span>obj<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">     36</span>         <span class="ansired"># lambda, but not partial, allows help() to work with update_wrapper</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-<span class="ansigreen">---&gt; 37</span><span class="ansiyellow">         </span>out <span class="ansiyellow">=</span> <span class="ansigreen">lambda</span> <span class="ansiyellow">*</span>args<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">:</span> self<span class="ansiyellow">.</span>fn<span class="ansiyellow">(</span>obj<span class="ansiyellow">,</span> <span class="ansiyellow">*</span>args<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">     38</span>         <span class="ansired"># update the docstring of the returned function</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-<span class="ansigreen">     39</span>         update_wrapper<span class="ansiyellow">(</span>out<span class="ansiyellow">,</span> self<span class="ansiyellow">.</span>fn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansi-green-intense-fg ansi-bold">d:\programfiles\Miniconda3\lib\site-packages\sklearn\utils\metaestimators.py</span> in <span class="ansi-cyan-fg">&lt;lambda&gt;</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
+<span class="ansi-green-fg">     35</span>             self<span class="ansi-yellow-intense-fg ansi-bold">.</span>get_attribute<span class="ansi-yellow-intense-fg ansi-bold">(</span>obj<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     36</span>         <span class="ansi-red-intense-fg ansi-bold"># lambda, but not partial, allows help() to work with update_wrapper</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 37</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>out <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-green-intense-fg ansi-bold">lambda</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">:</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>fn<span class="ansi-yellow-intense-fg ansi-bold">(</span>obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     38</span>         <span class="ansi-red-intense-fg ansi-bold"># update the docstring of the returned function</span>
+<span class="ansi-green-fg">     39</span>         update_wrapper<span class="ansi-yellow-intense-fg ansi-bold">(</span>out<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>fn<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansigreen">d:\programfiles\Miniconda3\lib\site-packages\sklearn\pipeline.py</span> in <span class="ansicyan">inverse_transform</span><span class="ansiblue">(self, X)</span>
-<span class="ansigreen">    265</span>         Xt <span class="ansiyellow">=</span> X<span class="ansiyellow"></span>
-<span class="ansigreen">    266</span>         <span class="ansigreen">for</span> name<span class="ansiyellow">,</span> step <span class="ansigreen">in</span> self<span class="ansiyellow">.</span>steps<span class="ansiyellow">[</span><span class="ansiyellow">:</span><span class="ansiyellow">:</span><span class="ansiyellow">-</span><span class="ansicyan">1</span><span class="ansiyellow">]</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 267</span><span class="ansiyellow">             </span>Xt <span class="ansiyellow">=</span> step<span class="ansiyellow">.</span>inverse_transform<span class="ansiyellow">(</span>Xt<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    268</span>         <span class="ansigreen">return</span> Xt<span class="ansiyellow"></span>
-<span class="ansigreen">    269</span> <span class="ansiyellow"></span>
+<span class="ansi-green-intense-fg ansi-bold">d:\programfiles\Miniconda3\lib\site-packages\sklearn\pipeline.py</span> in <span class="ansi-cyan-fg">inverse_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, X)</span>
+<span class="ansi-green-fg">    265</span>         Xt <span class="ansi-yellow-intense-fg ansi-bold">=</span> X
+<span class="ansi-green-fg">    266</span>         <span class="ansi-green-intense-fg ansi-bold">for</span> name<span class="ansi-yellow-intense-fg ansi-bold">,</span> step <span class="ansi-green-intense-fg ansi-bold">in</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>steps<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-yellow-intense-fg ansi-bold">:</span><span class="ansi-yellow-intense-fg ansi-bold">:</span><span class="ansi-yellow-intense-fg ansi-bold">-</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 267</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>Xt <span class="ansi-yellow-intense-fg ansi-bold">=</span> step<span class="ansi-yellow-intense-fg ansi-bold">.</span>inverse_transform<span class="ansi-yellow-intense-fg ansi-bold">(</span>Xt<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    268</span>         <span class="ansi-green-intense-fg ansi-bold">return</span> Xt
+<span class="ansi-green-fg">    269</span> 
 
-<span class="ansired">AttributeError</span>: 'Imputer' object has no attribute 'inverse_transform'</pre>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: 'Imputer' object has no attribute 'inverse_transform'</pre>
 </div>
 </div>
 
@@ -565,7 +565,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">scaler</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">new_mat</span><span class="p">)[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scaler</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">new_mat</span><span class="p">)[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
 </div>

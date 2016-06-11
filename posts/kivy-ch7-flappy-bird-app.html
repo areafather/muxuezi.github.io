@@ -227,22 +227,22 @@ MathJax.Hub.Config({
 <li>更有效的方法是创建一些静态多边形（一个是一层）占据整个屏幕，然后让花纹图案动起来。用一个平铺的花纹图案，这个方法可以流畅的实现动画效果，也省不少功夫——不需要重新定位背景上的对象。</li>
 </ul>
 <p>我们要第二种方法来实现，因为这更简单有效。首先让我们把<code>kivybird.kv</code>文件做出来：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">FloatLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">Background</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">background</span>
-        <span class="l-Scalar-Plain">canvas</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-                <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.pos</span>
-                <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.width, 96)</span>
-                <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_floor</span>
-            <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-                <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x, self.y + 96)</span>
-                <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.width, 64)</span>
-                <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_grass</span>
-            <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-                <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x, self.height - 144)</span>
-                <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.width, 128)</span>
-                <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_cloud</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">FloatLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">Background</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">background</span>
+        <span class="l l-Scalar l-Scalar-Plain">canvas</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.pos</span>
+                <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.width, 96)</span>
+                <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_floor</span>
+            <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x, self.y + 96)</span>
+                <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.width, 64)</span>
+                <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_grass</span>
+            <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+                <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x, self.height - 144)</span>
+                <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.width, 128)</span>
+                <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_cloud</span>
 </pre></div>
 <blockquote>
 <p>这里的数字都是花纹的尺寸：96是地面高度，64是草的高度，144是云的高度。在实际开发中写这些代码很费劲，不过我们应该尽量简化代码，降低工作量。</p>
@@ -278,14 +278,14 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.widget</span> <span class="k">import</span> <span class="n">Widget</span>
 
 <span class="k">class</span> <span class="nc">BaseWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">load_tileable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="n">t</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">'%s.png'</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span>
-        <span class="n">t</span><span class="o">.</span><span class="n">wrap</span> <span class="o">=</span> <span class="s">'repeat'</span>
-        <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s">'tx_%s'</span> <span class="o">%</span> <span class="n">name</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s1">'</span><span class="si">%s</span><span class="s1">.png'</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">wrap</span> <span class="o">=</span> <span class="s1">'repeat'</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">'tx_</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">name</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -329,16 +329,16 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="k">import</span> <span class="n">ObjectProperty</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="k">import</span> <span class="n">ObjectProperty</span>
 
 <span class="k">class</span> <span class="nc">Background</span><span class="p">(</span><span class="n">BaseWidget</span><span class="p">):</span>
-    <span class="n">tx_floor</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
-    <span class="n">tx_grass</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
-    <span class="n">tx_cloud</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
+    <span class="n">tx_floor</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">tx_grass</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">tx_cloud</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
     
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Background</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'floor'</span><span class="p">,</span> <span class="s">'grass'</span><span class="p">,</span> <span class="s">'cloud'</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'floor'</span><span class="p">,</span> <span class="s1">'grass'</span><span class="p">,</span> <span class="s1">'cloud'</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">load_tileable</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
@@ -363,7 +363,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">set_background_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">set_background_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx</span><span class="p">):</span>
     <span class="n">tx</span><span class="o">.</span><span class="n">uvsize</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">/</span> <span class="n">tx</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -390,7 +390,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">on_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">on_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">tx</span> <span class="ow">in</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tx_floor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_grass</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_cloud</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_background_size</span><span class="p">(</span><span class="n">tx</span><span class="p">)</span>
 </pre></div>
@@ -436,7 +436,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.clock</span> <span class="k">import</span> <span class="n">Clock</span>
 
 <span class="k">class</span> <span class="nc">KivyBirdApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
@@ -469,10 +469,10 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s">'tx_floor'</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s">'tx_grass'</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s">'tx_cloud'</span><span class="p">,</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s1">'tx_floor'</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s1">'tx_grass'</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_background_uv</span><span class="p">(</span><span class="s1">'tx_cloud'</span><span class="p">,</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="n">nap</span><span class="p">)</span>
     
 <span class="k">def</span> <span class="nf">set_background_uv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
@@ -520,28 +520,28 @@ MathJax.Hub.Config({
 <p>管道分成两部分：高的和低的。中间会留出一个孔给小鸟飞过。每一部分都是有不同长度的管体和管头构成。</p>
 <p><img src="kbpic/7.4%20pipe.png" alt="pipe"></p>
 <p><code>kivybird.kv</code>文件里的布局部件给我们一个好起点：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;Pipe&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">canvas</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x + 4, self.FLOOR)</span>
-            <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(56, self.lower_len)</span>
-            <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_pipe</span>
-            <span class="l-Scalar-Plain">tex_coords</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.lower_coords</span>
-        <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x, self.FLOOR + self.lower_len)</span>
-            <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(64, self.PCAP_HEIGHT)</span>
-            <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_pcap</span>
-        <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x + 4, self.upper_y)</span>
-            <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(56, self.upper_len)</span>
-            <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_pipe</span>
-            <span class="l-Scalar-Plain">tex_coords</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.upper_coords</span>
-        <span class="l-Scalar-Plain">Rectangle</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">pos</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(self.x, self.upper_y - self.PCAP_HEIGHT)</span>
-            <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(64, self.PCAP_HEIGHT)</span>
-            <span class="l-Scalar-Plain">texture</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">self.tx_pcap</span>
-    <span class="l-Scalar-Plain">size_hint</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(None, 1)</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">64</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;Pipe&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">canvas</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x + 4, self.FLOOR)</span>
+            <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(56, self.lower_len)</span>
+            <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_pipe</span>
+            <span class="l l-Scalar l-Scalar-Plain">tex_coords</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.lower_coords</span>
+        <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x, self.FLOOR + self.lower_len)</span>
+            <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(64, self.PCAP_HEIGHT)</span>
+            <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_pcap</span>
+        <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x + 4, self.upper_y)</span>
+            <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(56, self.upper_len)</span>
+            <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_pipe</span>
+            <span class="l l-Scalar l-Scalar-Plain">tex_coords</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.upper_coords</span>
+        <span class="l l-Scalar l-Scalar-Plain">Rectangle</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">pos</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(self.x, self.upper_y - self.PCAP_HEIGHT)</span>
+            <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(64, self.PCAP_HEIGHT)</span>
+            <span class="l l-Scalar l-Scalar-Plain">texture</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">self.tx_pcap</span>
+    <span class="l l-Scalar l-Scalar-Plain">size_hint</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(None, 1)</span>
+    <span class="l l-Scalar l-Scalar-Plain">width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">64</span>
 </pre></div>
 <p>其实很简单，就是把管道从下到上分成四个矩形：</p>
 <ul>
@@ -581,7 +581,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="k">import</span> <span class="p">(</span><span class="n">AliasProperty</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.properties</span> <span class="k">import</span> <span class="p">(</span><span class="n">AliasProperty</span><span class="p">,</span> 
                              <span class="n">ListProperty</span><span class="p">,</span>
                              <span class="n">NumericProperty</span><span class="p">,</span>
                              <span class="n">ObjectProperty</span><span class="p">)</span>
@@ -589,8 +589,8 @@ MathJax.Hub.Config({
     <span class="n">FLOOR</span> <span class="o">=</span> <span class="mi">96</span>
     <span class="n">PCAP_HEIGHT</span> <span class="o">=</span> <span class="mi">26</span>
     <span class="n">PIPE_GAP</span> <span class="o">=</span> <span class="mi">120</span>
-    <span class="n">tx_pipe</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
-    <span class="n">tx_pcap</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="k">None</span><span class="p">)</span>
+    <span class="n">tx_pipe</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">tx_pcap</span> <span class="o">=</span> <span class="n">ObjectProperty</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
     <span class="n">ratio</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
     <span class="n">lower_len</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">lower_coords</span> <span class="o">=</span> <span class="n">ListProperty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
@@ -598,7 +598,7 @@ MathJax.Hub.Config({
     <span class="n">upper_coords</span> <span class="o">=</span> <span class="n">ListProperty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
     <span class="n">upper_y</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span>
         <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">upper_len</span><span class="p">,</span>
-        <span class="k">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s">'height'</span><span class="p">,</span> <span class="s">'upper_len'</span><span class="p">])</span>
+        <span class="kc">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">'height'</span><span class="p">,</span> <span class="s1">'upper_len'</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -630,11 +630,11 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Pipe</span><span class="p">(</span><span class="n">BaseWidget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Pipe</span><span class="p">(</span><span class="n">BaseWidget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Pipe</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         
-        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'pipe'</span><span class="p">,</span> <span class="s">'pcap'</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'pipe'</span><span class="p">,</span> <span class="s1">'pcap'</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">load_tileable</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
@@ -706,9 +706,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">set_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">,</span> <span class="nb">len</span><span class="p">):</span>
-    <span class="nb">len</span> <span class="o">/=</span> <span class="mi">16</span> <span class="c"># height of the texture</span>
-    <span class="n">coords</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">)</span> <span class="c"># set the last 3 items</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">set_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">,</span> <span class="nb">len</span><span class="p">):</span>
+    <span class="nb">len</span> <span class="o">/=</span> <span class="mi">16</span> <span class="c1"># height of the texture</span>
+    <span class="n">coords</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">)</span> <span class="c1"># set the last 3 items</span>
 </pre></div>
 
 </div>
@@ -731,7 +731,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">on_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">on_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="n">pipes_length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="p">(</span>
         <span class="n">Pipe</span><span class="o">.</span><span class="n">FLOOR</span> <span class="o">+</span> <span class="n">Pipe</span><span class="o">.</span><span class="n">PIPE_GAP</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Pipe</span><span class="o">.</span><span class="n">PCAP_HEIGHT</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">lower_len</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ratio</span> <span class="o">*</span> <span class="n">pipes_length</span>
@@ -760,7 +760,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">ratio</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">on_size</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">ratio</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">on_size</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -805,12 +805,12 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">KivyBirdApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">KivyBirdApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="n">pipes</span> <span class="o">=</span> <span class="p">[]</span>
     
     <span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">width</span>
-        <span class="c"># ...</span>
+        <span class="c1"># ...</span>
         
     <span class="k">def</span> <span class="nf">spawn_pipes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipes</span><span class="p">:</span>
@@ -867,12 +867,12 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">nap</span><span class="p">)</span>
     
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipes</span><span class="p">:</span>
         <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">-=</span> <span class="mi">96</span> <span class="o">*</span> <span class="n">nap</span>
-        <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mi">64</span><span class="p">:</span> <span class="c"># pipe gone off screen</span>
+        <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mi">64</span><span class="p">:</span> <span class="c1"># pipe gone off screen</span>
             <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="mi">4</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing</span>
             <span class="n">p</span><span class="o">.</span><span class="n">ratio</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
 </pre></div>
@@ -913,12 +913,12 @@ MathJax.Hub.Config({
 <img src="kbpic/7.8%20bird.png" alt="bird"></p>
 <p>这个很简单，直接用Kivy的<code>Image</code>部件（<code>kivy.uix.image.Image</code>）实现<code>Bird</code>类就行。</p>
 <p><code>kivybird.kv</code>文件里面，我们需要几个属性来处理小鸟图片：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">Bird</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bird</span>
-    <span class="l-Scalar-Plain">pos_hint</span><span class="p-Indicator">:</span> <span class="p-Indicator">{</span><span class="s">'center_x'</span><span class="p-Indicator">:</span> <span class="nv">0.3333</span><span class="p-Indicator">,</span> <span class="s">'center_y'</span><span class="p-Indicator">:</span> <span class="nv">0.6</span><span class="p-Indicator">}</span>
-    <span class="l-Scalar-Plain">size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(54, 54)</span>
-    <span class="l-Scalar-Plain">size_hint</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(None, None)</span>
-    <span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="s">'bird.png'</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Bird</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">id</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">bird</span>
+    <span class="l l-Scalar l-Scalar-Plain">pos_hint</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">{</span><span class="s">'center_x'</span><span class="p p-Indicator">:</span> <span class="nv">0.3333</span><span class="p p-Indicator">,</span> <span class="s">'center_y'</span><span class="p p-Indicator">:</span> <span class="nv">0.6</span><span class="p p-Indicator">}</span>
+    <span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(54, 54)</span>
+    <span class="l l-Scalar l-Scalar-Plain">size_hint</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(None, None)</span>
+    <span class="l l-Scalar l-Scalar-Plain">source</span><span class="p p-Indicator">:</span> <span class="s">'bird.png'</span>
 </pre></div>
 <p>这是<code>Bird</code>类的Python实现：</p>
 
@@ -930,7 +930,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.uix.image</span> <span class="k">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">ImageWidget</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.uix.image</span> <span class="k">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">ImageWidget</span>
 
 <span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">ImageWidget</span><span class="p">):</span>
     <span class="k">pass</span>
@@ -1002,22 +1002,22 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Keyboard</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Keyboard</span>
 <span class="k">class</span> <span class="nc">KivyBirdApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
-    <span class="n">playing</span> <span class="o">=</span> <span class="k">False</span>
+    <span class="n">playing</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c"># ...</span>
+        <span class="c1"># ...</span>
         <span class="n">Window</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">on_key_down</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">on_key_down</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">on_touch_down</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_action</span>
         
     <span class="k">def</span> <span class="nf">on_key_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">window</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">keycodes</span><span class="p">[</span><span class="s">'spacebar'</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">keycodes</span><span class="p">[</span><span class="s1">'spacebar'</span><span class="p">]:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">user_action</span><span class="p">()</span>
             
     <span class="k">def</span> <span class="nf">user_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">playing</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">spawn_pipes</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="k">True</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 
 </div>
@@ -1060,14 +1060,14 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">ImageWidget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">ImageWidget</span><span class="p">):</span>
     <span class="n">ACCEL_FALL</span> <span class="o">=</span> <span class="mf">0.25</span>
     
     <span class="n">speed</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     
     <span class="k">def</span> <span class="nf">gravity_on</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
-        <span class="c"># Replace pos_hint with a value</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">pos_hint</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'center_y'</span><span class="p">,</span> <span class="k">None</span><span class="p">)</span>
+        <span class="c1"># Replace pos_hint with a value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos_hint</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">'center_y'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">center_y</span> <span class="o">=</span> <span class="mf">0.6</span> <span class="o">*</span> <span class="n">height</span>
         
     <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
@@ -1095,10 +1095,10 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">playing</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">playing</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">gravity_on</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">spawn_pipes</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="k">True</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 
 </div>
@@ -1114,7 +1114,7 @@ MathJax.Hub.Config({
 <p>这个方法可以有效的重置鸟的初始位置，从<code>pos_hint</code>里面把<code>'center_y'</code>移除。</p>
 <blockquote>
 <p><code>self.bird</code>类似前面的<code>self.background</code>。下面的代码应该放在<code>KivyBirdApp.on_start()</code>里面：</p>
-<div class="highlight"><pre><span class="bp">self</span><span class="o">.</span><span class="n">background</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">background</span>
+<div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">background</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">background</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">bird</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">ids</span><span class="o">.</span><span class="n">bird</span>
 </pre></div>
 </blockquote>
@@ -1128,13 +1128,13 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">nap</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">playing</span><span class="p">:</span>
-        <span class="k">return</span> <span class="c"># don't move bird or pipes</span>
+        <span class="k">return</span> <span class="c1"># don't move bird or pipes</span>
     
     <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">nap</span><span class="p">)</span>
-    <span class="c"># rest of the code omitted</span>
+    <span class="c1"># rest of the code omitted</span>
 </pre></div>
 
 </div>
@@ -1178,7 +1178,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">ACCEL_JUMP</span> <span class="o">=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ACCEL_JUMP</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="k">def</span> <span class="nf">bump</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">Bird</span><span class="o">.</span><span class="n">ACCEL_JUMP</span>
@@ -1225,11 +1225,11 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">ImageWidget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">ImageWidget</span><span class="p">):</span>
     <span class="n">speed</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">angle</span> <span class="o">=</span> <span class="n">AliasProperty</span><span class="p">(</span>
         <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="mi">5</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed</span><span class="p">,</span>
-        <span class="k">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s">'speed'</span><span class="p">])</span>
+        <span class="kc">None</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="p">[</span><span class="s1">'speed'</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -1244,15 +1244,15 @@ MathJax.Hub.Config({
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>这里的速度因子<code>5</code>是随意设置的。</p>
 <p>现在，要让小鸟旋转起来，我们要在<code>kivybird.kv</code>里面加入：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;Bird&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">canvas.before</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">PushMatrix</span>
-        <span class="l-Scalar-Plain">Rotate</span><span class="p-Indicator">:</span>
-            <span class="l-Scalar-Plain">angle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.angle</span>
-            <span class="l-Scalar-Plain">axis</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(0, 0, 1)</span>
-            <span class="l-Scalar-Plain">origin</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.center</span>
-    <span class="l-Scalar-Plain">canvas.after</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">PopMatrix</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;Bird&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">canvas.before</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">PushMatrix</span>
+        <span class="l l-Scalar l-Scalar-Plain">Rotate</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">angle</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.angle</span>
+            <span class="l l-Scalar l-Scalar-Plain">axis</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(0, 0, 1)</span>
+            <span class="l l-Scalar l-Scalar-Plain">origin</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.center</span>
+    <span class="l l-Scalar l-Scalar-Plain">canvas.after</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">PopMatrix</span>
 </pre></div>
 <p>这个操作会改变OpenGL使用的局部坐标系统，影响后面所有的渲染。不要忘了保存（<code>PushMatrix</code>）和恢复（<code>PopMatrix</code>）坐标系统的状态，否则致命的错误可能会发生，导致整个画面变形。</p>
 <blockquote>
@@ -1289,11 +1289,11 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">test_game_over</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_game_over</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="ow">or</span> \
             <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="mi">50</span><span class="p">:</span>
-        <span class="k">return</span> <span class="k">True</span>
-    <span class="k">return</span> <span class="k">False</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 
 </div>
@@ -1316,24 +1316,24 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">test_game_over</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_game_over</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">screen_height</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">height</span>
     
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="ow">or</span> \
             <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;</span> <span class="n">screen_height</span> <span class="o">-</span> <span class="mi">50</span><span class="p">:</span>
-        <span class="k">return</span> <span class="k">True</span>
+        <span class="k">return</span> <span class="kc">True</span>
     
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipes</span><span class="p">:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">collide_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="p">):</span>
             <span class="k">continue</span>
             
-        <span class="c"># The gap between pipes</span>
+        <span class="c1"># The gap between pipes</span>
         <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">p</span><span class="o">.</span><span class="n">lower_len</span> <span class="o">+</span> <span class="mi">116</span> <span class="ow">or</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">bird</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;</span> <span class="n">screen_height</span> <span class="o">-</span> <span class="p">(</span>
                 <span class="n">p</span><span class="o">.</span><span class="n">upper_len</span> <span class="o">+</span> <span class="mi">75</span><span class="p">)):</span>
-            <span class="k">return</span> <span class="k">True</span>
+            <span class="k">return</span> <span class="kc">True</span>
         
-    <span class="k">return</span> <span class="k">False</span>
+    <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 
 </div>
@@ -1376,10 +1376,10 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
-    <span class="c"># ...</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
+    <span class="c1"># ...</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">test_game_over</span><span class="p">():</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="k">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="kc">False</span>
 </pre></div>
 
 </div>
@@ -1447,8 +1447,8 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.audio</span> <span class="k">import</span> <span class="n">SoundLoader</span>
-<span class="n">snd</span> <span class="o">=</span> <span class="n">SoundLoader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s">'sound.wav'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.audio</span> <span class="k">import</span> <span class="n">SoundLoader</span>
+<span class="n">snd</span> <span class="o">=</span> <span class="n">SoundLoader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'sound.wav'</span><span class="p">)</span>
 <span class="n">snd</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
 </pre></div>
 
@@ -1479,7 +1479,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">MultiAudio</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MultiAudio</span><span class="p">:</span>
     <span class="n">_next</span> <span class="o">=</span> <span class="mi">0</span>
     
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
@@ -1511,7 +1511,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">snd</span> <span class="o">=</span> <span class="n">MultiAudio</span><span class="p">(</span><span class="s">'sound.wav'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snd</span> <span class="o">=</span> <span class="n">MultiAudio</span><span class="p">(</span><span class="s1">'sound.wav'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">snd</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
 </pre></div>
 
@@ -1557,8 +1557,8 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">snd_bump</span> <span class="o">=</span> <span class="n">MultiAudio</span><span class="p">(</span><span class="s">'bump.wav'</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">snd_game_over</span> <span class="o">=</span> <span class="n">SoundLoader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s">'game_over.wav'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">snd_bump</span> <span class="o">=</span> <span class="n">MultiAudio</span><span class="p">(</span><span class="s1">'bump.wav'</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">snd_game_over</span> <span class="o">=</span> <span class="n">SoundLoader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'game_over.wav'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1581,9 +1581,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">test_game_over</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">test_game_over</span><span class="p">():</span>
     <span class="n">snd_game_over</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="k">False</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">playing</span> <span class="o">=</span> <span class="kc">False</span>
     
 <span class="k">def</span> <span class="nf">user_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="n">snd_bump</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>

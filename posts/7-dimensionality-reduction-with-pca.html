@@ -262,12 +262,12 @@ $$<p>让我们计算下表数据的协方差矩阵：</p>
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.4</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">1.9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.2</span><span class="p">]]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cov</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cov</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -464,9 +464,9 @@ $$<p>我们可以通过Numpy检验我们手算的特征向量。<code>eig</code>
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">]]))</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'特征值：{}</span><span class="se">\n</span><span class="s">特征向量：{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">v</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'特征值：</span><span class="si">{}</span><span class="se">\n</span><span class="s1">特征向量：</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">v</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -658,7 +658,7 @@ $$<p>通过Numpy的<code>dot</code>函数计算如下：</p>
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mf">0.27</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">],</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mf">0.27</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">],</span>
 <span class="p">[</span><span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">],</span>
 <span class="p">[</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">],</span>
 <span class="p">[</span><span class="o">-</span><span class="mf">0.67</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">],</span>
@@ -742,10 +742,10 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
 </pre></div>
 
 </div>
@@ -768,7 +768,7 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">target</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -795,7 +795,7 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">red_x</span><span class="p">,</span> <span class="n">red_y</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">red_x</span><span class="p">,</span> <span class="n">red_y</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
 <span class="n">blue_x</span><span class="p">,</span> <span class="n">blue_y</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
 <span class="n">green_x</span><span class="p">,</span> <span class="n">green_y</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
 
@@ -810,9 +810,9 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
         <span class="n">green_x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reduced_X</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
         <span class="n">green_y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reduced_X</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">red_x</span><span class="p">,</span> <span class="n">red_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">'r'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'x'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">blue_x</span><span class="p">,</span> <span class="n">blue_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">'b'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'D'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">green_x</span><span class="p">,</span> <span class="n">green_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">'g'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">red_x</span><span class="p">,</span> <span class="n">red_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'r'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">blue_x</span><span class="p">,</span> <span class="n">blue_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'b'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'D'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">green_x</span><span class="p">,</span> <span class="n">green_y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'g'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -874,15 +874,15 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">walk</span><span class="p">,</span> <span class="n">path</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">mahotas</span> <span class="kn">as</span> <span class="nn">mh</span>
-<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">scale</span>
-<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">walk</span><span class="p">,</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mahotas</span> <span class="k">as</span> <span class="nn">mh</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">scale</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">classification_report</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
@@ -908,11 +908,11 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">for</span> <span class="n">dir_path</span><span class="p">,</span> <span class="n">dir_names</span><span class="p">,</span> <span class="n">file_names</span> <span class="ow">in</span> <span class="n">walk</span><span class="p">(</span><span class="s">'mlslpic/att-faces/'</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">dir_path</span><span class="p">,</span> <span class="n">dir_names</span><span class="p">,</span> <span class="n">file_names</span> <span class="ow">in</span> <span class="n">walk</span><span class="p">(</span><span class="s1">'mlslpic/att-faces/'</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">file_names</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">fn</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">==</span> <span class="s">'pgm'</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">fn</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">'pgm'</span><span class="p">:</span>
             <span class="n">image_filename</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">fn</span><span class="p">)</span>
-            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scale</span><span class="p">(</span><span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_filename</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10304</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s">'float32'</span><span class="p">)))</span>
+            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scale</span><span class="p">(</span><span class="n">mh</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_filename</span><span class="p">,</span> <span class="n">as_grey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10304</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float32'</span><span class="p">)))</span>
             <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -938,7 +938,7 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 </pre></div>
 
@@ -962,10 +962,10 @@ $$X=U \sum {V^T}$$<p>列向量$U$称为数据矩阵的左奇异值向量，$V$�
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">X_train_reduced</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_reduced</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 <span class="n">X_test_reduced</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'训练集数据的原始维度是：{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'PCA降维后训练集数据是：{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train_reduced</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'训练集数据的原始维度是：</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'PCA降维后训练集数据是：</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train_reduced</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="n">accuracies</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train_reduced</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
@@ -1006,10 +1006,10 @@ PCA降维后训练集数据是：(300, 150)
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">'交叉验证准确率是：{}</span><span class="se">\n</span><span class="s">{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracies</span><span class="p">),</span> <span class="n">accuracies</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'交叉验证准确率是：</span><span class="si">{}</span><span class="se">\n</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracies</span><span class="p">),</span> <span class="n">accuracies</span><span class="p">))</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_reduced</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_reduced</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
 </pre></div>
 
 </div>

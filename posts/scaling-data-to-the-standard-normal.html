@@ -185,7 +185,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">preprocessing</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 
@@ -219,7 +219,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="n">boston</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_boston</span><span class="p">()</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">boston</span><span class="o">.</span><span class="n">target</span>
 </pre></div>
@@ -234,7 +234,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c">#前三个特征的均值</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#前三个特征的均值</span>
 </pre></div>
 
 </div>
@@ -264,7 +264,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c">#前三个特征的标准差</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#前三个特征的标准差</span>
 </pre></div>
 
 </div>
@@ -304,7 +304,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X_2</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_2</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -317,7 +317,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X_2</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_2</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -347,7 +347,7 @@ Getting ready¶
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">X_2</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_2</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -398,7 +398,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">my_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">()</span>
 <span class="n">my_scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">my_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
@@ -440,7 +440,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">my_minmax_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">MinMaxScaler</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_minmax_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">MinMaxScaler</span><span class="p">()</span>
 <span class="n">my_minmax_scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">my_minmax_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
@@ -482,7 +482,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">my_odd_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_odd_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">))</span>
 <span class="n">my_odd_scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">my_odd_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
@@ -524,7 +524,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">normalized_X</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">normalized_X</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -587,7 +587,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">my_useless_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">(</span><span class="n">with_mean</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">with_std</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_useless_scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">(</span><span class="n">with_mean</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">with_std</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">transformed_sd</span> <span class="o">=</span> <span class="n">my_useless_scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">original_sd</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">transformed_sd</span><span class="p">,</span> <span class="n">original_sd</span><span class="p">)</span>
@@ -640,7 +640,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">scipy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy</span>
 <span class="n">matrix</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
 </pre></div>
@@ -657,21 +657,21 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt"></div>
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">ValueError</span>                                Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-45-466df6030461&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansigreen">import</span> scipy<span class="ansiyellow"></span>
-<span class="ansigreen">      2</span> matrix <span class="ansiyellow">=</span> scipy<span class="ansiyellow">.</span>sparse<span class="ansiyellow">.</span>eye<span class="ansiyellow">(</span><span class="ansicyan">1000</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 3</span><span class="ansiyellow"> </span>preprocessing<span class="ansiyellow">.</span>scale<span class="ansiyellow">(</span>matrix<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-45-466df6030461&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-green-intense-fg ansi-bold">import</span> scipy
+<span class="ansi-green-fg">      2</span> matrix <span class="ansi-yellow-intense-fg ansi-bold">=</span> scipy<span class="ansi-yellow-intense-fg ansi-bold">.</span>sparse<span class="ansi-yellow-intense-fg ansi-bold">.</span>eye<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">1000</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>preprocessing<span class="ansi-yellow-intense-fg ansi-bold">.</span>scale<span class="ansi-yellow-intense-fg ansi-bold">(</span>matrix<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansigreen">d:\programfiles\Miniconda3\lib\site-packages\sklearn\preprocessing\data.py</span> in <span class="ansicyan">scale</span><span class="ansiblue">(X, axis, with_mean, with_std, copy)</span>
-<span class="ansigreen">    120</span>         <span class="ansigreen">if</span> with_mean<span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">    121</span>             raise ValueError(
-<span class="ansigreen">--&gt; 122</span><span class="ansiyellow">                 </span><span class="ansiblue">"Cannot center sparse matrices: pass `with_mean=False` instead"</span><span class="ansiyellow"></span>
-<span class="ansigreen">    123</span>                 " See docstring for motivation and alternatives.")
-<span class="ansigreen">    124</span>         <span class="ansigreen">if</span> axis <span class="ansiyellow">!=</span> <span class="ansicyan">0</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansi-green-intense-fg ansi-bold">d:\programfiles\Miniconda3\lib\site-packages\sklearn\preprocessing\data.py</span> in <span class="ansi-cyan-fg">scale</span><span class="ansi-blue-intense-fg ansi-bold">(X, axis, with_mean, with_std, copy)</span>
+<span class="ansi-green-fg">    120</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> with_mean<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    121</span>             raise ValueError(
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 122</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span><span class="ansi-blue-intense-fg ansi-bold">"Cannot center sparse matrices: pass `with_mean=False` instead"</span>
+<span class="ansi-green-fg">    123</span>                 " See docstring for motivation and alternatives.")
+<span class="ansi-green-fg">    124</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> axis <span class="ansi-yellow-intense-fg ansi-bold">!=</span> <span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
 
-<span class="ansired">ValueError</span>: Cannot center sparse matrices: pass `with_mean=False` instead See docstring for motivation and alternatives.</pre>
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: Cannot center sparse matrices: pass `with_mean=False` instead See docstring for motivation and alternatives.</pre>
 </div>
 </div>
 
@@ -694,7 +694,7 @@ $$x= \frac {x- \bar x} \sigma$$<p>除了这个函数，还有一个中心化与�
 <div class="prompt input_prompt">In [58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">with_mean</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">preprocessing</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">with_mean</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
 </div>

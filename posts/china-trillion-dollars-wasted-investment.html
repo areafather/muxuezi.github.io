@@ -168,7 +168,7 @@ In ">
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 
@@ -182,7 +182,7 @@ In ">
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">dficor</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">'china-1979-2013-icor.xlsx'</span><span class="p">,</span><span class="s">'Sheet1'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dficor</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'china-1979-2013-icor.xlsx'</span><span class="p">,</span><span class="s1">'Sheet1'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -215,7 +215,7 @@ In ">
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">dficor</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dficor</span>
 </pre></div>
 
 </div>
@@ -504,10 +504,10 @@ $$ICOR = \frac {Annual\ Investment} {Annual\ Added\ GDP} $$
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># 计算指定时间段begin,end的ICOR均值</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 计算指定时间段begin,end的ICOR均值</span>
 <span class="k">def</span> <span class="nf">icor_average</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">):</span>
     <span class="n">icor</span> <span class="o">=</span> <span class="n">dficor</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">end</span><span class="p">:</span><span class="n">begin</span><span class="p">]</span>
-    <span class="n">icor</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">'{1}_{0}_Average'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">),</span><span class="s">'ICOR'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">icor</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'ICOR'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">icor</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'</span><span class="si">{1}</span><span class="s1">_</span><span class="si">{0}</span><span class="s1">_Average'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">),</span><span class="s1">'ICOR'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">icor</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">'ICOR'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">icor</span>
 </pre></div>
 
@@ -531,7 +531,7 @@ $$ICOR = \frac {Annual\ Investment} {Annual\ Added\ GDP} $$
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">icor_average</span><span class="p">(</span><span class="mi">1979</span><span class="p">,</span><span class="mi">1996</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">icor_average</span><span class="p">(</span><span class="mi">1979</span><span class="p">,</span><span class="mi">1996</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -695,7 +695,7 @@ $$ICOR = \frac {Annual\ Investment} {Annual\ Added\ GDP} $$
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">icor_average</span><span class="p">(</span><span class="mi">1997</span><span class="p">,</span><span class="mi">2013</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">icor_average</span><span class="p">(</span><span class="mi">1997</span><span class="p">,</span><span class="mi">2013</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -862,11 +862,11 @@ $$ Efficiency\ of\ Investment = \frac {1979-96\ ICOR\ average\ as\ baseline\ ICO
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">worthlessInvt</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">,</span><span class="n">baselineICOR</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">worthlessInvt</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">,</span><span class="n">baselineICOR</span><span class="p">):</span>
     <span class="n">WorthlessInvt</span> <span class="o">=</span> <span class="n">dficor</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">end</span><span class="p">:</span><span class="n">begin</span><span class="p">]</span>
-    <span class="n">WorthlessInvt</span><span class="p">[</span><span class="s">'WorthlessInvt pct'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'ICOR'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">-</span><span class="n">baselineICOR</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">WorthlessInvt</span><span class="p">[</span><span class="s">'WorthlessInvt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">u'Investment(￥)'</span><span class="p">]</span> <span class="o">*</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'WorthlessInvt pct'</span><span class="p">]</span>
-    <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">'{1}_{0}_Total'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">),</span><span class="s">'WorthlessInvt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'WorthlessInvt'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">WorthlessInvt</span><span class="p">[</span><span class="s1">'WorthlessInvt pct'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">'ICOR'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">-</span><span class="n">baselineICOR</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">WorthlessInvt</span><span class="p">[</span><span class="s1">'WorthlessInvt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">u'Investment(￥)'</span><span class="p">]</span> <span class="o">*</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">'WorthlessInvt pct'</span><span class="p">]</span>
+    <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'</span><span class="si">{1}</span><span class="s1">_</span><span class="si">{0}</span><span class="s1">_Total'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">),</span><span class="s1">'WorthlessInvt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">WorthlessInvt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">'WorthlessInvt'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">WorthlessInvt</span>
 </pre></div>
 
@@ -880,7 +880,7 @@ $$ Efficiency\ of\ Investment = \frac {1979-96\ ICOR\ average\ as\ baseline\ ICO
 <div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">worthlessInvt</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mf">2.59</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">worthlessInvt</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mf">2.59</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -980,7 +980,7 @@ $$ Efficiency\ of\ Investment = \frac {1979-96\ ICOR\ average\ as\ baseline\ ICO
 <div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">new_icor</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">icor_average</span><span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1980</span><span class="p">,</span><span class="mi">1989</span><span class="p">),(</span><span class="mi">1990</span><span class="p">,</span><span class="mi">1999</span><span class="p">),(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2008</span><span class="p">),(</span><span class="mi">2009</span><span class="p">,</span><span class="mi">2013</span><span class="p">)])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_icor</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">icor_average</span><span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1980</span><span class="p">,</span><span class="mi">1989</span><span class="p">),(</span><span class="mi">1990</span><span class="p">,</span><span class="mi">1999</span><span class="p">),(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2008</span><span class="p">),(</span><span class="mi">2009</span><span class="p">,</span><span class="mi">2013</span><span class="p">)])</span>
 <span class="n">new_icor</span>
 </pre></div>
 
@@ -1055,7 +1055,7 @@ $$ Efficiency\ of\ Investment = \frac {1979-96\ ICOR\ average\ as\ baseline\ ICO
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">worthlessInvt</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">worthlessInvt</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">)</span>
 </pre></div>
 
 </div>

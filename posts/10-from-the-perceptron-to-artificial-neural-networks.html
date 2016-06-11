@@ -423,15 +423,15 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <p>让我们训练一个多层感知器来近似XOR函数。目前，scikit-learn的0.16.1版本还没有合并，作者在其github上提供了单独的MLP模块<a href="https://github.com/IssamLaradji/NeuralNetworks">NeuralNetworks</a>，我们在0.16.1版本基础上稍作修改，即可完成本书的例子。</p>
 <blockquote>
 <p>请fork作者的NeuralNetworks，将<code>multilayer_perceptron</code>文件夹里的<code>.py</code>文件复制到<code>sklearn/neural_network</code>文件夹里，然后将对<code>__init__.py</code>文件做如下修改即可：</p>
-<div class="highlight"><pre><span class="c"># __init__.py</span>
+<div class="highlight"><pre><span></span><span class="c1"># __init__.py</span>
 <span class="kn">from</span> <span class="nn">.rbm</span> <span class="kn">import</span> <span class="n">BernoulliRBM</span>
 
 <span class="kn">from</span> <span class="nn">.multilayer_perceptron</span> <span class="kn">import</span> <span class="n">MultilayerPerceptronClassifier</span>
 <span class="kn">from</span> <span class="nn">.multilayer_perceptron</span> <span class="kn">import</span> <span class="n">MultilayerPerceptronRegressor</span>
 
-<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s">"BernoulliRBM"</span><span class="p">,</span>
-           <span class="s">"MultilayerPerceptronClassifier"</span><span class="p">,</span>
-           <span class="s">"MultilayerPerceptronRegressor"</span><span class="p">]</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"BernoulliRBM"</span><span class="p">,</span>
+           <span class="s2">"MultilayerPerceptronClassifier"</span><span class="p">,</span>
+           <span class="s2">"MultilayerPerceptronRegressor"</span><span class="p">]</span>
 </pre></div>
 <p>另外，在Linux和Mac OS系统里，复制<code>.py</code>文件的权限记得改成<code>chmod 644</code></p>
 </blockquote>
@@ -445,9 +445,9 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MultilayerPerceptronClassifier</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="k">import</span> <span class="n">MultilayerPerceptronClassifier</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1000</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -475,9 +475,9 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">clf</span> <span class="o">=</span> <span class="n">MultilayerPerceptronClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
-                                    <span class="n">activation</span><span class="o">=</span><span class="s">'logistic'</span><span class="p">,</span>
-                                    <span class="n">algorithm</span><span class="o">=</span><span class="s">'sgd'</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">MultilayerPerceptronClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                                    <span class="n">activation</span><span class="o">=</span><span class="s1">'logistic'</span><span class="p">,</span>
+                                    <span class="n">algorithm</span><span class="o">=</span><span class="s1">'sgd'</span><span class="p">,</span>
                                     <span class="n">random_state</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
@@ -523,11 +523,11 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">'层数：</span><span class="si">%s</span><span class="s">，输出单元数量：</span><span class="si">%s</span><span class="s">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">n_layers_</span><span class="p">,</span> <span class="n">clf</span><span class="o">.</span><span class="n">n_outputs_</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'层数：</span><span class="si">%s</span><span class="s1">，输出单元数量：</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">n_layers_</span><span class="p">,</span> <span class="n">clf</span><span class="o">.</span><span class="n">n_outputs_</span><span class="p">))</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'准确率：</span><span class="si">%s</span><span class="s">'</span> <span class="o">%</span> <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'准确率：</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">predictions</span><span class="p">[:</span><span class="mi">10</span><span class="p">]):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'真实值：</span><span class="si">%s</span><span class="s">，预测值：</span><span class="si">%s</span><span class="s">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">y_test</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'真实值：</span><span class="si">%s</span><span class="s1">，预测值：</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">y_test</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -586,11 +586,11 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_digits</span>
-<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
-<span class="kn">from</span> <span class="nn">sklearn.neural_network.multilayer_perceptron</span> <span class="kn">import</span> <span class="n">MultilayerPerceptronClassifier</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_digits</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.neural_network.multilayer_perceptron</span> <span class="k">import</span> <span class="n">MultilayerPerceptronClassifier</span>
 </pre></div>
 
 </div>
@@ -613,7 +613,7 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">digits</span> <span class="o">=</span> <span class="n">load_digits</span><span class="p">()</span>
     <span class="n">X</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">data</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span>
@@ -639,11 +639,11 @@ $$MSE = \frac 1 m \sum_{i=1}^m{(y_i-f(x_i))^2}$$
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
-                    <span class="p">(</span><span class="s">'ss'</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span>
-                    <span class="p">(</span><span class="s">'mlp'</span><span class="p">,</span> <span class="n">MultilayerPerceptronClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+                    <span class="p">(</span><span class="s1">'ss'</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span>
+                    <span class="p">(</span><span class="s1">'mlp'</span><span class="p">,</span> <span class="n">MultilayerPerceptronClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
                     <span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'准确率： </span><span class="si">%s</span><span class="s">'</span> <span class="o">%</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'准确率： </span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
 </div>

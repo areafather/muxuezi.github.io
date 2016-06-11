@@ -189,10 +189,10 @@ $$F(t)=\frac 1 {1+e^{-t}}$$<p>下面是$t$在<code>{-6,6}</code>的图形：</p>
 <div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib.font_manager</span> <span class="k">import</span> <span class="n">FontProperties</span>
-<span class="n">font</span> <span class="o">=</span> <span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s">r"c:\windows\fonts\msyh.ttc"</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s2">r"c:\windows\fonts\msyh.ttc"</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -205,13 +205,13 @@ $$F(t)=\frac 1 {1+e^{-t}}$$<p>下面是$t$在<code>{-6,6}</code>的图形：</p>
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">e</span> <span class="o">**</span> <span class="p">(</span><span class="o">-</span><span class="n">X</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'b-'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">'b-'</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -274,11 +274,11 @@ $$g(x)=ln {\frac {F(x)} {1-F(x)}} = \beta_0+\beta_x$$<p>定义了逻辑回归的
 <div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/SMSSpamCollection'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="k">None</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/SMSSpamCollection'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">'</span><span class="se">\t</span><span class="s1">'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'含spam短信数量：'</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">'spam'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'含ham短信数量：'</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">'ham'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'含spam短信数量：'</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'spam'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'含ham短信数量：'</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'ham'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -334,7 +334,7 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model.logistic</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -360,7 +360,7 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/SMSSpamCollection'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="k">None</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/SMSSpamCollection'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">'</span><span class="se">\t</span><span class="s1">'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
 <span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
@@ -385,7 +385,7 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_raw</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_raw</span><span class="p">)</span>
 </pre></div>
@@ -410,7 +410,7 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </pre></div>
@@ -425,8 +425,8 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">'预测类型：%s. 信息：%s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'预测类型：</span><span class="si">%s</span><span class="s1">. 信息：</span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 </pre></div>
 
 </div>
@@ -489,17 +489,17 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">confusion_matrix</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">confusion_matrix</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">y_test</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">confusion_matrix</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'混淆矩阵'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'混淆矩阵'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'实际类型'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'预测类型'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'实际类型'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'预测类型'</span><span class="p">,</span><span class="n">fontproperties</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -559,7 +559,7 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
 <span class="n">y_pred</span><span class="p">,</span> <span class="n">y_true</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
@@ -599,21 +599,21 @@ KL341. Valid 12 hours only.</li>
 <div class="prompt input_prompt">In [34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model.logistic</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/sms.csv'</span><span class="p">)</span>
-<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'label'</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/sms.csv'</span><span class="p">)</span>
+<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">])</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_raw</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_raw</span><span class="p">)</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'准确率：'</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">),</span> <span class="n">scores</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'准确率：'</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">),</span> <span class="n">scores</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -675,23 +675,23 @@ $$R = \frac {10} {10+0}=1$$<p>分类器如果将每一个样本都预测为阴�
 <div class="prompt input_prompt">In [38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model.logistic</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/sms.csv'</span><span class="p">)</span>
-<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'label'</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/sms.csv'</span><span class="p">)</span>
+<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">])</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_raw</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_raw</span><span class="p">)</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">precisions</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">'precision'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'精确率：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">precisions</span><span class="p">),</span> <span class="n">precisions</span><span class="p">)</span>
-<span class="n">recalls</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">'recall'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'召回率：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">recalls</span><span class="p">),</span> <span class="n">recalls</span><span class="p">)</span>
+<span class="n">precisions</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'precision'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'精确率：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">precisions</span><span class="p">),</span> <span class="n">precisions</span><span class="p">)</span>
+<span class="n">recalls</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'recall'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'召回率：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">recalls</span><span class="p">),</span> <span class="n">recalls</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -752,8 +752,8 @@ $$F1 = 2{\frac {PR} {P+R}}$$<p>综合评价指标平衡了精确率和召回率�
 <div class="prompt input_prompt">In [39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">f1s</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">'f1'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'综合评价指标：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">f1s</span><span class="p">),</span> <span class="n">f1s</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1s</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'f1'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'综合评价指标：'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">f1s</span><span class="p">),</span> <span class="n">f1s</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -812,7 +812,7 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <div class="prompt input_prompt">In [40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
@@ -820,8 +820,8 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">auc</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/sms.csv'</span><span class="p">)</span>
-<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'label'</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/sms.csv'</span><span class="p">)</span>
+<span class="n">X_train_raw</span><span class="p">,</span> <span class="n">X_test_raw</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">])</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_raw</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_raw</span><span class="p">)</span>
@@ -830,14 +830,14 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">false_positive_rate</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">thresholds</span> <span class="o">=</span> <span class="n">roc_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">roc_auc</span> <span class="o">=</span> <span class="n">auc</span><span class="p">(</span><span class="n">false_positive_rate</span><span class="p">,</span> <span class="n">recall</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'Receiver Operating Characteristic'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">false_positive_rate</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'AUC = %0.2f'</span> <span class="o">%</span> <span class="n">roc_auc</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">'lower right'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s">'r--'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Receiver Operating Characteristic'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">false_positive_rate</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'AUC = </span><span class="si">%0.2f</span><span class="s1">'</span> <span class="o">%</span> <span class="n">roc_auc</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'lower right'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'r--'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Recall'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Fall-out'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Recall'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Fall-out'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -888,7 +888,7 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model.logistic</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
@@ -897,34 +897,34 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">accuracy_score</span>
 
 <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
-    <span class="p">(</span><span class="s">'vect'</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)),</span>
-    <span class="p">(</span><span class="s">'clf'</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">())</span>
+    <span class="p">(</span><span class="s1">'vect'</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">'clf'</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="p">])</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">'vect__max_df'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-    <span class="s">'vect__stop_words'</span><span class="p">:</span> <span class="p">(</span><span class="s">'english'</span><span class="p">,</span> <span class="k">None</span><span class="p">),</span>
-    <span class="s">'vect__max_features'</span><span class="p">:</span> <span class="p">(</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="k">None</span><span class="p">),</span>
-    <span class="s">'vect__ngram_range'</span><span class="p">:</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-    <span class="s">'vect__use_idf'</span><span class="p">:</span> <span class="p">(</span><span class="k">True</span><span class="p">,</span> <span class="k">False</span><span class="p">),</span>
-    <span class="s">'vect__norm'</span><span class="p">:</span> <span class="p">(</span><span class="s">'l1'</span><span class="p">,</span> <span class="s">'l2'</span><span class="p">),</span>
-    <span class="s">'clf__penalty'</span><span class="p">:</span> <span class="p">(</span><span class="s">'l1'</span><span class="p">,</span> <span class="s">'l2'</span><span class="p">),</span>
-    <span class="s">'clf__C'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+    <span class="s1">'vect__max_df'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
+    <span class="s1">'vect__stop_words'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'english'</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="s1">'vect__max_features'</span><span class="p">:</span> <span class="p">(</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="s1">'vect__ngram_range'</span><span class="p">:</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="s1">'vect__use_idf'</span><span class="p">:</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="s1">'vect__norm'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'l1'</span><span class="p">,</span> <span class="s1">'l2'</span><span class="p">),</span>
+    <span class="s1">'clf__penalty'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'l1'</span><span class="p">,</span> <span class="s1">'l2'</span><span class="p">),</span>
+    <span class="s1">'clf__C'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
 <span class="p">}</span>
-<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">'accuracy'</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'accuracy'</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mlslpic/sms.csv'</span><span class="p">)</span>
-<span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'label'</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'mlslpic/sms.csv'</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'message'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">]</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'最佳效果：%0.3f'</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'最优参数组合：'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'最佳效果：</span><span class="si">%0.3f</span><span class="s1">'</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'最优参数组合：'</span><span class="p">)</span>
 <span class="n">best_parameters</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">param_name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">%s: %r'</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span> <span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="si">%s</span><span class="s1">: </span><span class="si">%r</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span> <span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">]))</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'准确率：'</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'精确率：'</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'召回率：'</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'准确率：'</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'精确率：'</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'召回率：'</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -1015,10 +1015,10 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <div class="prompt input_prompt">In [28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">zipfile</span>
-<span class="c"># 压缩节省空间</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s">'mlslpic/train.zip'</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">namelist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">zipfile</span>
+<span class="c1"># 压缩节省空间</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">'mlslpic/train.zip'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">namelist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">'</span><span class="se">\t</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1031,7 +1031,7 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1107,7 +1107,7 @@ $$F = \frac {FP} {TN+FP}$$<p>AUC是ROC曲线下方的面积，它把ROC曲线变
 <div class="prompt input_prompt">In [31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1151,7 +1151,7 @@ dtype: int64</pre>
 <div class="prompt input_prompt">In [32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">Phrase</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Phrase</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1191,7 +1191,7 @@ Name: Phrase, dtype: object</pre>
 <div class="prompt input_prompt">In [33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1229,7 +1229,7 @@ Name: Sentiment, dtype: float64</pre>
 <div class="prompt input_prompt">In [34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1264,7 +1264,7 @@ dtype: int64</pre>
 <div class="prompt input_prompt">In [35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">/</span><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">/</span><span class="n">df</span><span class="o">.</span><span class="n">Sentiment</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1309,7 +1309,7 @@ dtype: float64</pre>
 <div class="prompt input_prompt">In [37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model.logistic</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -1319,27 +1319,27 @@ dtype: float64</pre>
 <span class="kn">import</span> <span class="nn">zipfile</span>
 
 <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
-    <span class="p">(</span><span class="s">'vect'</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s">'english'</span><span class="p">)),</span>
-    <span class="p">(</span><span class="s">'clf'</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">())</span>
+    <span class="p">(</span><span class="s1">'vect'</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">'clf'</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="p">])</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">'vect__max_df'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
-    <span class="s">'vect__ngram_range'</span><span class="p">:</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-    <span class="s">'vect__use_idf'</span><span class="p">:</span> <span class="p">(</span><span class="k">True</span><span class="p">,</span> <span class="k">False</span><span class="p">),</span>
-    <span class="s">'clf__C'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+    <span class="s1">'vect__max_df'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">'vect__ngram_range'</span><span class="p">:</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="s1">'vect__use_idf'</span><span class="p">:</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="s1">'clf__C'</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
 <span class="p">}</span>
 
-<span class="n">z</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s">'mlslpic/train.zip'</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">namelist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">)</span>
-<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'Phrase'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'Sentiment'</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">()</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">'mlslpic/train.zip'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">namelist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">'</span><span class="se">\t</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Phrase'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Sentiment'</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">()</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">'accuracy'</span><span class="p">)</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'accuracy'</span><span class="p">)</span>
 <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'最佳效果：%0.3f'</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'最优参数组合：'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'最佳效果：</span><span class="si">%0.3f</span><span class="s1">'</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'最优参数组合：'</span><span class="p">)</span>
 <span class="n">best_parameters</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">param_name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">%s: %r'</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span> <span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="si">%s</span><span class="s1">: </span><span class="si">%r</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span> <span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">]))</span>
 </pre></div>
 
 </div>
@@ -1404,10 +1404,10 @@ dtype: float64</pre>
 <div class="prompt input_prompt">In [38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">predictions</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'准确率：'</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'混淆矩阵：'</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">'分类报告：'</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'准确率：'</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'混淆矩阵：'</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'分类报告：'</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -1507,7 +1507,7 @@ $$J(Predicted,True) = \frac {|Predicted \cap True|} {|Predicted \cup True|}$$
 <div class="prompt input_prompt">In [39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">hamming_loss</span><span class="p">,</span> <span class="n">jaccard_similarity_score</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hamming_loss</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hamming_loss</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])))</span>

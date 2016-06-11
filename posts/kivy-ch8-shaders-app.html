@@ -289,28 +289,28 @@ MathJax.Hub.Config({
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>GLSL作为一门语言，与C语法类似，是一个静态强类型。如果你不熟悉C语言，下面是参考。C与Python不同，不在乎缩进，句末要用分号，逻辑代码块要用括号。</p>
 <p>GLSL同时支持C和C++的注释方式：</p>
-<div class="highlight"><pre><span class="cm">/* ANSI C-style comment */</span>
+<div class="highlight"><pre><span></span><span class="cm">/* ANSI C-style comment */</span>
 <span class="c1">// C++ one-line comment</span>
 </pre></div>
 <p>变量声明方式为<code>[type] [name] [= optional value];</code>：</p>
-<div class="highlight"><pre><span class="kt">float</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// this has no direct Python equivalent</span>
+<div class="highlight"><pre><span></span><span class="kt">float</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// this has no direct Python equivalent</span>
 <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 <p>函数定义方式为<code>[type] [name] ([arguments]) { [body of function] }</code>：</p>
-<div class="highlight"><pre><span class="kt">float</span> <span class="nf">pow2</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">float</span> <span class="nf">pow2</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 <p>控制结构形式为：</p>
-<div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">9.0</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">9.0</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mf">9.0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 <p>差不多就这些了，即使没有学过C，你现在也可以读GLSL代码了。</p>
 <p>着色器代码的起点是<code>main()</code>函数。后面，我们把点着色器和像素着色器放在一个文件中，因此，在一个文件里面会有两个<code>main()</code>函数。其结构如下：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// code</span>
 <span class="p">}</span>
@@ -347,7 +347,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.base</span> <span class="k">import</span> <span class="n">EventLoop</span>
 <span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Mesh</span>
 <span class="kn">from</span> <span class="nn">kivy.graphics.instructions</span> <span class="k">import</span> <span class="n">RenderContext</span>
@@ -356,16 +356,16 @@ MathJax.Hub.Config({
 <span class="k">class</span> <span class="nc">GlslDemo</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">Widget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s">'basic.glsl'</span>
-        <span class="c"># Set up geometry here.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s1">'basic.glsl'</span>
+        <span class="c1"># Set up geometry here.</span>
         
 <span class="k">class</span> <span class="nc">GlslApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">EventLoop</span><span class="o">.</span><span class="n">ensure_window</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">GlslDemo</span><span class="p">()</span>
     
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">GlslApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -415,26 +415,26 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">Widget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s">'basic.glsl'</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s1">'basic.glsl'</span>
     
-    <span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span> <span class="c"># Step 1</span>
-        <span class="p">(</span><span class="n">b</span><span class="s">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
+    <span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span> <span class="c1"># Step 1</span>
+        <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
     <span class="p">)</span>
     
-    <span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span> <span class="c"># Step 2</span>
+    <span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span> <span class="c1"># Step 2</span>
         <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
         <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
         <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>
         <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>
     <span class="p">)</span>
     
-    <span class="n">indices</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c"># Step 3</span>
+    <span class="n">indices</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># Step 3</span>
     
     <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-        <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">'triangles'</span><span class="p">,</span> <span class="c"># Step 4</span>
+        <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'triangles'</span><span class="p">,</span> <span class="c1"># Step 4</span>
             <span class="n">indices</span><span class="o">=</span><span class="n">indices</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="n">vertices</span><span class="p">)</span>
 </pre></div>
 
@@ -488,7 +488,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
     <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
     <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>
@@ -518,9 +518,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">indices</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="c"># 三个点构成一个三角形</span>
-    <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="c"># 另一个三角形</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">indices</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="c1"># 三个点构成一个三角形</span>
+    <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="c1"># 另一个三角形</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -561,7 +561,7 @@ MathJax.Hub.Config({
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>下面我们就来写可以在GPU上执行的GLSL代码，它和C语言一样快。</p>
 <p>Kviy要求点着色器和像素着色器代码在一个文件里，代码用<code>'---vertex'</code>和<code>'---fragment'</code>分割，<code>$HEADER$</code>语句由Kivy指定，这并非任何标准，只在这里用：</p>
-<div class="highlight"><pre><span class="o">---</span><span class="n">vertex</span>
+<div class="highlight"><pre><span></span><span class="o">---</span><span class="n">vertex</span>
 <span class="err">$</span><span class="n">HEADER</span><span class="err">$</span>
 
 <span class="kt">void</span> <span class="n">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -582,7 +582,7 @@ MathJax.Hub.Config({
 <p>为了节省篇幅，后面的代码会忽略这些样本代码，希望你看代码的时候记得它们是存在的。</p>
 <p><code>$HEADER$</code>宏变量是上下文相关的，表示不同类型的着色器。</p>
 <p>在点着色器里面，<code>$HEADER$</code>是下面代码：</p>
-<div class="highlight"><pre><span class="n">varying</span> <span class="n">vec4</span> <span class="n">frag_color</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="n">varying</span> <span class="n">vec4</span> <span class="n">frag_color</span><span class="p">;</span>
 <span class="n">varying</span> <span class="n">vec2</span> <span class="n">tex_coord0</span><span class="p">;</span>
 <span class="n">attribute</span> <span class="n">vec2</span> <span class="n">vPosition</span><span class="p">;</span>
 <span class="n">attribute</span> <span class="n">vec2</span> <span class="n">vTexCoords0</span><span class="p">;</span>
@@ -592,7 +592,7 @@ MathJax.Hub.Config({
 <span class="n">uniform</span> <span class="kt">float</span> <span class="n">opacity</span><span class="p">;</span>
 </pre></div>
 <p>在像素着色器里面，<code>$HEADER$</code>是下面代码：</p>
-<div class="highlight"><pre><span class="n">varying</span> <span class="n">vec4</span> <span class="n">frag_color</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="n">varying</span> <span class="n">vec4</span> <span class="n">frag_color</span><span class="p">;</span>
 <span class="n">varying</span> <span class="n">vec2</span> <span class="n">tex_coord0</span><span class="p">;</span>
 
 <span class="n">uniform</span> <span class="n">sampler2D</span> <span class="n">texture0</span><span class="p">;</span>
@@ -659,7 +659,7 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>现在，让我们来写一个简单的着色器：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">vec4</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">vec4</span><span class="p">(</span><span class="n">vPosition</span><span class="p">.</span><span class="n">xy</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
     <span class="n">gl_Position</span> <span class="o">=</span> <span class="n">projection_mat</span> <span class="o">*</span> <span class="n">modelview_mat</span> <span class="o">*</span> <span class="n">pos</span><span class="p">;</span>
@@ -671,7 +671,7 @@ MathJax.Hub.Config({
 如果你很感兴趣，可以去看看<a href="http://www.learnopengles.com/understanding-opengls-matrices/">OpenGL的坐标空间和矩阵用法</a></p>
 </blockquote>
 <p>最简单的像素着色器就是一个返回固定颜色的函数：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">gl_FragColor</span> <span class="o">=</span> <span class="n">vec4</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
 <span class="p">}</span>
@@ -710,7 +710,7 @@ MathJax.Hub.Config({
 <code>B</code>通道值等于<code>R</code>与<code>G</code>均值</li>
 </ul>
 <p>对应最简单像素着色器的算法如下：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kt">float</span> <span class="n">r</span> <span class="o">=</span> <span class="n">gl_FragCoord</span><span class="p">.</span><span class="n">x</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">;</span>
     <span class="kt">float</span> <span class="n">g</span> <span class="o">=</span> <span class="n">gl_FragCoord</span><span class="p">.</span><span class="n">y</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">;</span>
@@ -750,9 +750,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="p">(</span><span class="n">b</span><span class="s">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
-    <span class="p">(</span><span class="n">b</span><span class="s">'vColor'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">b</span><span class="s1">'vColor'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
 <span class="p">)</span>
 
 <span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span>
@@ -777,7 +777,7 @@ MathJax.Hub.Config({
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>更新之后，每个点都有5个维度，后面三个是RGB颜色值。对应的<code>vertices</code>也要做修改。</p>
 <p><code>vColor</code>属性是一个RGB颜色值，而点着色器用的是RGBA颜色，这里并没有每个点的alpha通道值，我们需要对点着色器做一些调整：</p>
-<div class="highlight"><pre><span class="n">attribute</span> <span class="n">vec3</span> <span class="n">vColor</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="n">attribute</span> <span class="n">vec3</span> <span class="n">vColor</span><span class="p">;</span>
 
 <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
@@ -792,7 +792,7 @@ MathJax.Hub.Config({
 <p>同理，可以取矢量的四个值，如<code>.xyzw</code>，<code>.rgba</code>或<code>.stpq</code>。</p>
 </blockquote>
 <p>那么，像素着色器就很简单了：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">gl_FragColor</span> <span class="o">=</span> <span class="n">frag_color</span><span class="p">;</span>
 <span class="p">}</span>
@@ -828,9 +828,9 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="p">(</span><span class="n">b</span><span class="s">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
-    <span class="p">(</span><span class="n">b</span><span class="s">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
 <span class="p">)</span>
 
 <span class="n">vertices</span> <span class="o">=</span> <span class="p">(</span>
@@ -862,12 +862,12 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
 
 <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-    <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">'triangles'</span><span class="p">,</span>
+    <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'triangles'</span><span class="p">,</span>
         <span class="n">indices</span><span class="o">=</span><span class="n">indices</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="n">vertices</span><span class="p">,</span>
-        <span class="n">texture</span><span class="o">=</span><span class="n">Image</span><span class="p">(</span><span class="s">'kivy.png'</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span><span class="p">)</span>
+        <span class="n">texture</span><span class="o">=</span><span class="n">Image</span><span class="p">(</span><span class="s1">'kivy.png'</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -883,7 +883,7 @@ MathJax.Hub.Config({
 <p>这样就把当前文件夹内的<code>kivy.png</code>文件转换成纹理了。如下图所示：</p>
 <p><img src="kbpic/8.7%20texture.png" alt="texture"></p>
 <p>这和前面的着色器没啥不同。点着色器传递纹理的坐标值：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">tex_coord0</span> <span class="o">=</span> <span class="n">vTexCoords0</span><span class="p">;</span>
     <span class="n">vec4</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">vec4</span><span class="p">(</span><span class="n">vPosition</span><span class="p">.</span><span class="n">xy</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
@@ -891,7 +891,7 @@ MathJax.Hub.Config({
 <span class="p">}</span>
 </pre></div>
 <p>像素着色器用修改过的<code>tex_coord0</code>坐标值来装饰在<code>texture0</code>位置的纹理，于是返回对应的颜色：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
    <span class="n">gl_FragColor</span> <span class="o">=</span> <span class="n">texture2D</span><span class="p">(</span><span class="n">texture0</span><span class="p">,</span> <span class="n">tex_coord0</span><span class="p">);</span>
 <span class="p">}</span>
@@ -960,7 +960,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.base</span> <span class="k">import</span> <span class="n">EventLoop</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.base</span> <span class="k">import</span> <span class="n">EventLoop</span>
 <span class="kn">from</span> <span class="nn">kivy.clock</span> <span class="k">import</span> <span class="n">Clock</span>
 
 <span class="k">class</span> <span class="nc">StarfieldApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
@@ -1014,7 +1014,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.image</span> <span class="k">import</span> <span class="n">Image</span>
 <span class="kn">from</span> <span class="nn">kivy.graphics.instructions</span> <span class="k">import</span> <span class="n">RenderContext</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.widget</span> <span class="k">import</span> <span class="n">Widget</span>
 
@@ -1023,14 +1023,14 @@ MathJax.Hub.Config({
 <span class="k">class</span> <span class="nc">Starfield</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">Widget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s">'starfield.glsl'</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s1">'starfield.glsl'</span>
         
         <span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span> <span class="o">=</span> <span class="p">(</span>
-            <span class="p">(</span><span class="n">b</span><span class="s">'vCenter'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s">'vScale'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">b</span><span class="s1">'vCenter'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">b</span><span class="s1">'vScale'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
         <span class="p">)</span>
         
         <span class="bp">self</span><span class="o">.</span><span class="n">vsize</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">attr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span><span class="p">)</span>
@@ -1048,7 +1048,7 @@ MathJax.Hub.Config({
                 <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
             <span class="p">))</span>
             
-        <span class="bp">self</span><span class="o">.</span><span class="n">texture</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">'star.png'</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">texture</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s1">'star.png'</span><span class="p">)</span><span class="o">.</span><span class="n">texture</span>
         
         <span class="bp">self</span><span class="o">.</span><span class="n">stars</span> <span class="o">=</span> <span class="p">[</span><span class="n">Star</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NSTARS</span><span class="p">)]</span>
 </pre></div>
@@ -1103,7 +1103,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">math</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">random</span>
 
 <span class="k">class</span> <span class="nc">Star</span><span class="p">:</span>
@@ -1163,7 +1163,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Mesh</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Mesh</span>
 
 <span class="k">def</span> <span class="nf">update_glsl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nap</span><span class="p">):</span>
     <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span>
@@ -1181,7 +1181,7 @@ MathJax.Hub.Config({
     <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     
     <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-        <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">'triangles'</span><span class="p">,</span>
+        <span class="n">Mesh</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'triangles'</span><span class="p">,</span>
              <span class="n">indices</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">indices</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vertices</span><span class="p">,</span>
              <span class="n">texture</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">texture</span><span class="p">)</span>
 </pre></div>
@@ -1208,7 +1208,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">iterate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">iterate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">j</span><span class="p">,</span>
                  <span class="bp">self</span><span class="o">.</span><span class="n">j</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">sf</span><span class="o">.</span><span class="n">vsize</span><span class="p">,</span>
                  <span class="bp">self</span><span class="o">.</span><span class="n">sf</span><span class="o">.</span><span class="n">vsize</span><span class="p">)</span>
@@ -1252,7 +1252,7 @@ MathJax.Hub.Config({
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>着色器代码和前面类似。点着色器代码：</p>
-<div class="highlight"><pre><span class="n">attribute</span> <span class="n">vec2</span> <span class="n">vCenter</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="n">attribute</span> <span class="n">vec2</span> <span class="n">vCenter</span><span class="p">;</span>
 <span class="n">attribute</span> <span class="kt">float</span> <span class="n">vScale</span><span class="p">;</span>
 
 <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -1269,7 +1269,7 @@ MathJax.Hub.Config({
 </pre></div>
 <p>我们通过<code>vScale</code>因子与顶点坐标值相乘来等比例放大，然后用<code>vCenter</code>属性把它们变换成位置。<code>move_mat</code>矩阵是变换矩阵，线性代数里的一种放射变换方法。</p>
 <p>像素着色器代码：</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">gl_FragColor</span> <span class="o">=</span> <span class="n">texture2D</span><span class="p">(</span><span class="n">texture0</span><span class="p">,</span> <span class="n">tex_coord0</span><span class="p">);</span>
 <span class="p">}</span>

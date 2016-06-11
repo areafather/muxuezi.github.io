@@ -207,7 +207,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.widget</span> <span class="k">import</span> <span class="n">Widget</span>
 
 <span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
@@ -217,7 +217,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
        <span class="k">return</span> <span class="n">CanvasWidget</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
    <span class="n">PaintApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -284,10 +284,10 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
 <span class="kn">from</span> <span class="nn">kivy.utils</span> <span class="k">import</span> <span class="n">get_color_from_hex</span>
 
-<span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#FFFFFF'</span><span class="p">)</span>
+<span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#FFFFFF'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -334,10 +334,10 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.config</span> <span class="k">import</span> <span class="n">Config</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.config</span> <span class="k">import</span> <span class="n">Config</span>
 
-<span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'graphics'</span><span class="p">,</span> <span class="s">'width'</span><span class="p">,</span> <span class="s">'960'</span><span class="p">)</span>
-<span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'graphics'</span><span class="p">,</span> <span class="s">'height'</span><span class="p">,</span> <span class="s">'540'</span><span class="p">)</span>  <span class="c"># 16:9</span>
+<span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'graphics'</span><span class="p">,</span> <span class="s1">'width'</span><span class="p">,</span> <span class="s1">'960'</span><span class="p">)</span>
+<span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'graphics'</span><span class="p">,</span> <span class="s1">'height'</span><span class="p">,</span> <span class="s1">'540'</span><span class="p">)</span>  <span class="c1"># 16:9</span>
 </pre></div>
 
 </div>
@@ -360,7 +360,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'graphics'</span><span class="p">,</span> <span class="s">'resizable'</span><span class="p">,</span> <span class="s">'0'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'graphics'</span><span class="p">,</span> <span class="s1">'resizable'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -420,15 +420,15 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.base</span> <span class="k">import</span> <span class="n">EventLoop</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.base</span> <span class="k">import</span> <span class="n">EventLoop</span>
 <span class="k">class</span> <span class="nc">PaintApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">EventLoop</span><span class="o">.</span><span class="n">ensure_window</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">EventLoop</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">'Pygame'</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">EventLoop</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'Pygame'</span><span class="p">):</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="kn">from</span> <span class="nn">pygame</span> <span class="k">import</span> <span class="n">mouse</span>
-                <span class="c"># pygame_compile_cursor is a fixed version of</span>
-                <span class="c"># pygame.cursors.compile</span>
+                <span class="c1"># pygame_compile_cursor is a fixed version of</span>
+                <span class="c1"># pygame.cursors.compile</span>
                 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">pygame_compile_cursor</span><span class="p">()</span>
                 <span class="n">mouse</span><span class="o">.</span><span class="n">set_cursor</span><span class="p">((</span><span class="mi">24</span><span class="p">,</span> <span class="mi">24</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
             <span class="k">except</span><span class="p">:</span>
@@ -497,7 +497,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'input'</span><span class="p">,</span> <span class="s">'mouse'</span><span class="p">,</span> <span class="s">'mouse,disable_multitouch'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="s1">'mouse'</span><span class="p">,</span> <span class="s1">'mouse,disable_multitouch'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -531,7 +531,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
@@ -577,7 +577,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">circle</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">25</span><span class="p">)))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">circle</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">25</span><span class="p">)))</span>
 </pre></div>
 
 </div>
@@ -604,7 +604,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
     <span class="n">Line</span><span class="p">(</span><span class="n">circle</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
 </pre></div>
 
@@ -620,7 +620,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>需要注意的是，如前面所说，canvas上后面调用的指令不会覆盖前面调用的指令；因此，canvas是一个不断增长的数组，里面都是不断显示元素的指令，更新频率60fps，但是也不能让canvas无限增长下去。</p>
 <p>例如，所见即所得的程序（如HTML5的<code>&lt;canvas&gt;</code>）里有一条设计规则就是通过背景色填充擦除之前的图像。在浏览器里面可以很直观的写出：</p>
-<div class="highlight"><pre><span class="c1">// JavaScript code for clearing the canvas</span>
+<div class="highlight"><pre><span></span><span class="c1">// JavaScript code for clearing the canvas</span>
 <span class="nx">canvas</span><span class="p">.</span><span class="nx">rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span>
 <span class="nx">canvas</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">'#FFFFFF'</span>
 <span class="nx">canvas</span><span class="p">.</span><span class="nx">fill</span><span class="p">()</span>
@@ -635,7 +635,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># 看着和avaScript代码一样，但是错了。</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 看着和avaScript代码一样，但是错了。</span>
 <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
     <span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">Rectangle</span><span class="p">(</span><span class="n">pos</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
@@ -683,10 +683,10 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-            <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#0080FF80'</span><span class="p">))</span>
+            <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#0080FF80'</span><span class="p">))</span>
             <span class="n">Line</span><span class="p">(</span><span class="n">circle</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 
@@ -717,7 +717,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># In main.py</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># In main.py</span>
 <span class="kn">from</span> <span class="nn">kivy.app</span> <span class="k">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.config</span> <span class="k">import</span> <span class="n">Config</span>
 <span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Color</span><span class="p">,</span> <span class="n">Line</span>
@@ -727,20 +727,20 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-            <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#0080FF80'</span><span class="p">))</span>
+            <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#0080FF80'</span><span class="p">))</span>
             <span class="n">Line</span><span class="p">(</span><span class="n">circle</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">PaintApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">CanvasWidget</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'graphics'</span><span class="p">,</span> <span class="s">'width'</span><span class="p">,</span> <span class="s">'400'</span><span class="p">)</span>
-    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'graphics'</span><span class="p">,</span> <span class="s">'height'</span><span class="p">,</span> <span class="s">'400'</span><span class="p">)</span>
-    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s">'input'</span><span class="p">,</span> <span class="s">'mouse'</span><span class="p">,</span> <span class="s">'mouse,disable_multitouch'</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'graphics'</span><span class="p">,</span> <span class="s1">'width'</span><span class="p">,</span> <span class="s1">'400'</span><span class="p">)</span>
+    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'graphics'</span><span class="p">,</span> <span class="s1">'height'</span><span class="p">,</span> <span class="s1">'400'</span><span class="p">)</span>
+    <span class="n">Config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="s1">'mouse'</span><span class="p">,</span> <span class="s1">'mouse,disable_multitouch'</span><span class="p">)</span>
     
     <span class="kn">from</span> <span class="nn">kivy.core.window</span> <span class="k">import</span> <span class="n">Window</span>
-    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#FFFFFF'</span><span class="p">)</span>
+    <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#FFFFFF'</span><span class="p">)</span>
     <span class="n">PaintApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -780,14 +780,14 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <p>上一章时钟app里面，我们没有讨论过位置，所有部件都放在<code>BoxLayouts</code>里面。现在我们的app没有任何布局，因为根部件就是<code>CanvasWidget</code>，我们没有实现任何子部件的位置。</p>
 <p>在Kivy里面，布局部件缺失表示每一个部件都可以随意设置位置和大小（类似的UI设计工具，如Delphi，Visual Basic等等都如此）。</p>
 <p>要让清屏按钮放在右上角，我们这么做：</p>
-<div class="highlight"><pre><span class="c1"># In paint.kv</span>
-<span class="l-Scalar-Plain">&lt;CanvasWidget&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Delete'</span>
-        <span class="l-Scalar-Plain">right</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.right</span>
-        <span class="l-Scalar-Plain">top</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.top</span>
-        <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">80</span>
-        <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">40</span>
+<div class="highlight"><pre><span></span><span class="c1"># In paint.kv</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;CanvasWidget&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Delete'</span>
+        <span class="l l-Scalar l-Scalar-Plain">right</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.right</span>
+        <span class="l l-Scalar l-Scalar-Plain">top</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.top</span>
+        <span class="l l-Scalar l-Scalar-Plain">width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+        <span class="l l-Scalar l-Scalar-Plain">height</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
 </pre></div>
 <p>按钮的<code>right</code>和<code>top</code>属性与根部件的属性一致。我们还可以进行数学运行，如<code>root.top – 20</code>。结果很直接，<code>right</code>和<code>top</code>属性都是绝对值。</p>
 <p>注意我们定义了一个<code>&lt;CanvasWidget&gt;</code>类却没有指定父类。这么做可以是因为我们在Python代码理论已经定义了一个同样的类。Kivy允许我们扩展所有的类，包括内部类，如<code>&lt;Button&gt;</code>和<code>&lt;Label&gt;</code>，以及自定义类。</p>
@@ -823,7 +823,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># 注意：不是最优代码</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 注意：不是最优代码</span>
 <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
         <span class="n">widget</span><span class="o">.</span><span class="n">on_touch_down</span><span class="p">(</span><span class="n">touch</span><span class="p">)</span>
@@ -849,7 +849,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">Widget</span><span class="o">.</span><span class="n">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
         <span class="k">return</span>
 </pre></div>
@@ -894,7 +894,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">clear_canvas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clear_canvas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </pre></div>
 
@@ -909,8 +909,8 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>别忘了把事件绑定到<code>paint.kv</code>文件：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">Button</span><span class="p-Indicator">:</span>
-<span class="l-Scalar-Plain">on_release</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.clear_canvas()</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Button</span><span class="p p-Indicator">:</span>
+<span class="l l-Scalar l-Scalar-Plain">on_release</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.clear_canvas()</span>
 </pre></div>
 <p>这样就可以清屏了，同时还把按钮也清除了。因为<code>CanvasWidget</code>是根部件，按钮是子部件。按钮部件本身没有被删除，它的画布<code>Button.canvas</code>从<code>CanvasWidget.canvas.children</code>层级中移除了，因此不存在了。</p>
 <p>要保留按钮，可以这样：</p>
@@ -923,7 +923,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">clear_canvas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clear_canvas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">widget</span><span class="o">.</span><span class="n">canvas</span> 
                             <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">]</span>
@@ -955,7 +955,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">clear_canvas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">saved</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">[:]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">clear_widgets</span><span class="p">()</span>
@@ -1021,18 +1021,18 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Color</span><span class="p">,</span> <span class="n">Line</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.graphics</span> <span class="k">import</span> <span class="n">Color</span><span class="p">,</span> <span class="n">Line</span>
     <span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">Widget</span><span class="o">.</span><span class="n">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
                 <span class="k">return</span>
             <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-                <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#0080FF80'</span><span class="p">))</span>
-                <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s">'current_line'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span>
+                <span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#0080FF80'</span><span class="p">))</span>
+                <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s1">'current_line'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span>
                     <span class="n">points</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
         <span class="k">def</span> <span class="nf">on_touch_move</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
-            <span class="k">if</span> <span class="s">'current_line'</span> <span class="ow">in</span> <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">:</span>
-                <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s">'current_line'</span><span class="p">]</span><span class="o">.</span><span class="n">points</span> <span class="o">+=</span> <span class="p">(</span>
+            <span class="k">if</span> <span class="s1">'current_line'</span> <span class="ow">in</span> <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">:</span>
+                <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s1">'current_line'</span><span class="p">]</span><span class="o">.</span><span class="n">points</span> <span class="o">+=</span> <span class="p">(</span>
                     <span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
@@ -1125,23 +1125,23 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>首先，让我们把全不选的功能去掉。</p>
 <p>首先，让我们实现一个标准的<code>ToggleButton</code>部件。我们之间在<code>paint.kv</code>文件里面增加如下代码：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'horizontal'</span>
-    <span class="l-Scalar-Plain">padding</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
-    <span class="l-Scalar-Plain">spacing</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
-    <span class="l-Scalar-Plain">x</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">0</span>
-    <span class="l-Scalar-Plain">y</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">0</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.width</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">40</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'horizontal'</span>
+    <span class="l l-Scalar l-Scalar-Plain">padding</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+    <span class="l l-Scalar l-Scalar-Plain">spacing</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+    <span class="l l-Scalar l-Scalar-Plain">x</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="l l-Scalar l-Scalar-Plain">y</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="l l-Scalar l-Scalar-Plain">width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.width</span>
+    <span class="l l-Scalar l-Scalar-Plain">height</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">40</span>
 
-    <span class="l-Scalar-Plain">ToggleButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">group</span><span class="p-Indicator">:</span> <span class="s">'color'</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Red'</span>
+    <span class="l l-Scalar l-Scalar-Plain">ToggleButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">group</span><span class="p p-Indicator">:</span> <span class="s">'color'</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Red'</span>
 
-    <span class="l-Scalar-Plain">ToggleButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">group</span><span class="p-Indicator">:</span> <span class="s">'color'</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Blue'</span>
-        <span class="l-Scalar-Plain">state</span><span class="p-Indicator">:</span> <span class="s">'down'</span>
+    <span class="l l-Scalar l-Scalar-Plain">ToggleButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">group</span><span class="p p-Indicator">:</span> <span class="s">'color'</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Blue'</span>
+        <span class="l l-Scalar l-Scalar-Plain">state</span><span class="p p-Indicator">:</span> <span class="s">'down'</span>
 </pre></div>
 <p>我们用了与<code>BoxLayout</code>类似的方式，每个颜色按钮单独分配一个工具栏。布局部件本文的位置是绝对的，其<code>x</code>和<code>y</code>的值都是0，也就是左下角，宽度与<code>CanvasWidget</code>一致。</p>
 <p>每个<code>ToggleButton</code>都属于同一<code>color</code>组。因此同一时间只有一个颜色可以被选中。</p>
@@ -1174,12 +1174,12 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.uix.behaviors</span> <span class="k">import</span> <span class="n">ToggleButtonBehavior</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.uix.behaviors</span> <span class="k">import</span> <span class="n">ToggleButtonBehavior</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.togglebutton</span> <span class="k">import</span> <span class="n">ToggleButton</span>
 
 <span class="k">class</span> <span class="nc">RadioButton</span><span class="p">(</span><span class="n">ToggleButton</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">_do_press</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s">'normal'</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s1">'normal'</span><span class="p">:</span>
             <span class="n">ToggleButtonBehavior</span><span class="o">.</span><span class="n">_do_press</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 </pre></div>
 
@@ -1243,12 +1243,12 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>加油！我们就快完工了，在<code>paint.kv</code>里面加入新类<code>ColorButton</code>：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;ColorButton@RadioButton&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">group</span><span class="p-Indicator">:</span> <span class="s">'color'</span>
-    <span class="l-Scalar-Plain">on_release</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app.canvas_widget.set_color(self.background_color)</span>
-    <span class="l-Scalar-Plain">background_normal</span><span class="p-Indicator">:</span> <span class="s">'color_button_normal.png'</span>
-    <span class="l-Scalar-Plain">background_down</span><span class="p-Indicator">:</span> <span class="s">'color_button_down.png'</span>
-    <span class="l-Scalar-Plain">border</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">(3, 3, 3, 3)</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;ColorButton@RadioButton&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">group</span><span class="p p-Indicator">:</span> <span class="s">'color'</span>
+    <span class="l l-Scalar l-Scalar-Plain">on_release</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app.canvas_widget.set_color(self.background_color)</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_normal</span><span class="p p-Indicator">:</span> <span class="s">'color_button_normal.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_down</span><span class="p p-Indicator">:</span> <span class="s">'color_button_down.png'</span>
+    <span class="l l-Scalar l-Scalar-Plain">border</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">(3, 3, 3, 3)</span>
 </pre></div>
 <p>你会发现，我们把<code>group: 'color'</code>移到这里避免重复代码。</p>
 <p>我们还要配置<code>on_release</code>事件handler，作用于已经被选中的按钮。现在，每个按钮已经把自己的<code>background_color</code>属性传递给事件handler，剩下的事情就是把颜色分配给画布。这个事件将由<code>CanvasWidget</code>处理，需要通过<code>PaintApp</code>类显示出来。</p>
@@ -1261,12 +1261,12 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">PaintApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">PaintApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c"># set_color()方法后面实现</span>
+        <span class="c1"># set_color()方法后面实现</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas_widget</span> <span class="o">=</span> <span class="n">CanvasWidget</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas_widget</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span>
-            <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s">'#2980B9'</span><span class="p">))</span>
+            <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#2980B9'</span><span class="p">))</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas_widget</span>
 </pre></div>
 
@@ -1291,7 +1291,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_color</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_color</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">new_color</span><span class="p">))</span>
 </pre></div>
 
@@ -1326,7 +1326,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c">#:import C kivy.utils.get_color_from_hex</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#:import C kivy.utils.get_color_from_hex</span>
 </pre></div>
 
 </div>
@@ -1349,7 +1349,7 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">kivy.utils</span> <span class="k">import</span> <span class="n">get_color_from_hex</span> <span class="k">as</span> <span class="n">C</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.utils</span> <span class="k">import</span> <span class="n">get_color_from_hex</span> <span class="k">as</span> <span class="n">C</span>
 </pre></div>
 
 </div>
@@ -1363,17 +1363,17 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>我们使用扁平化设计的配色方式，代码如下：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
     <span class="c1"># ...</span>
-    <span class="l-Scalar-Plain">ColorButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#2980b9')</span>
-        <span class="l-Scalar-Plain">state</span><span class="p-Indicator">:</span> <span class="s">'down'</span>
+    <span class="l l-Scalar l-Scalar-Plain">ColorButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#2980b9')</span>
+        <span class="l l-Scalar l-Scalar-Plain">state</span><span class="p p-Indicator">:</span> <span class="s">'down'</span>
 
-    <span class="l-Scalar-Plain">ColorButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#16A085')</span>
+    <span class="l l-Scalar l-Scalar-Plain">ColorButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#16A085')</span>
 
-    <span class="l-Scalar-Plain">ColorButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#27AE60')</span>
+    <span class="l l-Scalar l-Scalar-Plain">ColorButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#27AE60')</span>
 </pre></div>
 <p>很简单吧，这样就为每个<code>ColorButton</code>按钮定义了<code>background_color</code>属性。其他的属性都是继承于Python中<code>ColorButton</code>类的定义。</p>
 <p>这样，增加任意数量的按钮都可以很好的排列了。</p>
@@ -1398,32 +1398,32 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>最后一个，也是最简单的功能就是设置线条的宽度。如下图所示，我们可以重用前面调色板的资源和样式。</p>
 <p>这个UI也是一种<code>RadioButton</code>子类，命名为<code>LineWidthButton</code>。在<code>paint.kv</code>文件中就是这样：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">&lt;LineWidthButton@ColorButton&gt;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">group</span><span class="p-Indicator">:</span> <span class="s">'line_width'</span>
-    <span class="l-Scalar-Plain">on_release</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app.canvas_widget.set_line_width(self.text)</span>
-    <span class="l-Scalar-Plain">color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#2C3E50')</span>
-    <span class="l-Scalar-Plain">background_color</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">C('#ECF0F1')</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">&lt;LineWidthButton@ColorButton&gt;</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">group</span><span class="p p-Indicator">:</span> <span class="s">'line_width'</span>
+    <span class="l l-Scalar l-Scalar-Plain">on_release</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app.canvas_widget.set_line_width(self.text)</span>
+    <span class="l l-Scalar l-Scalar-Plain">color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#2C3E50')</span>
+    <span class="l l-Scalar l-Scalar-Plain">background_color</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">C('#ECF0F1')</span>
 </pre></div>
 <p>与<code>ColorButton</code>不同之处在于第2、3行代码。这些按钮属于另外一组，由其他的事件handler触发。当然，这两组按钮依然很相似。</p>
 <p>布局很简单，和调色板的样式一致，只是垂直摆放：</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">BoxLayout</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">orientation</span><span class="p-Indicator">:</span> <span class="s">'vertical'</span>
-    <span class="l-Scalar-Plain">padding</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2</span>
-    <span class="l-Scalar-Plain">spacing</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2</span>
-    <span class="l-Scalar-Plain">x</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">0</span>
-    <span class="l-Scalar-Plain">top</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root.top</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">80</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">110</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">BoxLayout</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">orientation</span><span class="p p-Indicator">:</span> <span class="s">'vertical'</span>
+    <span class="l l-Scalar l-Scalar-Plain">padding</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="l l-Scalar l-Scalar-Plain">spacing</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="l l-Scalar l-Scalar-Plain">x</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="l l-Scalar l-Scalar-Plain">top</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">root.top</span>
+    <span class="l l-Scalar l-Scalar-Plain">width</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+    <span class="l l-Scalar l-Scalar-Plain">height</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">110</span>
 
-    <span class="l-Scalar-Plain">LineWidthButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Thin'</span>
+    <span class="l l-Scalar l-Scalar-Plain">LineWidthButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Thin'</span>
 
-    <span class="l-Scalar-Plain">LineWidthButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Normal'</span>
-        <span class="l-Scalar-Plain">state</span><span class="p-Indicator">:</span> <span class="s">'down'</span>
+    <span class="l l-Scalar l-Scalar-Plain">LineWidthButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Normal'</span>
+        <span class="l l-Scalar l-Scalar-Plain">state</span><span class="p p-Indicator">:</span> <span class="s">'down'</span>
 
-    <span class="l-Scalar-Plain">LineWidthButton</span><span class="p-Indicator">:</span>
-        <span class="l-Scalar-Plain">text</span><span class="p-Indicator">:</span> <span class="s">'Thick'</span>
+    <span class="l l-Scalar l-Scalar-Plain">LineWidthButton</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">'Thick'</span>
 </pre></div>
 <blockquote>
 <p>注意<code>CanvasWidget.set_line_width</code>事件监听器会接受宽度调节按钮的<code>text</code>属性。这样实现是为了简化，允许我们为每一个按钮定义一个唯一的宽度值。
@@ -1458,18 +1458,18 @@ Kivy可以不用编译直接在Andorid上运行测试，相当给力，绝对RAD
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CanvasWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="n">line_width</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="k">def</span> <span class="nf">on_touch_down</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">touch</span><span class="p">):</span>
-        <span class="c"># ...</span>
+        <span class="c1"># ...</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="p">:</span>
-            <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s">'current_line'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span>
+            <span class="n">touch</span><span class="o">.</span><span class="n">ud</span><span class="p">[</span><span class="s1">'current_line'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span>
                 <span class="n">points</span><span class="o">=</span><span class="p">(</span><span class="n">touch</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">touch</span><span class="o">.</span><span class="n">y</span><span class="p">),</span>
                 <span class="n">width</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">line_width</span><span class="p">)</span>
             
-<span class="k">def</span> <span class="nf">set_line_width</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="s">'Normal'</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">set_line_width</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="s1">'Normal'</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">line_width</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s">'Thin'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'Normal'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'Thick'</span><span class="p">:</span> <span class="mi">4</span>
+        <span class="s1">'Thin'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'Normal'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'Thick'</span><span class="p">:</span> <span class="mi">4</span>
     <span class="p">}[</span><span class="n">line_width</span><span class="p">]</span>
 </pre></div>
 
