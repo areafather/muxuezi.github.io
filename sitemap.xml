@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://muxuezi.github.io/</loc>
-  <lastmod>2016-06-20T04:35:00Z</lastmod>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/2010/</loc>
@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2016-06-24T13:13:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/chs.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/frequentism.html</loc>
@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/ipython.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/kivy.html</loc>
@@ -67,15 +67,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/linux.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2016-06-24T13:14:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/other.html</loc>
@@ -91,11 +91,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/python.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-cookbook.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-tutorial.html</loc>
@@ -111,7 +111,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/wordpress.html</loc>
-  <lastmod>2016-07-02T12:00:00Z</lastmod>
+  <lastmod>2016-07-03T09:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/galleries/</loc>
@@ -623,7 +623,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-212.html</loc>
-  <lastmod>2016-06-24T13:14:00Z</lastmod>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/index-213.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-22.html</loc>
@@ -5078,6 +5082,18 @@
   <lastmod>2016-06-24T13:14:00Z</lastmod>
  </url>
  <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16073-2016-06-25-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16074-2016-06-27-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16075-2016-06-29-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
   <lastmod>2016-06-11T02:25:00Z</lastmod>
  </url>
@@ -9367,7 +9383,19 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2016072-2016-06-23-report.html</loc>
-  <lastmod>2016-06-24T13:14:00Z</lastmod>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016073-2016-06-26-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016074-2016-06-28-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016075-2016-06-30-report.html</loc>
+  <lastmod>2016-07-03T09:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
