@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (WordPress)</title><link>https://muxuezi.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="https://muxuezi.github.io/categories/wordpress.xml"></atom:link><language>en</language><lastBuildDate>Sun, 13 Dec 2015 07:52:15 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>didi-taxi</title><link>https://muxuezi.github.io/posts/didi-taxi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;一定打的回家。快的打的减13元，滴滴打车首单减15元（其他12-20元不等）。如果你车费超过15元，你可以用滴滴打车先叫车，然后再用快的打车叫一遍车，师傅会把钱分成两份的&lt;/p&gt;
-&lt;h2&gt;免费的午餐总是让人心情愉快，背后大量的资金流动更是让人心旷神怡啊。&lt;/h2&gt;
-&lt;h2&gt;2月28日&lt;/h2&gt;
-&lt;p&gt;今天终于体验一把，滴滴首单免15，返10元，还好。听师傅讲过几天就没了，烧不起。不过昨晚看百度地图也有了，看来有人接盘了。师傅车上装wifi（电信，50元3.5G，乖乖，移动真坑爹啊，50元500M），网速嘎嘎的&lt;/p&gt;
-&lt;p&gt;缺点：乘客——要等。师傅——要抢，要反复联系。快的定位不准，滴滴可以。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/didi-taxi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>permission-to-be-human</title><link>https://muxuezi.github.io/posts/permission-to-be-human.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;a title="幸福课" href="http://v.163.com/movie/2006/1/3/T/M6HV755O6_M6HV8QB3T.html" target="_blank"&gt;幸福课&lt;/a&gt;
-——计划整理文字内容，便于查阅。&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/permission-to-be-human.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>drupal-views_slideshow</title><link>https://muxuezi.github.io/posts/drupal-views_slideshow.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;要让第二组图片水平，需要在主题css（任何一个文件）添加
-.views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-field-field-image{&lt;/p&gt;
-&lt;p&gt;float: left; margin: 5px 19px 0 0; }&lt;/p&gt;
-&lt;p&gt;重新启动该主题（切换到另一个主题，再换回来，就更新了）&lt;/p&gt;
-&lt;p&gt;一天半时间...&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/drupal-views_slideshow.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>grub4dos-for-ubuntu-on-disk</title><link>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://blog.163.com/fuhaocn@126/blog/static/366650802011112010920932/
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (WordPress)</title><link>https://muxuezi.github.io/</link><description></description><atom:link type="application/rss+xml" href="https://muxuezi.github.io/categories/wordpress.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Sep 2016 07:14:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>windows-open-cmd</title><link>https://muxuezi.github.io/posts/windows-open-cmd.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;打开“我的电脑”，点击菜单中的“工具”－“文件夹选项”，选择“文件类型”，找到“(无)资料夹”，点“高级”，“新建”，在“操作”中填入“CMD”，“用于执行操作的应用程序”中填入cmd.exe /k cd %1&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/windows-open-cmd.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>grub4dos-for-ubuntu-on-disk</title><link>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://blog.163.com/fuhaocn@126/blog/static/366650802011112010920932/
 1：ubuntu-9.04-desktop-i386.iso  &lt;/p&gt;
 &lt;p&gt;2：grub.exe；grldr；menu.lst; initrd.lz；vmlinuz； 备注：ubuntu-9.04-desktop-i386.iso 是ubuntu系统ISO安装文件; initrd.lz，vmlinuz，两个文件可以到ubuntu-9.04-beta-desktop-i386.iso 里面的 casper 文件夹里面找到，然后解压到C：盘根目录下，也就是C：下； &lt;/p&gt;
 &lt;p&gt;grub.exe，grldr 可以到网上下载，也可以在本文附件里下载, 将它们同样也放入C根目录下； menu.lst，要自己创建到C：下， 内容如下，复制进去，然后保存！&lt;/p&gt;
@@ -20,49 +11,87 @@
 &lt;p&gt;3：把ubuntu-9.04-desktop-i386.iso里.disk文件夹里的文件解压到C：下；注意了，一定要去C盘看下.disk文件夹下的文件是不是还在.disk文件夹里，要是的话，就把它们提到C：下； &lt;/p&gt;
 &lt;p&gt;4：去掉该文件的隐含系统只读属性 windows 下，开始－&amp;gt;运行－&amp;gt;cmd , 后输入 attrib -r -h -s c:boot.ini 或者直接右键点击boot.ini文件，把只读去掉 在WINXP下修改boot.ini，在boot.ini文件最后一行后回车，加入C:grldr="Install Ubuntu 9.04 desktop"&lt;/p&gt;
 &lt;p&gt;5：重启电脑，然后选择Ubuntu启动项就可以了，然后就是进入到Ubuntu9.04桌面了，桌面上有个安装，打开它，然后有7步设置，搞到挂载的时候，我是遇到了无法挂载的情况， 我是这样解决的：同时按下Ctrl+Alt+F2,然后在：后输入  sudo umount -l /isodevice  输好后，然后回车，再同时按下 Ctrl+Alt+F7，回到安装界面，然后我就一路装下去了！然后就是设置用户名和密码，确认分区信息，完成后就开始安装了!&lt;/p&gt;
-&lt;p&gt;这时可能出现的问题：安装ubuntn时出现：正在配置apt。一直82%不动。 解决办法：安装的时候不要配置网络，安装完成之后再配置网络，安装中拔掉网线。 我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题1：无法挂载的情况，我是这样解决的：同时按下Ctrl+Alt+F2,然后在：后输入 sudo umount -l /isodevice 输好后，然后回车，再同时按下 Ctrl+Alt+F7，回到安装界面，然后我就一路装下去了！然后就是设置用户名和密码，确认分区信息，完成后就开始安装了！我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题2：重启后不出现WINDOWS启动菜单 在端口里输入了 sudo gedit /boot/grub/menu.lst 然后输入密码，就打开了 menu.lst 文件， 然后在文件内容的最后加入如下内容：  title Windows xp root (hd0,0) makeactive chainloader +1  然后保存文件，重启！OK，启动菜单出来啦，双系统又并存啊！！&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>chrome-ppa-on-ubuntu</title><link>https://muxuezi.github.io/posts/chrome-ppa-on-ubuntu.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list'&lt;/p&gt;
-&lt;p&gt;sudo apt-get update&lt;/p&gt;
-&lt;p&gt;sudo apt-get install google-chrome-stable&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/chrome-ppa-on-ubuntu.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>office2010a-ey</title><link>https://muxuezi.github.io/posts/office2010a-ey.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;6QFDX-PYH2G-PPYFD-C7RJM-BBKQ8&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/office2010a-ey.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>pyperclip-clipboard-content</title><link>https://muxuezi.github.io/posts/pyperclip-clipboard-content.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;import pyperclip
-处理一下不能获取的网页节点&lt;/p&gt;
-&lt;p&gt;&amp;lt;input name="result" id="result" type="text" value=""&amp;gt;&lt;/p&gt;
-&lt;h2&gt;shadow-root (user-agent)&lt;/h2&gt;
-&lt;p&gt;&amp;lt;div id="inner-editor"26 /&amp;gt;&lt;/p&gt;
-&lt;p&gt;shadow-root是selenium无法读出的。&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;/p&gt;
-&lt;p&gt;定位 input name="result" type="text" /&amp;gt; 通过pyperclip获取剪贴板内容，为了保证准确性多复制几次&lt;/p&gt;
-&lt;p&gt;ft = self.driver.find_element_by_name("result")&lt;/p&gt;
-&lt;p&gt;def copyn(x):&lt;/p&gt;
-&lt;p&gt;ft.send_keys(Keys.CONTROL, 'a')&lt;/p&gt;
-&lt;p&gt;ft.send_keys(Keys.CONTROL, 'c')&lt;/p&gt;
-&lt;p&gt;map(copyn,range(2))&lt;/p&gt;
-&lt;p&gt;return pyperclip.paste()&lt;/p&gt;
-&lt;p&gt;网速不稳定的时候，time.sleep(2)缓两秒比较靠谱&lt;/p&gt;
-&lt;p&gt;网络数据处理效果依赖网速&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/pyperclip-clipboard-content.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>tmux</title><link>https://muxuezi.github.io/posts/tmux.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;To remedy the situation, here is a short script that you can invoke and that will kill all your running tmux sessions.
-1   tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}&lt;/p&gt;
-&lt;p&gt;You can put it into a nice little alias&lt;/p&gt;
-&lt;p&gt;1   alias kts='tx ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}'&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/tmux.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>chm-html</title><link>https://muxuezi.github.io/posts/chm-html.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;将.CHM文件反向转换成 .html 格式文件的方法：
-可以利用Windows自带的hh.exe文件来进行文件格式转换，语法为：&lt;/p&gt;
-&lt;p&gt;hh -decompile 目标文件夹 源CHM文件名。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/chm-html.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>31provns</title><link>https://muxuezi.github.io/posts/31provns.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;安北福甘广广贵，海河河黑湖湖吉，江江辽内宁青山
-山陕上，四天西新云浙重&lt;/p&gt;
-&lt;p&gt;这几天在整发票，省份音序排列，找了个词牌凑字数。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;单调小令，又名《荳叶黄》、《阑干万里心》。三十一字，五平韵。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;例词：&lt;/p&gt;
-&lt;p&gt;李重元《忆王孙（萋萋芳草忆王孙） 春词》&lt;/p&gt;
-&lt;p&gt;中平中仄仄平平，中仄平平中仄平，中仄平平仄仄平。&lt;/p&gt;
-&lt;p&gt;萋萋芳草忆王孙，柳外楼高空断魂，杜宇声声不忍闻。&lt;/p&gt;
-&lt;p&gt;仄平平，中仄平平中仄平。&lt;/p&gt;
-&lt;p&gt;欲黄昏，雨打梨花深闭门。&lt;/p&gt;
-&lt;h2&gt;20140318附另外三首&lt;/h2&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div&gt;忆王孙·夏&lt;/div&gt;
-&lt;div&gt;风蒲猎猎小池塘，过雨荷花满院香。沈李浮瓜冰雪凉。竹方床，针线慵拈午梦长。&lt;/div&gt;
+&lt;p&gt;这时可能出现的问题：安装ubuntn时出现：正在配置apt。一直82%不动。 解决办法：安装的时候不要配置网络，安装完成之后再配置网络，安装中拔掉网线。 我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题1：无法挂载的情况，我是这样解决的：同时按下Ctrl+Alt+F2,然后在：后输入 sudo umount -l /isodevice 输好后，然后回车，再同时按下 Ctrl+Alt+F7，回到安装界面，然后我就一路装下去了！然后就是设置用户名和密码，确认分区信息，完成后就开始安装了！我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题2：重启后不出现WINDOWS启动菜单 在端口里输入了 sudo gedit /boot/grub/menu.lst 然后输入密码，就打开了 menu.lst 文件， 然后在文件内容的最后加入如下内容：  title Windows xp root (hd0,0) makeactive chainloader +1  然后保存文件，重启！OK，启动菜单出来啦，双系统又并存啊！！&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>vernacular</title><link>https://muxuezi.github.io/posts/vernacular.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;span style="font-size: 26px; font-weight: bold; line-height: 1.3846153846;"&gt;vernacular&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;a title="添加该词条到生词本"&gt; &lt;/a&gt;&lt;/div&gt;
 
-&lt;div&gt;忆王孙·秋&lt;/div&gt;
+&lt;div&gt;英 &lt;strong&gt;[&lt;/strong&gt;&lt;strong lang="EN-US" xml:lang="EN-US"&gt;və'nækjələ(r)&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt;
 
-&lt;div&gt;飕飕风冷荻花秋，明月斜侵独倚楼。十二珠帘不上钩。黯凝眸，一点渔灯古渡头。&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
 
-&lt;div&gt;忆王孙·冬&lt;/div&gt;
+美 &lt;strong&gt;[&lt;/strong&gt;&lt;strong lang="EN-US" xml:lang="EN-US"&gt;vɚˈnækjəlɚ&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt;
 
-&lt;div&gt;彤云风扫雪初晴，天外孤鸿三两声。独拥寒衾不忍听。月笼明，窗外梅花瘦影横。&lt;/div&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/31provns.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+
+
+&lt;strong&gt;n.&lt;/strong&gt;&lt;label&gt;白话；&lt;/label&gt; &lt;label&gt;行话；&lt;/label&gt; &lt;label&gt;本国语；&lt;/label&gt; &lt;label&gt;动植物的俗名&lt;/label&gt;
+
+
+
+&lt;strong&gt;adj.&lt;/strong&gt;&lt;label&gt;本国语的；&lt;/label&gt; &lt;label&gt;白话的；&lt;/label&gt; &lt;label&gt;方言的；&lt;/label&gt; &lt;label&gt;本国的&lt;/label&gt;
+
+
+
+想起合肥话-&lt;a title="合肥话" href="http://zh.wikipedia.org/zh/%E5%90%88%E8%82%A5%E8%AF%9D" target="_blank"&gt;维基百科&lt;/a&gt;-&lt;a title="张爱玲" href="http://news.163.com/09/0504/03/58EJJ3QD000120GR.html" target="_blank"&gt;张爱玲合肥话&lt;/a&gt;-摪（怎样）搞啊？”“摪搞”
+
+
+
+讲给大姐听，她讲了《追风筝的人》作者&lt;a href="http://book.douban.com/series/19760"&gt;卡勒德·胡赛尼作品&lt;/a&gt;《群山回唱》里面我们每年在家都能听到的“
+
+
+
+以斯敏列”-以真主之名
+
+
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/vernacular.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>apt-spy-sources</title><link>https://muxuezi.github.io/posts/apt-spy-sources.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;apt-get install apt-spy
+apt-spy update&lt;/p&gt;
+&lt;h2&gt;下载最新的更新源列表&lt;/h2&gt;
+&lt;p&gt;apt-spy -d testing -a asia -t 5&lt;/p&gt;
+&lt;h2&gt;对选定的源列表进行连接速度的测试&lt;/h2&gt;
+&lt;p&gt;apt-spy会测试连接得到速度最快的更新源，记录在/etc/apt/sources.list.d/apt-spy.list中。之后apt- get update时会自动连接apt-spy.list中的更新源更新软件列表。apt-spy的使用参考5)。&lt;/p&gt;
+&lt;h2&gt;-------------ubuntu14.04 trusty(163#网易电信网通双线接入网速杆杆的#)-----------------&lt;/h2&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-security main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-updates main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-proposed universe restricted multiverse main&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-backports main multiverse restricted universe&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/apt-spy-sources.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>del-excel-newline</title><link>https://muxuezi.github.io/posts/del-excel-newline.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;选择“查找内容”后的文本框，按住Alt键，在数字键盘中输入“0010”&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/del-excel-newline.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>shell-keywords</title><link>https://muxuezi.github.io/posts/shell-keywords.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;在目录下所有ltestats文件中找关键词nackcnt:
+find . -name '&lt;em&gt;ltestats&lt;/em&gt;' -print | grep -R -i -n 'nackcnt'&amp;gt;nackcnt&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/shell-keywords.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>ubuntu-chroot-arm-upgrade</title><link>https://muxuezi.github.io/posts/ubuntu-chroot-arm-upgrade.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf &amp;gt; /dev/null&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/ubuntu-chroot-arm-upgrade.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>linux-mint-15-broadcom43xx-wifi</title><link>https://muxuezi.github.io/posts/linux-mint-15-broadcom43xx-wifi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;sudo apt-get install b43-fwcutter firmware-b43-installer&lt;/p&gt;
+&lt;p&gt;http://ydwcn.iteye.com/blog/1126278&lt;/p&gt;
+&lt;p&gt;1、查看网卡类型：lspci -vnn | grep 14e4，确定是Broadcom43xx网卡类型&lt;/p&gt;
+&lt;p&gt;2、查看ubuntu内核版本：uname -a，我的版本是Linux ubuntu 2.6.35-22-generic&lt;/p&gt;
+&lt;p&gt;3、安装b43-fwcutter： Install b43-fwcutter&lt;/p&gt;
+&lt;p&gt;写道&lt;/p&gt;
+&lt;p&gt;wget http://bu3sch.de/b43/fwcutter/b43-fwcutter-013.tar.bz2&lt;/p&gt;
+&lt;p&gt;tar xjf b43-fwcutter-013.tar.bz2&lt;/p&gt;
+&lt;p&gt;cd b43-fwcutter-013&lt;/p&gt;
+&lt;p&gt;make&lt;/p&gt;
+&lt;p&gt;cd ..&lt;/p&gt;
+&lt;p&gt;注意：这一步要记住b43-fwcutter安装路径，下面会用到。&lt;/p&gt;
+&lt;p&gt;4、根据内核版本选择安装驱动版本：&lt;/p&gt;
+&lt;p&gt;注意：下面的安装路径一定要在/lib/firmware/下执行：&lt;/p&gt;
+&lt;p&gt;a、如果你的版本你是linux-2.6.24，执行：&lt;/p&gt;
+&lt;p&gt;export FIRMWARE_INSTALL_DIR="/lib/firmware"&lt;/p&gt;
+&lt;p&gt;wget http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2&lt;/p&gt;
+&lt;p&gt;tar xjf broadcom-wl-4.80.53.0.tar.bz2&lt;/p&gt;
+&lt;p&gt;cd broadcom-wl-4.80.53.0/kmod&lt;/p&gt;
+&lt;p&gt;sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta.o&lt;/p&gt;
+&lt;p&gt;b、如果你的版本是linux-2.6.25 或是更高，执行：（我的版本就是选择这里）&lt;/p&gt;
+&lt;p&gt;export FIRMWARE_INSTALL_DIR="/lib/firmware"&lt;/p&gt;
+&lt;p&gt;wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2&lt;/p&gt;
+&lt;p&gt;tar xjf broadcom-wl-4.150.10.5.tar.bz2&lt;/p&gt;
+&lt;p&gt;cd broadcom-wl-4.150.10.5/driver&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;* b43-fwcutter -w /tmp FILE extract and write firmware to /tmp. &lt;/strong&gt;****&lt;/p&gt;
+&lt;p&gt;sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta_mimo.o&lt;/p&gt;
+&lt;p&gt;如果到这里，执行成功，会看到解析出好多*.fw文件，没有报警信息，这就大功告成了！&lt;/p&gt;
+&lt;p&gt;注意：../../b43-fwcutter-013，这个地方一定要选择自己安装b43-fwcutter的路径。&lt;/p&gt;
+&lt;p&gt;好辛苦啊，整了好几天啊，希望这个对初学ubuntu的朋友们有帮助。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/linux-mint-15-broadcom43xx-wifi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>outer-vga-debian</title><link>https://muxuezi.github.io/posts/outer-vga-debian.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;xrandr --output VGA --auto --output LVDS --off&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/outer-vga-debian.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>character-in-webpage</title><link>https://muxuezi.github.io/posts/character-in-webpage.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;软回车是^l，硬回车是^p&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/character-in-webpage.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>
