@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>frequentism-and-bayesianism-chs-iii | 绿萝间</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
@@ -113,8 +117,14 @@ MathJax.Hub.Config({
                     Tao Junjie
             </span></p>
             <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-06-24T13:43:03+08:00" itemprop="datePublished" title="2015-06-24 13:43">2015-06-24 13:43</time></a></p>
+                <p class="commentline">
+        
+    <a href="frequentism-and-bayesianism-chs-iii.html#disqus_thread" data-disqus-identifier="cache/posts/frequentism-and-bayesianism-chs-iii.html">Comments</a>
+
+
             
-        <p class="sourceline"><a href="frequentism-and-bayesianism-chs-iii.ipynb" id="sourcelink">Source</a></p>
+        </p>
+<p class="sourceline"><a href="frequentism-and-bayesianism-chs-iii.ipynb" id="sourcelink">Source</a></p>
 
         </div>
         
@@ -762,11 +772,8 @@ $$
 p(x~|~\theta) = \left\{
 \begin{array}{lll}
 \exp(\theta - x) &amp;,&amp; x &gt; \theta\\
-0                &amp;,&amp; x &lt; \theta
-\end{array}
-\right\}
-$$<p>这里$p(x~|~\theta)$表示时间$x$失败的概率，化学试剂可用时间$\theta$。
-观察数据$D = \{x_i\}$，我们的目标是估计$\theta$。</p>
+0                &amp;,&amp; x 这里$p(x~|~\theta)$表示时间$x$失败的概率，化学试剂可用时间$\theta$。
+观察数据$D = \{x_i\}$，我们的目标是估计$\theta$。
 <p>我们先为$\theta=10$画个图看看：</p>
 
 </div>
@@ -841,11 +848,9 @@ $$<p>这里$p(x~|~\theta)$表示时间$x$失败的概率，化学试剂可用时
 <p>我认为：遇到问题，计算之前，先想想怎么下手，并猜一猜结果。我们现在开始。想想这个问题，从概率分布的截断可以得出一个简单的观察结果：<strong>$\theta$必须小于观察值的最小值</strong>。</p>
 <p>这是显而易见的：看到一个小于$\theta$的观察值概率为0。因此，假如我们假设正确，那么一个$\theta$大于任何观察值的模型是不可能出现的。贝叶斯主义和频率主义的基本假设都是模型正确，因此我们可以直接写出常识条件：</p>
 $$
-\theta &lt; \min(D)
-$$<p>或者，特别地，$D = \{10, 12, 15\}$,</p>
+\theta 或者，特别地，$D = \{10, 12, 15\}$,
 $$
-\theta &lt; 10
-$$<p>这组数据中，$\theta$的每一个合理约束都应该满足以上条件。带着这条规则，我们继续用贝叶斯主义和频率主义进行定量分析。</p>
+\theta 这组数据中，$\theta$的每一个合理约束都应该满足以上条件。带着这条规则，我们继续用贝叶斯主义和频率主义进行定量分析。
 
 </div>
 </div>
@@ -966,12 +971,7 @@ f(\theta~|~D) \propto
 \left\{
 \begin{array}{lll}
 z^{N - 1}\exp(-z) &amp;,&amp; z &gt; 0\\
-0 &amp;,&amp; z &lt; 0
-\end{array}
-\right\}
-;~ z = N(\hat{\theta} + 1 - \theta)
-$$
-</div>
+0 &amp;,&amp; z 
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -1166,8 +1166,7 @@ $$<p>可以得出</p>
 $$
 p(\theta~|~D) \propto \left\{
 \begin{array}{lll}
-N\exp\left[N(\theta - \min(D))\right] &amp;,&amp; \theta &lt; \min(D)\\
-0                &amp;,&amp; \theta &gt; \min(D)
+N\exp\left[N(\theta - \min(D))\right] &amp;,&amp; \theta  \min(D)
 \end{array}
 \right\}
 $$<p>其中，$\min(D)$是$D$的最小值， 之所以出现是因为$p(x~|~\theta)$的截断。
@@ -1499,7 +1498,7 @@ Bayesian:             95% CR = (9.0, 10.0)
 </div>
     </div>
   </div>
-
+</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../categories/chs.html" rel="tag">CHS</a></li>
@@ -1514,7 +1513,29 @@ Bayesian:             95% CR = (9.0, 10.0)
             <li class="next">
                 <a href="kivy-ch8-shaders-app.html" rel="next" title="kivy-ch8-shaders-app">Next post</a>
             </li>
-        </ul></nav></aside><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://muxuezi.github.io/posts/frequentism-and-bayesianism-chs-iii.html",
+        disqus_title="frequentism-and-bayesianism-chs-iii",
+        disqus_identifier="cache/posts/frequentism-and-bayesianism-chs-iii.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -1526,7 +1547,7 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script></article>
+</script></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
         <!--End of body content-->
 
@@ -1540,7 +1561,7 @@ MathJax.Hub.Config({
 </div>
 
 
-            <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../assets/js/jquery.min.js"></script><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/moment-with-locales.min.js"></script><script src="../assets/js/fancydates.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><script>

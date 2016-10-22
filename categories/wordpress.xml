@@ -1,97 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (WordPress)</title><link>https://muxuezi.github.io/</link><description></description><atom:link type="application/rss+xml" href="https://muxuezi.github.io/categories/wordpress.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Sep 2016 07:14:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>windows-open-cmd</title><link>https://muxuezi.github.io/posts/windows-open-cmd.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;打开“我的电脑”，点击菜单中的“工具”－“文件夹选项”，选择“文件类型”，找到“(无)资料夹”，点“高级”，“新建”，在“操作”中填入“CMD”，“用于执行操作的应用程序”中填入cmd.exe /k cd %1&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/windows-open-cmd.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>grub4dos-for-ubuntu-on-disk</title><link>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://blog.163.com/fuhaocn@126/blog/static/366650802011112010920932/
-1：ubuntu-9.04-desktop-i386.iso  &lt;/p&gt;
-&lt;p&gt;2：grub.exe；grldr；menu.lst; initrd.lz；vmlinuz； 备注：ubuntu-9.04-desktop-i386.iso 是ubuntu系统ISO安装文件; initrd.lz，vmlinuz，两个文件可以到ubuntu-9.04-beta-desktop-i386.iso 里面的 casper 文件夹里面找到，然后解压到C：盘根目录下，也就是C：下； &lt;/p&gt;
-&lt;p&gt;grub.exe，grldr 可以到网上下载，也可以在本文附件里下载, 将它们同样也放入C根目录下； menu.lst，要自己创建到C：下， 内容如下，复制进去，然后保存！&lt;/p&gt;
-&lt;p&gt;title Install Ubuntu 9.04  &lt;/p&gt;
-&lt;p&gt;root (hd0,0)  &lt;/p&gt;
-&lt;p&gt;kernel /vmlinuz boot=casper iso-scan/filename=/ubuntu-9.04-desktop-i386.iso ro quiet splash locale=zh_CN.UTF-8&lt;/p&gt;
-&lt;p&gt;initrd /initrd.lz  &lt;/p&gt;
-&lt;p&gt;boot  &lt;/p&gt;
-&lt;p&gt;3：把ubuntu-9.04-desktop-i386.iso里.disk文件夹里的文件解压到C：下；注意了，一定要去C盘看下.disk文件夹下的文件是不是还在.disk文件夹里，要是的话，就把它们提到C：下； &lt;/p&gt;
-&lt;p&gt;4：去掉该文件的隐含系统只读属性 windows 下，开始－&amp;gt;运行－&amp;gt;cmd , 后输入 attrib -r -h -s c:boot.ini 或者直接右键点击boot.ini文件，把只读去掉 在WINXP下修改boot.ini，在boot.ini文件最后一行后回车，加入C:grldr="Install Ubuntu 9.04 desktop"&lt;/p&gt;
-&lt;p&gt;5：重启电脑，然后选择Ubuntu启动项就可以了，然后就是进入到Ubuntu9.04桌面了，桌面上有个安装，打开它，然后有7步设置，搞到挂载的时候，我是遇到了无法挂载的情况， 我是这样解决的：同时按下Ctrl+Alt+F2,然后在：后输入  sudo umount -l /isodevice  输好后，然后回车，再同时按下 Ctrl+Alt+F7，回到安装界面，然后我就一路装下去了！然后就是设置用户名和密码，确认分区信息，完成后就开始安装了!&lt;/p&gt;
-&lt;p&gt;这时可能出现的问题：安装ubuntn时出现：正在配置apt。一直82%不动。 解决办法：安装的时候不要配置网络，安装完成之后再配置网络，安装中拔掉网线。 我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题1：无法挂载的情况，我是这样解决的：同时按下Ctrl+Alt+F2,然后在：后输入 sudo umount -l /isodevice 输好后，然后回车，再同时按下 Ctrl+Alt+F7，回到安装界面，然后我就一路装下去了！然后就是设置用户名和密码，确认分区信息，完成后就开始安装了！我这里安装时间不到10分钟，重启再次进入Ubuntu 9.04，更新完软件包，也就是20多分钟，然后就OK了！  问题2：重启后不出现WINDOWS启动菜单 在端口里输入了 sudo gedit /boot/grub/menu.lst 然后输入密码，就打开了 menu.lst 文件， 然后在文件内容的最后加入如下内容：  title Windows xp root (hd0,0) makeactive chainloader +1  然后保存文件，重启！OK，启动菜单出来啦，双系统又并存啊！！&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/grub4dos-for-ubuntu-on-disk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>vernacular</title><link>https://muxuezi.github.io/posts/vernacular.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;span style="font-size: 26px; font-weight: bold; line-height: 1.3846153846;"&gt;vernacular&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;div&gt;&lt;a title="添加该词条到生词本"&gt; &lt;/a&gt;&lt;/div&gt;
-
-&lt;div&gt;英 &lt;strong&gt;[&lt;/strong&gt;&lt;strong lang="EN-US" xml:lang="EN-US"&gt;və'nækjələ(r)&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt;
-
-&lt;div&gt;&lt;/div&gt;
-
-美 &lt;strong&gt;[&lt;/strong&gt;&lt;strong lang="EN-US" xml:lang="EN-US"&gt;vɚˈnækjəlɚ&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-
-
-&lt;strong&gt;n.&lt;/strong&gt;&lt;label&gt;白话；&lt;/label&gt; &lt;label&gt;行话；&lt;/label&gt; &lt;label&gt;本国语；&lt;/label&gt; &lt;label&gt;动植物的俗名&lt;/label&gt;
-
-
-
-&lt;strong&gt;adj.&lt;/strong&gt;&lt;label&gt;本国语的；&lt;/label&gt; &lt;label&gt;白话的；&lt;/label&gt; &lt;label&gt;方言的；&lt;/label&gt; &lt;label&gt;本国的&lt;/label&gt;
-
-
-
-想起合肥话-&lt;a title="合肥话" href="http://zh.wikipedia.org/zh/%E5%90%88%E8%82%A5%E8%AF%9D" target="_blank"&gt;维基百科&lt;/a&gt;-&lt;a title="张爱玲" href="http://news.163.com/09/0504/03/58EJJ3QD000120GR.html" target="_blank"&gt;张爱玲合肥话&lt;/a&gt;-摪（怎样）搞啊？”“摪搞”
-
-
-
-讲给大姐听，她讲了《追风筝的人》作者&lt;a href="http://book.douban.com/series/19760"&gt;卡勒德·胡赛尼作品&lt;/a&gt;《群山回唱》里面我们每年在家都能听到的“
-
-
-
-以斯敏列”-以真主之名
-
-
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/vernacular.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>apt-spy-sources</title><link>https://muxuezi.github.io/posts/apt-spy-sources.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;apt-get install apt-spy
-apt-spy update&lt;/p&gt;
-&lt;h2&gt;下载最新的更新源列表&lt;/h2&gt;
-&lt;p&gt;apt-spy -d testing -a asia -t 5&lt;/p&gt;
-&lt;h2&gt;对选定的源列表进行连接速度的测试&lt;/h2&gt;
-&lt;p&gt;apt-spy会测试连接得到速度最快的更新源，记录在/etc/apt/sources.list.d/apt-spy.list中。之后apt- get update时会自动连接apt-spy.list中的更新源更新软件列表。apt-spy的使用参考5)。&lt;/p&gt;
-&lt;h2&gt;-------------ubuntu14.04 trusty(163#网易电信网通双线接入网速杆杆的#)-----------------&lt;/h2&gt;
-&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty main multiverse restricted universe&lt;/p&gt;
-&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-security main multiverse restricted universe&lt;/p&gt;
-&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-updates main multiverse restricted universe&lt;/p&gt;
-&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-proposed universe restricted multiverse main&lt;/p&gt;
-&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-backports main multiverse restricted universe&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/apt-spy-sources.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>del-excel-newline</title><link>https://muxuezi.github.io/posts/del-excel-newline.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;选择“查找内容”后的文本框，按住Alt键，在数字键盘中输入“0010”&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/del-excel-newline.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>shell-keywords</title><link>https://muxuezi.github.io/posts/shell-keywords.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;在目录下所有ltestats文件中找关键词nackcnt:
-find . -name '&lt;em&gt;ltestats&lt;/em&gt;' -print | grep -R -i -n 'nackcnt'&amp;gt;nackcnt&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/shell-keywords.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>ubuntu-chroot-arm-upgrade</title><link>https://muxuezi.github.io/posts/ubuntu-chroot-arm-upgrade.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf &amp;gt; /dev/null&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/ubuntu-chroot-arm-upgrade.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>linux-mint-15-broadcom43xx-wifi</title><link>https://muxuezi.github.io/posts/linux-mint-15-broadcom43xx-wifi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;sudo apt-get install b43-fwcutter firmware-b43-installer&lt;/p&gt;
-&lt;p&gt;http://ydwcn.iteye.com/blog/1126278&lt;/p&gt;
-&lt;p&gt;1、查看网卡类型：lspci -vnn | grep 14e4，确定是Broadcom43xx网卡类型&lt;/p&gt;
-&lt;p&gt;2、查看ubuntu内核版本：uname -a，我的版本是Linux ubuntu 2.6.35-22-generic&lt;/p&gt;
-&lt;p&gt;3、安装b43-fwcutter： Install b43-fwcutter&lt;/p&gt;
-&lt;p&gt;写道&lt;/p&gt;
-&lt;p&gt;wget http://bu3sch.de/b43/fwcutter/b43-fwcutter-013.tar.bz2&lt;/p&gt;
-&lt;p&gt;tar xjf b43-fwcutter-013.tar.bz2&lt;/p&gt;
-&lt;p&gt;cd b43-fwcutter-013&lt;/p&gt;
-&lt;p&gt;make&lt;/p&gt;
-&lt;p&gt;cd ..&lt;/p&gt;
-&lt;p&gt;注意：这一步要记住b43-fwcutter安装路径，下面会用到。&lt;/p&gt;
-&lt;p&gt;4、根据内核版本选择安装驱动版本：&lt;/p&gt;
-&lt;p&gt;注意：下面的安装路径一定要在/lib/firmware/下执行：&lt;/p&gt;
-&lt;p&gt;a、如果你的版本你是linux-2.6.24，执行：&lt;/p&gt;
-&lt;p&gt;export FIRMWARE_INSTALL_DIR="/lib/firmware"&lt;/p&gt;
-&lt;p&gt;wget http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2&lt;/p&gt;
-&lt;p&gt;tar xjf broadcom-wl-4.80.53.0.tar.bz2&lt;/p&gt;
-&lt;p&gt;cd broadcom-wl-4.80.53.0/kmod&lt;/p&gt;
-&lt;p&gt;sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta.o&lt;/p&gt;
-&lt;p&gt;b、如果你的版本是linux-2.6.25 或是更高，执行：（我的版本就是选择这里）&lt;/p&gt;
-&lt;p&gt;export FIRMWARE_INSTALL_DIR="/lib/firmware"&lt;/p&gt;
-&lt;p&gt;wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2&lt;/p&gt;
-&lt;p&gt;tar xjf broadcom-wl-4.150.10.5.tar.bz2&lt;/p&gt;
-&lt;p&gt;cd broadcom-wl-4.150.10.5/driver&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;* b43-fwcutter -w /tmp FILE extract and write firmware to /tmp. &lt;/strong&gt;****&lt;/p&gt;
-&lt;p&gt;sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta_mimo.o&lt;/p&gt;
-&lt;p&gt;如果到这里，执行成功，会看到解析出好多*.fw文件，没有报警信息，这就大功告成了！&lt;/p&gt;
-&lt;p&gt;注意：../../b43-fwcutter-013，这个地方一定要选择自己安装b43-fwcutter的路径。&lt;/p&gt;
-&lt;p&gt;好辛苦啊，整了好几天啊，希望这个对初学ubuntu的朋友们有帮助。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/linux-mint-15-broadcom43xx-wifi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>outer-vga-debian</title><link>https://muxuezi.github.io/posts/outer-vga-debian.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;xrandr --output VGA --auto --output LVDS --off&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/outer-vga-debian.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>character-in-webpage</title><link>https://muxuezi.github.io/posts/character-in-webpage.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;软回车是^l，硬回车是^p&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/character-in-webpage.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (WordPress)</title><link>https://muxuezi.github.io/</link><description></description><atom:link rel="self" href="https://muxuezi.github.io/categories/wordpress.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 22 Oct 2016 12:36:03 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>weizhuang</title><link>https://muxuezi.github.io/posts/weizhuang.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;人人尽说江南好
+游人只合江南老&lt;/p&gt;
+&lt;p&gt;春水碧于天&lt;/p&gt;
+&lt;p&gt;画船听雨眠&lt;/p&gt;
+&lt;p&gt;垆边人似月&lt;/p&gt;
+&lt;p&gt;皓腕凝霜雪&lt;/p&gt;
+&lt;p&gt;未老莫还乡&lt;/p&gt;
+&lt;p&gt;还乡须断肠&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/weizhuang.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>matplotlib-gbk</title><link>https://muxuezi.github.io/posts/matplotlib-gbk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;将中文字体文件复制到：
+%PythonPath%Libsite-packagesmatplotlibmpl-datafontsttf&lt;/p&gt;
+&lt;p&gt;下，这里以上一节介绍的Yahei Mono字体为例。&lt;/p&gt;
+&lt;p&gt;找到Matplotlib的配置文件matplotlibrc，全局配置文件的路径：&lt;/p&gt;
+&lt;p&gt;%PythonPath%Libsite-packagesmatplotlibmpl-datamatplotlibrc&lt;/p&gt;
+&lt;p&gt;用户配置文件路径：&lt;/p&gt;
+&lt;p&gt;c:Documents and Settings%UserName%.matplotlibmatplotlibrc&lt;/p&gt;
+&lt;p&gt;用文本编辑器打开此文件，进行如下编辑：&lt;/p&gt;
+&lt;p&gt;找到设置font.family的行，改为font.family : monospace，注意去掉前面的#号。&lt;/p&gt;
+&lt;p&gt;在下面添加一行：font.monospace : Yahei Mono。&lt;/p&gt;
+&lt;p&gt;在matplotlib中使用中文字符串时记住要用unicode格式，例如：u"测试中文显示"。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/matplotlib-gbk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>debian-udisk</title><link>https://muxuezi.github.io/posts/debian-udisk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;dd if=/dev/zero of=/disk2/xen/centos5.office.img bs=1M count=3072 oflag=direct
+dd if=debian-7.0.0-i386-DVD-1.iso of=/dev/sdb&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/debian-udisk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>didi-taxi</title><link>https://muxuezi.github.io/posts/didi-taxi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;一定打的回家。快的打的减13元，滴滴打车首单减15元（其他12-20元不等）。如果你车费超过15元，你可以用滴滴打车先叫车，然后再用快的打车叫一遍车，师傅会把钱分成两份的&lt;/p&gt;
+&lt;h2&gt;免费的午餐总是让人心情愉快，背后大量的资金流动更是让人心旷神怡啊。&lt;/h2&gt;
+&lt;h2&gt;2月28日&lt;/h2&gt;
+&lt;p&gt;今天终于体验一把，滴滴首单免15，返10元，还好。听师傅讲过几天就没了，烧不起。不过昨晚看百度地图也有了，看来有人接盘了。师傅车上装wifi（电信，50元3.5G，乖乖，移动真坑爹啊，50元500M），网速嘎嘎的&lt;/p&gt;
+&lt;p&gt;缺点：乘客——要等。师傅——要抢，要反复联系。快的定位不准，滴滴可以。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/didi-taxi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>win7-wifi</title><link>https://muxuezi.github.io/posts/win7-wifi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;netsh wlan set hostednetwork mode=allow ssid=JoysBoy.Net key=joysboy.net
+@echo off&lt;/p&gt;
+&lt;p&gt;choice /C 12 /M "开启wifi请输入1，关闭wifi请输入2&lt;/p&gt;
+&lt;p&gt;if errorlevel 2 goto off&lt;/p&gt;
+&lt;p&gt;if errorlevel 1 goto on&lt;/p&gt;
+&lt;p&gt;:on&lt;/p&gt;
+&lt;p&gt;netsh wlan start hostednetwork &lt;/p&gt;
+&lt;p&gt;goto end&lt;/p&gt;
+&lt;p&gt;:off&lt;/p&gt;
+&lt;p&gt;netsh wlan stop hostednetwork&lt;/p&gt;
+&lt;p&gt;goto end&lt;/p&gt;
+&lt;p&gt;:end&lt;/p&gt;
+&lt;p&gt;echo 网络设置完毕&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/win7-wifi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>shell-postfix</title><link>https://muxuezi.github.io/posts/shell-postfix.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;有一批文件，以 .bak结尾，现在想把这些 .bak 统统去掉。
+rename     's/.bak$//'       *.bak&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/shell-postfix.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>c-pointer-right-left-rule</title><link>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;此文纪念大学C语言，虽然没怎么用，再看K＆C，光彩依然&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/c-pointer-right-left-rule.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>python-cwd</title><link>https://muxuezi.github.io/posts/python-cwd.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;在python的一些程序执行时，CWD很重要：除非程序执行所需文件的名字都包含绝对目录路径，否则那些文件通常都被假设位于CWD里面。
+记住，没有完整路径名的文件名映射到CWD，与PYTHONPATH设置无关。&lt;/p&gt;
+&lt;p&gt;1）一个程序是从CWD启动，而不是从包含它的目录启动；&lt;/p&gt;
+&lt;p&gt;2）import从包含程序的目录开始搜索，不是CWD。&lt;/p&gt;
+&lt;p&gt;当你在命令行输入这段命令：python dir1dir2file.py，CWD是输入命令的目录，可能是C:Documents and SettingsAdministrator，但不一定是file.py所在目录。另外，python会自动把file.py所在的目录绝对路径dir1dir2放在模块搜索路径最前面，这样不管在哪儿运行程序，file.py都可以导入dir1dir2内的所有文件。dir1dir2将成为模块搜索路径的第一路径。&lt;/p&gt;
+&lt;p&gt;实现from PP4E.System.more import more，需要之前在sys.path中加入（append）包含PP4E的目录。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/python-cwd.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>grub-ubuntuwin7</title><link>https://muxuezi.github.io/posts/grub-ubuntuwin7.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Ubuntu与Win7双系统，在重装Win7后会出现Ubuntu的Linux不能启动的情况，这是因为grub引导被覆盖了。
+   要修复grub需要一张Ubuntu的LiveCD（安装光盘），用LiveCD启动电脑，进入试用Ubuntu，进入之后打开终端，做如下几步：
+   1、输入sudo -i取得权限；
+   2、找到安装ubuntu的挂载点，我的 / 在sda9，/boot 在sda8里面，如果不清楚可以用命令 fdisk -l 来查看；
+   3、挂载分区分别输入命令：
+        mount /dev/sda9 /mnt                (mount跟sda9之后分别有一个空格）
+        mount /dev/sda8 /mnt/boot        (如果没有/boot分区可以省略这一步）
+   4、安装grub输入命令：
+        grub-install --root-directory=/mnt /dev/sda
+        (--跟/dev/sda之前分别有一个空格，sda指的是第一硬盘，如果想安装在第二硬盘里面就用sdb）
+         注：如果grub.cfg己丢失，或grub.cfg出现错误，需要重建的继续执行下面操作：
+               mount –bind /proc /mnt/proc
+               mount –bind /dev /mnt/dev
+               mount –bind /sys /mnt/sys
+               chroot /mnt update-grub
+               umount /mnt/sys
+               umount /mnt/dev
+               umount /mnt/proc
+               exit
+   5、重启电脑，进入熟悉的ubuntu
+   6、打开终端输入命令 sudo update-grub &lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/grub-ubuntuwin7.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>tmux</title><link>https://muxuezi.github.io/posts/tmux.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;To remedy the situation, here is a short script that you can invoke and that will kill all your running tmux sessions.
+1   tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}&lt;/p&gt;
+&lt;p&gt;You can put it into a nice little alias&lt;/p&gt;
+&lt;p&gt;1   alias kts='tx ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}'&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/tmux.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>
