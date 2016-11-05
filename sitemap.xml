@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2016-10-31T00:35:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/chs.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/frequentism.html</loc>
@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/ipython.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/kivy.html</loc>
@@ -67,15 +67,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/linux.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2016-10-31T00:35:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/other.html</loc>
@@ -91,11 +91,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/python.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-cookbook.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-tutorial.html</loc>
@@ -111,7 +111,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/wordpress.html</loc>
-  <lastmod>2016-10-31T00:37:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/galleries/</loc>
@@ -671,7 +671,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-223.html</loc>
-  <lastmod>2016-10-31T00:35:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-23.html</loc>
@@ -5338,6 +5338,14 @@
   <lastmod>2016-10-31T00:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16128-2016-10-31-report.html</loc>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-16129-2016-11-02-report.html</loc>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
   <lastmod>2016-10-22T13:03:00Z</lastmod>
  </url>
@@ -9839,7 +9847,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2016127-2016-10-30-report.html</loc>
-  <lastmod>2016-10-31T00:36:00Z</lastmod>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016128-2016-11-01-report.html</loc>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2016129-2016-11-03-report.html</loc>
+  <lastmod>2016-11-05T14:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
