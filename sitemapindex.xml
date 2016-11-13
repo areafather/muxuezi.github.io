@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://muxuezi.github.io/categories/chs.xml</loc>
-  <lastmod>2016-10-22T12:36:00Z</lastmod>
+  <lastmod>2016-11-13T01:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://muxuezi.github.io/categories/frequentism.xml</loc>
@@ -31,7 +31,7 @@
  </sitemap>
  <sitemap>
   <loc>https://muxuezi.github.io/categories/lottery.xml</loc>
-  <lastmod>2016-11-12T03:51:00Z</lastmod>
+  <lastmod>2016-11-13T01:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://muxuezi.github.io/categories/machine-learning.xml</loc>
@@ -79,10 +79,10 @@
  </sitemap>
  <sitemap>
   <loc>https://muxuezi.github.io/rss.xml</loc>
-  <lastmod>2016-11-12T03:51:00Z</lastmod>
+  <lastmod>2016-11-13T01:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://muxuezi.github.io/sitemap.xml</loc>
-  <lastmod>2016-11-12T03:51:00Z</lastmod>
+  <lastmod>2016-11-13T01:28:00Z</lastmod>
  </sitemap>
 </sitemapindex>
