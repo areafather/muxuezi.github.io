@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://muxuezi.github.io/</loc>
-  <lastmod>2017-01-08T02:47:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/2010/</loc>
@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/chs.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/frequentism.html</loc>
@@ -63,7 +63,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/ipython.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/kivy.html</loc>
@@ -71,15 +71,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/linux.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/other.html</loc>
@@ -95,11 +95,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/python.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-cookbook.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/scikit-learn-tutorial.html</loc>
@@ -115,7 +115,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/wordpress.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/galleries/</loc>
@@ -699,11 +699,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-229.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-23.html</loc>
   <lastmod>2017-01-08T01:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/index-230.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-24.html</loc>
@@ -5499,7 +5503,15 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/dlott-17006-2017-01-14-report.html</loc>
-  <lastmod>2017-01-15T23:35:00Z</lastmod>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17007-2017-01-16-report.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17008-2017-01-18-report.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
@@ -10132,6 +10144,18 @@
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2017006-2017-01-12-report.html</loc>
   <lastmod>2017-01-15T23:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017007-2017-01-15-report.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017008-2017-01-17-report.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017009-2017-01-19-report.html</loc>
+  <lastmod>2017-01-20T11:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
