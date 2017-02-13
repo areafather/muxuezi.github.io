@@ -7,7 +7,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/posts/kivy-ch1-clock-app.html">
 <script type="text/x-mathjax-config">
@@ -205,7 +206,7 @@ Kivy布局方式
 <span class="k">class</span> <span class="nc">ClockApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">pass</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -699,7 +700,7 @@ Kivy布局方式
     <span class="k">def</span> <span class="nf">on_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
 
     <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#301216'</span><span class="p">)</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
@@ -901,7 +902,7 @@ Kivy布局方式
         <span class="n">Clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_time</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
 
     <span class="n">Window</span><span class="o">.</span><span class="n">clearcolor</span> <span class="o">=</span> <span class="n">get_color_from_hex</span><span class="p">(</span><span class="s1">'#123456'</span><span class="p">)</span>
     <span class="n">ClockApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>

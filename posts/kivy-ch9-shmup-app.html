@@ -7,7 +7,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/posts/kivy-ch9-shmup-app.html">
 <script type="text/x-mathjax-config">
@@ -316,7 +317,7 @@ MathJax.Hub.Config({
 <span class="k">class</span> <span class="nc">BasicApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
     <span class="k">pass</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">BasicApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -532,10 +533,10 @@ MathJax.Hub.Config({
 <p><code>load_atlas('icons.atlas')</code>函数返回的是<code>icons-0.png</code>加载的纹理，和图集里每个纹理的UV描述，类似下面的结果：</p>
 <div class="highlight"><pre><span></span>&gt;&gt;&gt; load_atlas<span class="o">(</span><span class="s1">'icons.atlas'</span><span class="o">)</span>
 
-<span class="o">(</span>&lt;Texture <span class="nv">size</span><span class="o">=(</span>512, 512<span class="o">)</span>...&gt;,
-<span class="o">{</span><span class="s1">'icon_paint'</span>: UVMapping<span class="o">(</span><span class="nv">u0</span><span class="o">=</span>0.2578125, <span class="nv">v0</span><span class="o">=</span>0.00390625,
-                <span class="nv">u1</span><span class="o">=</span>0.5078125, <span class="nv">v1</span><span class="o">=</span>0.25390625,
-                <span class="nv">su</span><span class="o">=</span>64.0, <span class="nv">sv</span><span class="o">=</span>64.0<span class="o">)</span>,
+<span class="o">(</span>&lt;Texture <span class="nv">size</span><span class="o">=(</span><span class="m">512</span>, <span class="m">512</span><span class="o">)</span>...&gt;,
+<span class="o">{</span><span class="s1">'icon_paint'</span>: UVMapping<span class="o">(</span><span class="nv">u0</span><span class="o">=</span><span class="m">0</span>.2578125, <span class="nv">v0</span><span class="o">=</span><span class="m">0</span>.00390625,
+                <span class="nv">u1</span><span class="o">=</span><span class="m">0</span>.5078125, <span class="nv">v1</span><span class="o">=</span><span class="m">0</span>.25390625,
+                <span class="nv">su</span><span class="o">=</span><span class="m">64</span>.0, <span class="nv">sv</span><span class="o">=</span><span class="m">64</span>.0<span class="o">)</span>,
 <span class="s1">'icon_clock'</span>: UVMapping<span class="o">(</span>...<span class="o">)})</span>
 </pre></div>
 
@@ -585,14 +586,14 @@ MathJax.Hub.Config({
 <span class="c1"># ......</span>
 <span class="k">class</span> <span class="nc">GlslDemo</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="n">Widget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">Widget</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s1">'tex_atlas.glsl'</span>
 
         <span class="n">fmt</span> <span class="o">=</span> <span class="p">(</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vCenter'</span><span class="p">,</span>     <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span>   <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vCenter'</span><span class="p">,</span>     <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vPosition'</span><span class="p">,</span>   <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
         <span class="p">)</span>
 
         <span class="n">texture</span><span class="p">,</span> <span class="n">uvmap</span> <span class="o">=</span> <span class="n">load_atlas</span><span class="p">(</span><span class="s1">'icons.atlas'</span><span class="p">)</span>
@@ -759,15 +760,15 @@ MathJax.Hub.Config({
     <span class="n">particles</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="n">Widget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">Widget</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">RenderContext</span><span class="p">(</span><span class="n">use_parent_projection</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">shader</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">glsl</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span> <span class="o">=</span> <span class="p">(</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vCenter'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vScale'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
-            <span class="p">(</span><span class="n">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vCenter'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vScale'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vPosition'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">b</span><span class="s1">'vTexCoords0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'float'</span><span class="p">),</span>
         <span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">vsize</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">attr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">vfmt</span><span class="p">)</span>

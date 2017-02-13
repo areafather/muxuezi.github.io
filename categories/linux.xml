@@ -1,66 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (Linux)</title><link>https://muxuezi.github.io/</link><description></description><atom:link rel="self" href="https://muxuezi.github.io/categories/linux.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 22 Oct 2016 12:36:05 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>weizhuang</title><link>https://muxuezi.github.io/posts/weizhuang.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;人人尽说江南好
-游人只合江南老&lt;/p&gt;
-&lt;p&gt;春水碧于天&lt;/p&gt;
-&lt;p&gt;画船听雨眠&lt;/p&gt;
-&lt;p&gt;垆边人似月&lt;/p&gt;
-&lt;p&gt;皓腕凝霜雪&lt;/p&gt;
-&lt;p&gt;未老莫还乡&lt;/p&gt;
-&lt;p&gt;还乡须断肠&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/weizhuang.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>matplotlib-gbk</title><link>https://muxuezi.github.io/posts/matplotlib-gbk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;将中文字体文件复制到：
-%PythonPath%Libsite-packagesmatplotlibmpl-datafontsttf&lt;/p&gt;
-&lt;p&gt;下，这里以上一节介绍的Yahei Mono字体为例。&lt;/p&gt;
-&lt;p&gt;找到Matplotlib的配置文件matplotlibrc，全局配置文件的路径：&lt;/p&gt;
-&lt;p&gt;%PythonPath%Libsite-packagesmatplotlibmpl-datamatplotlibrc&lt;/p&gt;
-&lt;p&gt;用户配置文件路径：&lt;/p&gt;
-&lt;p&gt;c:Documents and Settings%UserName%.matplotlibmatplotlibrc&lt;/p&gt;
-&lt;p&gt;用文本编辑器打开此文件，进行如下编辑：&lt;/p&gt;
-&lt;p&gt;找到设置font.family的行，改为font.family : monospace，注意去掉前面的#号。&lt;/p&gt;
-&lt;p&gt;在下面添加一行：font.monospace : Yahei Mono。&lt;/p&gt;
-&lt;p&gt;在matplotlib中使用中文字符串时记住要用unicode格式，例如：u"测试中文显示"。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/matplotlib-gbk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>debian-udisk</title><link>https://muxuezi.github.io/posts/debian-udisk.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;dd if=/dev/zero of=/disk2/xen/centos5.office.img bs=1M count=3072 oflag=direct
-dd if=debian-7.0.0-i386-DVD-1.iso of=/dev/sdb&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/debian-udisk.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>didi-taxi</title><link>https://muxuezi.github.io/posts/didi-taxi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;一定打的回家。快的打的减13元，滴滴打车首单减15元（其他12-20元不等）。如果你车费超过15元，你可以用滴滴打车先叫车，然后再用快的打车叫一遍车，师傅会把钱分成两份的&lt;/p&gt;
-&lt;h2&gt;免费的午餐总是让人心情愉快，背后大量的资金流动更是让人心旷神怡啊。&lt;/h2&gt;
-&lt;h2&gt;2月28日&lt;/h2&gt;
-&lt;p&gt;今天终于体验一把，滴滴首单免15，返10元，还好。听师傅讲过几天就没了，烧不起。不过昨晚看百度地图也有了，看来有人接盘了。师傅车上装wifi（电信，50元3.5G，乖乖，移动真坑爹啊，50元500M），网速嘎嘎的&lt;/p&gt;
-&lt;p&gt;缺点：乘客——要等。师傅——要抢，要反复联系。快的定位不准，滴滴可以。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/didi-taxi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>win7-wifi</title><link>https://muxuezi.github.io/posts/win7-wifi.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;netsh wlan set hostednetwork mode=allow ssid=JoysBoy.Net key=joysboy.net
-@echo off&lt;/p&gt;
-&lt;p&gt;choice /C 12 /M "开启wifi请输入1，关闭wifi请输入2&lt;/p&gt;
-&lt;p&gt;if errorlevel 2 goto off&lt;/p&gt;
-&lt;p&gt;if errorlevel 1 goto on&lt;/p&gt;
-&lt;p&gt;:on&lt;/p&gt;
-&lt;p&gt;netsh wlan start hostednetwork &lt;/p&gt;
-&lt;p&gt;goto end&lt;/p&gt;
-&lt;p&gt;:off&lt;/p&gt;
-&lt;p&gt;netsh wlan stop hostednetwork&lt;/p&gt;
-&lt;p&gt;goto end&lt;/p&gt;
-&lt;p&gt;:end&lt;/p&gt;
-&lt;p&gt;echo 网络设置完毕&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/win7-wifi.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>shell-postfix</title><link>https://muxuezi.github.io/posts/shell-postfix.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;有一批文件，以 .bak结尾，现在想把这些 .bak 统统去掉。
-rename     's/.bak$//'       *.bak&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/shell-postfix.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>c-pointer-right-left-rule</title><link>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;此文纪念大学C语言，虽然没怎么用，再看K＆C，光彩依然&lt;!--more--&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/c-pointer-right-left-rule.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>python-cwd</title><link>https://muxuezi.github.io/posts/python-cwd.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;在python的一些程序执行时，CWD很重要：除非程序执行所需文件的名字都包含绝对目录路径，否则那些文件通常都被假设位于CWD里面。
-记住，没有完整路径名的文件名映射到CWD，与PYTHONPATH设置无关。&lt;/p&gt;
-&lt;p&gt;1）一个程序是从CWD启动，而不是从包含它的目录启动；&lt;/p&gt;
-&lt;p&gt;2）import从包含程序的目录开始搜索，不是CWD。&lt;/p&gt;
-&lt;p&gt;当你在命令行输入这段命令：python dir1dir2file.py，CWD是输入命令的目录，可能是C:Documents and SettingsAdministrator，但不一定是file.py所在目录。另外，python会自动把file.py所在的目录绝对路径dir1dir2放在模块搜索路径最前面，这样不管在哪儿运行程序，file.py都可以导入dir1dir2内的所有文件。dir1dir2将成为模块搜索路径的第一路径。&lt;/p&gt;
-&lt;p&gt;实现from PP4E.System.more import more，需要之前在sys.path中加入（append）包含PP4E的目录。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/python-cwd.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>grub-ubuntuwin7</title><link>https://muxuezi.github.io/posts/grub-ubuntuwin7.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Ubuntu与Win7双系统，在重装Win7后会出现Ubuntu的Linux不能启动的情况，这是因为grub引导被覆盖了。
-   要修复grub需要一张Ubuntu的LiveCD（安装光盘），用LiveCD启动电脑，进入试用Ubuntu，进入之后打开终端，做如下几步：
-   1、输入sudo -i取得权限；
-   2、找到安装ubuntu的挂载点，我的 / 在sda9，/boot 在sda8里面，如果不清楚可以用命令 fdisk -l 来查看；
-   3、挂载分区分别输入命令：
-        mount /dev/sda9 /mnt                (mount跟sda9之后分别有一个空格）
-        mount /dev/sda8 /mnt/boot        (如果没有/boot分区可以省略这一步）
-   4、安装grub输入命令：
-        grub-install --root-directory=/mnt /dev/sda
-        (--跟/dev/sda之前分别有一个空格，sda指的是第一硬盘，如果想安装在第二硬盘里面就用sdb）
-         注：如果grub.cfg己丢失，或grub.cfg出现错误，需要重建的继续执行下面操作：
-               mount –bind /proc /mnt/proc
-               mount –bind /dev /mnt/dev
-               mount –bind /sys /mnt/sys
-               chroot /mnt update-grub
-               umount /mnt/sys
-               umount /mnt/dev
-               umount /mnt/proc
-               exit
-   5、重启电脑，进入熟悉的ubuntu
-   6、打开终端输入命令 sudo update-grub &lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/grub-ubuntuwin7.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>tmux</title><link>https://muxuezi.github.io/posts/tmux.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;To remedy the situation, here is a short script that you can invoke and that will kill all your running tmux sessions.
-1   tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}&lt;/p&gt;
-&lt;p&gt;You can put it into a nice little alias&lt;/p&gt;
-&lt;p&gt;1   alias kts='tx ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}'&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/tmux.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (Posts about Linux)</title><link>https://muxuezi.github.io/</link><description></description><atom:link href="https://muxuezi.github.io/categories/linux.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 13 Feb 2017 01:02:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>3d-javascript-code</title><link>https://muxuezi.github.io/posts/3d-javascript-code.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://www.mrdoob.com/projects/htmleditor/&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/3d-javascript-code.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>31provns</title><link>https://muxuezi.github.io/posts/31provns.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;安北福甘广广贵，海河河黑湖湖吉，江江辽内宁青山
+山陕上，四天西新云浙重&lt;/p&gt;
+&lt;p&gt;这几天在整发票，省份音序排列，找了个词牌凑字数。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;单调小令，又名《荳叶黄》、《阑干万里心》。三十一字，五平韵。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;例词：&lt;/p&gt;
+&lt;p&gt;李重元《忆王孙（萋萋芳草忆王孙） 春词》&lt;/p&gt;
+&lt;p&gt;中平中仄仄平平，中仄平平中仄平，中仄平平仄仄平。&lt;/p&gt;
+&lt;p&gt;萋萋芳草忆王孙，柳外楼高空断魂，杜宇声声不忍闻。&lt;/p&gt;
+&lt;p&gt;仄平平，中仄平平中仄平。&lt;/p&gt;
+&lt;p&gt;欲黄昏，雨打梨花深闭门。&lt;/p&gt;
+&lt;h2&gt;20140318附另外三首&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div&gt;忆王孙·夏&lt;/div&gt;
+&lt;div&gt;风蒲猎猎小池塘，过雨荷花满院香。沈李浮瓜冰雪凉。竹方床，针线慵拈午梦长。&lt;/div&gt;
+
+&lt;div&gt;忆王孙·秋&lt;/div&gt;
+
+&lt;div&gt;飕飕风冷荻花秋，明月斜侵独倚楼。十二珠帘不上钩。黯凝眸，一点渔灯古渡头。&lt;/div&gt;
+
+&lt;div&gt;忆王孙·冬&lt;/div&gt;
+
+&lt;div&gt;彤云风扫雪初晴，天外孤鸿三两声。独拥寒衾不忍听。月笼明，窗外梅花瘦影横。&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/31provns.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>android-chroot-debian</title><link>https://muxuezi.github.io/posts/android-chroot-debian.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;以前在Webos、kindle上面用过chroot，可以运行Debian、Ubuntu，现在总结一下Android的chroot Debian（Ubuntu方法类似）方法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/android-chroot-debian.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/android-chroot-debian.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>android-emulator-in-mint64</title><link>https://muxuezi.github.io/posts/android-emulator-in-mint64.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;pre&gt;&lt;code&gt;sudo apt-get install lib32ncurses5 lib32stdc++6&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ia32-libs
+&lt;p&gt;if “aapt: error while loading shared libraries: libz.so.1: cannot open shared object file: No such file or directory” &lt;/p&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/android-emulator-in-mint64.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>apt-spy-sources</title><link>https://muxuezi.github.io/posts/apt-spy-sources.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;apt-get install apt-spy
+apt-spy update&lt;/p&gt;
+&lt;h2&gt;下载最新的更新源列表&lt;/h2&gt;
+&lt;p&gt;apt-spy -d testing -a asia -t 5&lt;/p&gt;
+&lt;h2&gt;对选定的源列表进行连接速度的测试&lt;/h2&gt;
+&lt;p&gt;apt-spy会测试连接得到速度最快的更新源，记录在/etc/apt/sources.list.d/apt-spy.list中。之后apt- get update时会自动连接apt-spy.list中的更新源更新软件列表。apt-spy的使用参考5)。&lt;/p&gt;
+&lt;h2&gt;-------------ubuntu14.04 trusty(163#网易电信网通双线接入网速杆杆的#)-----------------&lt;/h2&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-security main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-updates main multiverse restricted universe&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-proposed universe restricted multiverse main&lt;/p&gt;
+&lt;p&gt;deb &lt;a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank"&gt;http://mirrors.163.com/ubuntu/&lt;/a&gt; trusty-backports main multiverse restricted universe&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/apt-spy-sources.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>c-pointer-right-left-rule</title><link>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;此文纪念大学C语言，虽然没怎么用，再看K＆C，光彩依然&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/c-pointer-right-left-rule.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/c-pointer-right-left-rule.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>character-in-webpage</title><link>https://muxuezi.github.io/posts/character-in-webpage.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;软回车是^l，硬回车是^p&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/character-in-webpage.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>chm-html</title><link>https://muxuezi.github.io/posts/chm-html.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;将.CHM文件反向转换成 .html 格式文件的方法：
+可以利用Windows自带的hh.exe文件来进行文件格式转换，语法为：&lt;/p&gt;
+&lt;p&gt;hh -decompile 目标文件夹 源CHM文件名。&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/chm-html.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>chrome-ppa-on-ubuntu</title><link>https://muxuezi.github.io/posts/chrome-ppa-on-ubuntu.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list'&lt;/p&gt;
+&lt;p&gt;sudo apt-get update&lt;/p&gt;
+&lt;p&gt;sudo apt-get install google-chrome-stable&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/chrome-ppa-on-ubuntu.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item><item><title>clean-pyc-file</title><link>https://muxuezi.github.io/posts/clean-pyc-file.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;清理pyc文件&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/clean-pyc-file.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>Linux</category><category>WordPress</category><guid>https://muxuezi.github.io/posts/clean-pyc-file.html</guid><pubDate>Fri, 01 Jan 2010 05:44:27 GMT</pubDate></item></channel></rss>

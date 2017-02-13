@@ -7,7 +7,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/posts/kivy-ch4-chat-app.html">
 <script type="text/x-mathjax-config">
@@ -374,7 +375,7 @@ Twisted目前仍然不能很好的不支持Python3，所以这里得使用Python
 <p>处理字符串协议服务器的一个标准化工具就是Telnet，一般都是命令行，没有图像界面。很多操作系统都带有Telnet。在Windows系统中，打开“控制面板|程序和功能|启动或关闭Windows功能”就可以找到Telnet。</p>
 <p><img src="kbpic/4.1Telnet.png" alt="Telnet"></p>
 <p>Telnet有两个参数：服务器地址和端口。为了连接到Telnet，你需要先启动<code>server.py</code>，然后再打开命令行输入：</p>
-<div class="highlight"><pre><span></span>telnet 127.0.0.1 9096
+<div class="highlight"><pre><span></span>telnet <span class="m">127</span>.0.0.1 <span class="m">9096</span>
 </pre></div>
 <p>另外，你也可以用<code>localhost</code>代替<code>127.0.0.1</code>，在<code>hosts</code>文件中是默认设置。</p>
 <p>现在就可以测试服务器了。你可以根据前面设计流程，向服务器发送内容进行实现测试：</p>

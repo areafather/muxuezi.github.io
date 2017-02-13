@@ -8,7 +8,8 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/index-1.html">
 <link rel="prev" href="index-2.html" type="text/html">
@@ -74,178 +75,211 @@ MathJax.Hub.Config({
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/clean-pyc-file.html" class="u-url">clean-pyc-file</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tmux.html" class="u-url">tmux</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/clean-pyc-file.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/tmux.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>清理pyc文件</p>
-<p class="more"><a href="posts/clean-pyc-file.html">Read more…</a></p>
+<p>To remedy the situation, here is a short script that you can invoke and that will kill all your running tmux sessions.
+1   tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}</p>
+<p>You can put it into a nice little alias</p>
+<p>1   alias kts='tx ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}'</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/chrome-ppa-on-ubuntu.html" class="u-url">chrome-ppa-on-ubuntu</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ubuntu-chroot-arm-upgrade.html" class="u-url">ubuntu-chroot-arm-upgrade</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/chrome-ppa-on-ubuntu.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/ubuntu-chroot-arm-upgrade.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</p>
-<p>sudo apt-get update</p>
-<p>sudo apt-get install google-chrome-stable</p>
+<p>echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf &gt; /dev/null</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/chm-html.html" class="u-url">chm-html</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/urllib2-quote-gbk.html" class="u-url">urllib2-quote-gbk</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/chm-html.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/urllib2-quote-gbk.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>将.CHM文件反向转换成 .html 格式文件的方法：
-可以利用Windows自带的hh.exe文件来进行文件格式转换，语法为：</p>
-<p>hh -decompile 目标文件夹 源CHM文件名。</p>
+<p>import urllib2
+name = u'张宏科'</p>
+<p>school = u'北京交通大学'</p>
+<p>transfer = lambda temp : urllib2.quote(temp.encode('utf-8'))</p>
+<p>url = 'https://duckduckgo.com/?q=%s+%s&amp;t=lm' % (transfer(name),transfer(school))</p>
+<p></p>
+<pre style="color: #000000;">https://duckduckgo.com/?q=%E5%BC%A0%E5%AE%8F%E7%A7%91+%E5%8C%97%E4%BA%AC%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6&amp;t=lm</pre>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/character-in-webpage.html" class="u-url">character-in-webpage</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/vernacular.html" class="u-url">vernacular</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/character-in-webpage.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/vernacular.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>软回车是^l，硬回车是^p</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/c-pointer-right-left-rule.html" class="u-url">c-pointer-right-left-rule</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/c-pointer-right-left-rule.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>此文纪念大学C语言，虽然没怎么用，再看K＆C，光彩依然<!--more--></p>
-<p class="more"><a href="posts/c-pointer-right-left-rule.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/apt-spy-sources.html" class="u-url">apt-spy-sources</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/apt-spy-sources.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>apt-get install apt-spy
-apt-spy update</p>
-<h2>下载最新的更新源列表</h2>
-<p>apt-spy -d testing -a asia -t 5</p>
-<h2>对选定的源列表进行连接速度的测试</h2>
-<p>apt-spy会测试连接得到速度最快的更新源，记录在/etc/apt/sources.list.d/apt-spy.list中。之后apt- get update时会自动连接apt-spy.list中的更新源更新软件列表。apt-spy的使用参考5)。</p>
-<h2>-------------ubuntu14.04 trusty(163#网易电信网通双线接入网速杆杆的#)-----------------</h2>
-<p>deb <a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank">http://mirrors.163.com/ubuntu/</a> trusty main multiverse restricted universe</p>
-<p>deb <a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank">http://mirrors.163.com/ubuntu/</a> trusty-security main multiverse restricted universe</p>
-<p>deb <a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank">http://mirrors.163.com/ubuntu/</a> trusty-updates main multiverse restricted universe</p>
-<p>deb <a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank">http://mirrors.163.com/ubuntu/</a> trusty-proposed universe restricted multiverse main</p>
-<p>deb <a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAteBfGoS4pBb6AnX8vad7Uc62NmXHQfNOd1c93Kd44ZaVMeiRzQylojoLLKCQh+pr5V+HytT7d3oaAwQnSt+fbSSqfYTpGQJka9OnT+BwdFoZuQye2MG4bWMDxm7iZ2BjQ=" target="_blank">http://mirrors.163.com/ubuntu/</a> trusty-backports main multiverse restricted universe</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/android-emulator-in-mint64.html" class="u-url">android-emulator-in-mint64</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/android-emulator-in-mint64.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<pre><code>sudo apt-get install lib32ncurses5 lib32stdc++6</code></pre>
-<pre><code>sudo apt-get install ia32-libs
-<p>if “aapt: error while loading shared libraries: libz.so.1: cannot open shared object file: No such file or directory” </p></code></pre>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/android-chroot-debian.html" class="u-url">android-chroot-debian</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/android-chroot-debian.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>以前在Webos、kindle上面用过chroot，可以运行Debian、Ubuntu，现在总结一下Android的chroot Debian（Ubuntu方法类似）方法</p>
-<p class="more"><a href="posts/android-chroot-debian.html">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/3d-javascript-code.html" class="u-url">3d-javascript-code</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/3d-javascript-code.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>http://www.mrdoob.com/projects/htmleditor/</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/31provns.html" class="u-url">31provns</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/31provns.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>安北福甘广广贵，海河河黑湖湖吉，江江辽内宁青山
-山陕上，四天西新云浙重</p>
-<p>这几天在整发票，省份音序排列，找了个词牌凑字数。</p>
-<p><em>单调小令，又名《荳叶黄》、《阑干万里心》。三十一字，五平韵。</em></p>
-<p>例词：</p>
-<p>李重元《忆王孙（萋萋芳草忆王孙） 春词》</p>
-<p>中平中仄仄平平，中仄平平中仄平，中仄平平仄仄平。</p>
-<p>萋萋芳草忆王孙，柳外楼高空断魂，杜宇声声不忍闻。</p>
-<p>仄平平，中仄平平中仄平。</p>
-<p>欲黄昏，雨打梨花深闭门。</p>
-<h2>20140318附另外三首</h2>
-<p></p>
-<div>忆王孙·夏</div>
-<div>风蒲猎猎小池塘，过雨荷花满院香。沈李浮瓜冰雪凉。竹方床，针线慵拈午梦长。</div>
+<div><span style="font-size: 26px; font-weight: bold; line-height: 1.3846153846;">vernacular</span></div>
+<div>
+<div><a title="添加该词条到生词本"> </a></div>
 
-<div>忆王孙·秋</div>
+<div>英 <strong>[</strong><strong lang="EN-US" xml:lang="EN-US">və'nækjələ(r)</strong><strong>]</strong>
 
-<div>飕飕风冷荻花秋，明月斜侵独倚楼。十二珠帘不上钩。黯凝眸，一点渔灯古渡头。</div>
+<div></div>
 
-<div>忆王孙·冬</div>
+美 <strong>[</strong><strong lang="EN-US" xml:lang="EN-US">vɚˈnækjəlɚ</strong><strong>]</strong>
 
-<div>彤云风扫雪初晴，天外孤鸿三两声。独拥寒衾不忍听。月笼明，窗外梅花瘦影横。</div>
+
+
+</div>
+
+</div>
+
+<div>
+
+
+
+<strong>n.</strong><label>白话；</label> <label>行话；</label> <label>本国语；</label> <label>动植物的俗名</label>
+
+
+
+<strong>adj.</strong><label>本国语的；</label> <label>白话的；</label> <label>方言的；</label> <label>本国的</label>
+
+
+
+想起合肥话-<a title="合肥话" href="http://zh.wikipedia.org/zh/%E5%90%88%E8%82%A5%E8%AF%9D" target="_blank">维基百科</a>-<a title="张爱玲" href="http://news.163.com/09/0504/03/58EJJ3QD000120GR.html" target="_blank">张爱玲合肥话</a>-摪（怎样）搞啊？”“摪搞”
+
+
+
+讲给大姐听，她讲了《追风筝的人》作者<a href="http://book.douban.com/series/19760">卡勒德·胡赛尼作品</a>《群山回唱》里面我们每年在家都能听到的“
+
+
+
+以斯敏列”-以真主之名
+
+
+
+</div>
 
 <p></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/vim-replace.html" class="u-url">vim-replace</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/vim-replace.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>%s/vivian/sky/（等同于 ：g/vivian/s//sky/） 替换每一行的第一个 vivian 为 sky 
+%s/vivian/sky/g（等同于 ：g/vivian/s//sky/g） 替换每一行中所有 vivian 为 sky</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/wait.html" class="u-url">wait</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/wait.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<ol>
+<li>三位组成的数列有等差数列 : 6个球一共有1,107,568种组合，这是小学就会的；6个球中有任意四个至少一个成等差数列的很少，占总数5%；但是任意三个至少一个成等差数列的很多，占总数63%</li>
+    <li>新一期的号码分割更有可能出现在间隔中 : 如果按照从小到大排序，(1,2,3,4,5,6)是第一位，(28,29,30,31,32,33)是最后一位。目前出现的所有1377期中，相邻两个直接的间隔，就是位置之差。有这样的特点：最大间隔4586，最小间隔1。其中， 339个间隔超过1000，而且有碎片化的趋势，即新一期的号码分割更有可能出现在这些间隔中</li>
+    <li>Combination(6,3)频率是（0，1，2）：6个号码的任意三位组成的数列，Combination(6,3)共20个。如果按照重复率统计的话。新一期6个号码任意三位组成的数列出现的重复率不超过2，即这20个三位数列的频率是（0，1，2），即在以往所有出现过的6个号码任意三位组成的数列中，新一期6个号码任意三位组成的数列将出现的频率是：0次（没出现过）、1次（出现过1次）、2次（出现过2次，这类一般只有一个）</li>
+    <li>如果在这些超过1000的间隔里面，取出某个区间，重新筛选出无4阶等差、有3阶段等差、3阶段等差仅含（0，1，2），最后还有重复抽样的概率约束</li>
+</ol>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/weizhuang.html" class="u-url">weizhuang</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/weizhuang.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>人人尽说江南好
+游人只合江南老</p>
+<p>春水碧于天</p>
+<p>画船听雨眠</p>
+<p>垆边人似月</p>
+<p>皓腕凝霜雪</p>
+<p>未老莫还乡</p>
+<p>还乡须断肠</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/win7-wifi.html" class="u-url">win7-wifi</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/win7-wifi.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>netsh wlan set hostednetwork mode=allow ssid=JoysBoy.Net key=joysboy.net
+@echo off</p>
+<p>choice /C 12 /M "开启wifi请输入1，关闭wifi请输入2</p>
+<p>if errorlevel 2 goto off</p>
+<p>if errorlevel 1 goto on</p>
+<p>:on</p>
+<p>netsh wlan start hostednetwork </p>
+<p>goto end</p>
+<p>:off</p>
+<p>netsh wlan stop hostednetwork</p>
+<p>goto end</p>
+<p>:end</p>
+<p>echo 网络设置完毕</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/windows-open-cmd.html" class="u-url">windows-open-cmd</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/windows-open-cmd.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>打开“我的电脑”，点击菜单中的“工具”－“文件夹选项”，选择“文件类型”，找到“(无)资料夹”，点“高级”，“新建”，在“操作”中填入“CMD”，“用于执行操作的应用程序”中填入cmd.exe /k cd %1</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/xz-upzip.html" class="u-url">xz-upzip</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/xz-upzip.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>$xz -d <strong><em>.tar.xz
+$tar -xvf  </em></strong>.tar</p>
 </div>
     </div>
     </article>

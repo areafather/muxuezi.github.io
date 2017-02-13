@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>绿萝间 (Python)</title><link>https://muxuezi.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="https://muxuezi.github.io/categories/python.xml"></atom:link><language>en</language><lastBuildDate>Sat, 22 Oct 2016 13:11:59 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python solo 6 years</title><link>https://muxuezi.github.io/posts/python-solo-6-years.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;h2&gt;Python solo 六年记&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>绿萝间 (Posts about Python)</title><link>https://muxuezi.github.io/</link><description></description><atom:link href="https://muxuezi.github.io/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 13 Feb 2017 01:02:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python solo 6 years</title><link>https://muxuezi.github.io/posts/python-solo-6-years.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div&gt;&lt;h2&gt;Python solo 六年记&lt;/h2&gt;
 &lt;p&gt;人生几何？Python 当歌！&lt;/p&gt;
 &lt;p&gt;我的博客“绿萝间”里记载了近六年的学习历程，大都是围绕 Python 而做。没有仔细梳理，信号嘈杂，噪音扰民。看我博客的人不多（ Google analysis 分析数据），估计大都是彩民（彩票数据用 Python 分析的）。记得李敖曾经说，看他早期著作的读者，都是在地下色情书刊买错了书的色情狂，想象那些平日里满眼格子的X，见到李敖的嘻笑怒骂，顿然醍醐灌顶，拍案叫绝。还有法国大革命前，巴黎市民读到的哲学，大多混杂于书商斗篷内的诽谤小说，对集权体制的批判与质疑从此开始。学贯中西的公知已经很多，我的博客没那么高大上，都是烂笔头里磨出的一些杂碎。&lt;/p&gt;
 &lt;p&gt;一切皆是历史，学习就是读史。罗马政治家西塞罗有句名言：一个不知道自己出生前发生了什么事情的人，等于没有长大。而立之年，不能不学历史。学历史方法很多，读书是系统学习的方法之一，也适合我的个性。梁文道说，读书不是为了让你很安静地逃离这个世界，而是为了让你回到这个世界，换一种方式来认知这个世界，接触这个世界。总之，文以载道，不能不读书。知与行，学与思，皆非一日之功，需小锅慢炖，厚积薄发。在工作和生活中，我一直用 Python，简洁、高效、开源，自带电池，开箱即用，快乐多多。沉舟侧畔，几经风霜，颠覆妄想症的时期已经过去。积跬步，做小事，乐生活。＂成功未必在我，功成其中有我＂，足矣。&lt;/p&gt;
@@ -125,43 +125,7 @@
 &lt;li&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;贝叶斯岭回归&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://muxuezi.github.io/posts/using-boosting-to-learn-from-errors.html"&gt;用梯度提升回归从误差中学习&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/2-working-with-linear-models.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/2-working-with-linear-models.html</guid><pubDate>Tue, 18 Aug 2015 05:07:14 GMT</pubDate></item><item><title>evaluating-the-linear-regression-model</title><link>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="评估线性回归模型"&gt;评估线性回归模型&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html#%E8%AF%84%E4%BC%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;在这个主题中，我们将介绍回归模型拟合数据的效果。上一个主题我们拟合了数据，但是并没太关注拟合的效果。每当拟合工作做完之后，我们应该问的第一个问题就是“拟合的效果如何？”本主题将回答这个问题。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>using-linear-methods-for-classification-logistic-regression</title><link>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="用线性方法处理分类问题——逻辑回归"&gt;用线性方法处理分类问题——逻辑回归&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html#%E7%94%A8%E7%BA%BF%E6%80%A7%E6%96%B9%E6%B3%95%E5%A4%84%E7%90%86%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;实际上线性模型也可以用于分类任务。方法是把一个线性模型拟合成某个类型的概率分布，然后用一个函数建立阈值来确定结果属于哪一类。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/using-linear-methods-for-classification-logistic-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>directly-applying-bayesian-ridge-regression</title><link>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/2-working-with-linear-models.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/2-working-with-linear-models.html</guid><pubDate>Tue, 18 Aug 2015 05:07:14 GMT</pubDate></item><item><title>directly-applying-bayesian-ridge-regression</title><link>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -180,4 +144,40 @@
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;在&lt;em&gt;用岭回归弥补线性回归的不足&lt;/em&gt;主题中，我们介绍了岭回归优化的限制条件。我们还介绍了相关系数的先验概率分布的贝叶斯解释，将很大程度地影响着先验概率分布，先验概率分布通常均值是0。&lt;/p&gt;
 &lt;p&gt;因此，现在我们就来演示如何scikit-learn来应用这种解释。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/directly-applying-bayesian-ridge-regression.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>evaluating-the-linear-regression-model</title><link>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="评估线性回归模型"&gt;评估线性回归模型&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html#%E8%AF%84%E4%BC%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;在这个主题中，我们将介绍回归模型拟合数据的效果。上一个主题我们拟合了数据，但是并没太关注拟合的效果。每当拟合工作做完之后，我们应该问的第一个问题就是“拟合的效果如何？”本主题将回答这个问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/evaluating-the-linear-regression-model.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item><item><title>fitting-a-line-through-data</title><link>https://muxuezi.github.io/posts/fitting-a-line-through-data.html</link><dc:creator>Tao Junjie</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="线性回归模型"&gt;线性回归模型&lt;a class="anchor-link" href="https://muxuezi.github.io/posts/fitting-a-line-through-data.html#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;现在，我们来做一些建模！我们从最简单的线性回归（Linear regression）开始。线性回归是最早的也是最基本的模型——把数据拟合成一条直线。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://muxuezi.github.io/posts/fitting-a-line-through-data.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>CHS</category><category>ipython</category><category>Machine Learning</category><category>Python</category><category>scikit-learn cookbook</category><guid>https://muxuezi.github.io/posts/fitting-a-line-through-data.html</guid><pubDate>Tue, 18 Aug 2015 04:57:47 GMT</pubDate></item></channel></rss>

@@ -7,7 +7,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/posts/frequentism-and-bayesianism-chs-iii.html">
 <script type="text/x-mathjax-config">
@@ -537,12 +538,12 @@ $$<p>我们设计一个函数来解叶斯可信范围：</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first define some quantities that we need </span>
-<span class="n">Nsamples</span> <span class="o">=</span> <span class="mi">2</span><span class="n">E7</span>
+<span class="n">Nsamples</span> <span class="o">=</span> <span class="mf">2E7</span>
 <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
 <span class="n">sigma_x</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1"># if someone changes N, this could easily cause a memory error</span>
-<span class="k">if</span> <span class="n">N</span> <span class="o">*</span> <span class="n">Nsamples</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="n">E8</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">N</span> <span class="o">*</span> <span class="n">Nsamples</span> <span class="o">&gt;</span> <span class="mf">1E8</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Are you sure you want this many samples?"</span><span class="p">)</span>
     
 <span class="c1"># eps tells us how close to D we need to be to consider</span>
@@ -660,7 +661,7 @@ $$<p>我们设计一个函数来解叶斯可信范围：</p>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define some quantities we need</span>
 <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
-<span class="n">Nsamples</span> <span class="o">=</span> <span class="mi">1</span><span class="n">E4</span>
+<span class="n">Nsamples</span> <span class="o">=</span> <span class="mf">1E4</span>
 <span class="n">mu</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">sigma_x</span> <span class="o">=</span> <span class="mi">10</span>
 
@@ -762,8 +763,11 @@ $$
 p(x~|~\theta) = \left\{
 \begin{array}{lll}
 \exp(\theta - x) &amp;,&amp; x &gt; \theta\\
-0                &amp;,&amp; x 这里$p(x~|~\theta)$表示时间$x$失败的概率，化学试剂可用时间$\theta$。
-观察数据$D = \{x_i\}$，我们的目标是估计$\theta$。
+0                &amp;,&amp; x &lt; \theta
+\end{array}
+\right\}
+$$<p>这里$p(x~|~\theta)$表示时间$x$失败的概率，化学试剂可用时间$\theta$。
+观察数据$D = \{x_i\}$，我们的目标是估计$\theta$。</p>
 <p>我们先为$\theta=10$画个图看看：</p>
 
 </div>
@@ -838,9 +842,11 @@ p(x~|~\theta) = \left\{
 <p>我认为：遇到问题，计算之前，先想想怎么下手，并猜一猜结果。我们现在开始。想想这个问题，从概率分布的截断可以得出一个简单的观察结果：<strong>$\theta$必须小于观察值的最小值</strong>。</p>
 <p>这是显而易见的：看到一个小于$\theta$的观察值概率为0。因此，假如我们假设正确，那么一个$\theta$大于任何观察值的模型是不可能出现的。贝叶斯主义和频率主义的基本假设都是模型正确，因此我们可以直接写出常识条件：</p>
 $$
-\theta 或者，特别地，$D = \{10, 12, 15\}$,
+\theta &lt; \min(D)
+$$<p>或者，特别地，$D = \{10, 12, 15\}$,</p>
 $$
-\theta 这组数据中，$\theta$的每一个合理约束都应该满足以上条件。带着这条规则，我们继续用贝叶斯主义和频率主义进行定量分析。
+\theta &lt; 10
+$$<p>这组数据中，$\theta$的每一个合理约束都应该满足以上条件。带着这条规则，我们继续用贝叶斯主义和频率主义进行定量分析。</p>
 
 </div>
 </div>
@@ -961,7 +967,12 @@ f(\theta~|~D) \propto
 \left\{
 \begin{array}{lll}
 z^{N - 1}\exp(-z) &amp;,&amp; z &gt; 0\\
-0 &amp;,&amp; z 
+0 &amp;,&amp; z &lt; 0
+\end{array}
+\right\}
+;~ z = N(\hat{\theta} + 1 - \theta)
+$$
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -1156,7 +1167,8 @@ $$<p>可以得出</p>
 $$
 p(\theta~|~D) \propto \left\{
 \begin{array}{lll}
-N\exp\left[N(\theta - \min(D))\right] &amp;,&amp; \theta  \min(D)
+N\exp\left[N(\theta - \min(D))\right] &amp;,&amp; \theta &lt; \min(D)\\
+0                &amp;,&amp; \theta &gt; \min(D)
 \end{array}
 \right\}
 $$<p>其中，$\min(D)$是$D$的最小值， 之所以出现是因为$p(x~|~\theta)$的截断。
@@ -1324,7 +1336,7 @@ Bayesian:             95% CR = (9.0, 10.0)
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-<span class="n">N</span> <span class="o">=</span> <span class="mi">1</span><span class="n">E7</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mf">1E7</span>
 <span class="n">eps</span> <span class="o">=</span> <span class="mf">0.1</span>
 
 <span class="n">theta</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
@@ -1488,7 +1500,7 @@ Bayesian:             95% CR = (9.0, 10.0)
 </div>
     </div>
   </div>
-</div>
+
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../categories/chs.html" rel="tag">CHS</a></li>

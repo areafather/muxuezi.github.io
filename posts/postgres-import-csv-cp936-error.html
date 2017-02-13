@@ -7,7 +7,8 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/posts/postgres-import-csv-cp936-error.html">
 <script type="text/x-mathjax-config">
@@ -125,7 +126,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="k">import</span> <span class="n">create_engine</span>
 <span class="kn">import</span> <span class="nn">ipython_memory_usage.ipython_memory_usage</span> <span class="k">as</span> <span class="nn">imu</span>
 </pre></div>
@@ -140,7 +141,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">imu</span><span class="o">.</span><span class="n">start_watching_memory</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imu</span><span class="o">.</span><span class="n">start_watching_memory</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -168,8 +169,8 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">chunksize</span> <span class="o">=</span> <span class="mi">1</span><span class="n">E6</span>
-<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s">'postgresql+psycopg2://postgres:tianKong7@localhost:5432/postgres'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chunksize</span> <span class="o">=</span> <span class="mf">1E6</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">'postgresql+psycopg2://postgres:tianKong7@localhost:5432/postgres'</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -197,7 +198,7 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'c_全年库存结构变动_20151124122730.csv'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'cp936'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'c_全年库存结构变动_20151124122730.csv'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'cp936'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -225,8 +226,8 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
-    <span class="n">chunk</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s">"inventory"</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s">'append'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
+    <span class="n">chunk</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s2">"inventory"</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">'append'</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">)</span>
     <span class="k">del</span> <span class="n">chunk</span>
 </pre></div>
 
@@ -240,21 +241,21 @@ MathJax.Hub.Config({
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># CREATE TABLE inv (</span>
-<span class="c">#     stat_date	date,</span>
-<span class="c">#     store_src_cd	int,</span>
-<span class="c">#     sku_id	int,</span>
-<span class="c">#     stock_qty	int,</span>
-<span class="c">#     canuse_qty	int,</span>
-<span class="c">#     len	int,</span>
-<span class="c">#     width	int,</span>
-<span class="c">#     height	int,</span>
-<span class="c">#     item_first_cate_name	varchar(80),</span>
-<span class="c">#     item_second_cate_name	varchar(80),</span>
-<span class="c">#     item_third_cate_name	varchar(80)</span>
-<span class="c"># );</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># CREATE TABLE inv (</span>
+<span class="c1">#     stat_date	date,</span>
+<span class="c1">#     store_src_cd	int,</span>
+<span class="c1">#     sku_id	int,</span>
+<span class="c1">#     stock_qty	int,</span>
+<span class="c1">#     canuse_qty	int,</span>
+<span class="c1">#     len	int,</span>
+<span class="c1">#     width	int,</span>
+<span class="c1">#     height	int,</span>
+<span class="c1">#     item_first_cate_name	varchar(80),</span>
+<span class="c1">#     item_second_cate_name	varchar(80),</span>
+<span class="c1">#     item_third_cate_name	varchar(80)</span>
+<span class="c1"># );</span>
 
-<span class="c"># COPY inv FROM 'D:\\reader\\dask-tutorial\\top200.csv' DELIMITER ',' CSV;</span>
+<span class="c1"># COPY inv FROM 'D:\\reader\\dask-tutorial\\top200.csv' DELIMITER ',' CSV;</span>
 </pre></div>
 
 </div>

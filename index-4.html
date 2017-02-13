@@ -8,7 +8,8 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://muxuezi.github.io/index-4.html">
 <link rel="prev" href="index-5.html" type="text/html">
@@ -75,30 +76,75 @@ MathJax.Hub.Config({
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/outer-vga-debian.html" class="u-url">outer-vga-debian</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/matplotlib-gbk.html" class="u-url">matplotlib-gbk</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/outer-vga-debian.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/matplotlib-gbk.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>xrandr --output VGA --auto --output LVDS --off</p>
+<p>将中文字体文件复制到：
+%PythonPath%Libsite-packagesmatplotlibmpl-datafontsttf</p>
+<p>下，这里以上一节介绍的Yahei Mono字体为例。</p>
+<p>找到Matplotlib的配置文件matplotlibrc，全局配置文件的路径：</p>
+<p>%PythonPath%Libsite-packagesmatplotlibmpl-datamatplotlibrc</p>
+<p>用户配置文件路径：</p>
+<p>c:Documents and Settings%UserName%.matplotlibmatplotlibrc</p>
+<p>用文本编辑器打开此文件，进行如下编辑：</p>
+<p>找到设置font.family的行，改为font.family : monospace，注意去掉前面的#号。</p>
+<p>在下面添加一行：font.monospace : Yahei Mono。</p>
+<p>在matplotlib中使用中文字符串时记住要用unicode格式，例如：u"测试中文显示"。</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/office2010a-ey.html" class="u-url">office2010a-ey</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mint-15-upto-16.html" class="u-url">mint-15-upto-16</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/office2010a-ey.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/mint-15-upto-16.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>6QFDX-PYH2G-PPYFD-C7RJM-BBKQ8</p>
+<p>sudo sed -i 's/raring/saucy/' /etc/apt/sources.list
+sudo sed -i 's/olivia/petra/' /etc/apt/sources.list</p>
+<p>sudo sed -i 's/raring/saucy/' /etc/apt/sources.list.d/official-package-repositories.list</p>
+<p>sudo sed -i 's/olivia/petra/' /etc/apt/sources.list.d/official-package-repositories.list</p>
+<p>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade</p>
+<p>sudo apt-get upgrade</p>
+<p>%%timeit about 2 hours</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mint-printer.html" class="u-url">mint-printer</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/mint-printer.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>Alt + F2
+<code>system-config-printer</code></p>
+<p>即可</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/n-forms-trans.html" class="u-url">n-forms-trans</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Tao Junjie
+            </span></p>
+            <p class="dateline"><a href="posts/n-forms-trans.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p></p>
+<p>option都适用</p>
+<p class="more"><a href="posts/n-forms-trans.html">Read more…</a></p>
 </div>
     </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/network-scripting.html" class="u-url">network-scripting</a></h1>
@@ -124,148 +170,100 @@ MathJax.Hub.Config({
 <p>This is <a href="http://nbviewer.ipython.org/github/muxuezi/pp4p/blob/master/pyNetworkScripting.ipynb" title="Python Network Scripting">Python Network Scripting</a> reference link.</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/n-forms-trans.html" class="u-url">n-forms-trans</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/office2010a-ey.html" class="u-url">office2010a-ey</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/n-forms-trans.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/office2010a-ey.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>option都适用</p>
-<p class="more"><a href="posts/n-forms-trans.html">Read more…</a></p>
+<p>6QFDX-PYH2G-PPYFD-C7RJM-BBKQ8</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mint-printer.html" class="u-url">mint-printer</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/outer-vga-debian.html" class="u-url">outer-vga-debian</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/mint-printer.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/outer-vga-debian.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>Alt + F2
-<code>system-config-printer</code></p>
-<p>即可</p>
+<p>xrandr --output VGA --auto --output LVDS --off</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mint-15-upto-16.html" class="u-url">mint-15-upto-16</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/pandas.html" class="u-url">pandas</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/mint-15-upto-16.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/pandas.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>sudo sed -i 's/raring/saucy/' /etc/apt/sources.list
-sudo sed -i 's/olivia/petra/' /etc/apt/sources.list</p>
-<p>sudo sed -i 's/raring/saucy/' /etc/apt/sources.list.d/official-package-repositories.list</p>
-<p>sudo sed -i 's/olivia/petra/' /etc/apt/sources.list.d/official-package-repositories.list</p>
-<p>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade</p>
-<p>sudo apt-get upgrade</p>
-<p>%%timeit about 2 hours</p>
+<p>pandas细节比较多，<a title="pandas" href="http://pandas.pydata.org/index.html" target="_blank">更新也快</a>，绝对可以替代所有sql
+</p>
+<h2>0.13中ExcelWriter支持使用with写入多sheet，更人性化</h2>
+<p>with ExcelWriter('path_to_file.xlsx') as writer:</p>
+<p>df1.to_excel(writer, sheet_name='Sheet1')</p>
+<p>df2.to_excel(writer, sheet_name='Sheet2')</p>
+<h3>0.12中，需要用writer.save()保持才能输出</h3>
+
+<h3>0.13ExcelWriter支持Excel writer engines</h3>
+
+<p>XlsxWriter —— .xlsx</p>
+<p>openpyxl —— .xlsm files</p>
+<p>xlwt —— .xls files</p>
+<h2>通过map实现多条件筛选</h2>
+
+<p>criterion = rdctemp[u'省名称'].map(lambda x: x.startswith(prov.decode('utf8')[:2]))</p>
+<p>rdctemp.loc[criterion,dstname] = price</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/matplotlib-gbk.html" class="u-url">matplotlib-gbk</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/pandas-table-items.html" class="u-url">pandas-table-items</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/matplotlib-gbk.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/pandas-table-items.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
 <p></p>
-<p>将中文字体文件复制到：
-%PythonPath%Libsite-packagesmatplotlibmpl-datafontsttf</p>
-<p>下，这里以上一节介绍的Yahei Mono字体为例。</p>
-<p>找到Matplotlib的配置文件matplotlibrc，全局配置文件的路径：</p>
-<p>%PythonPath%Libsite-packagesmatplotlibmpl-datamatplotlibrc</p>
-<p>用户配置文件路径：</p>
-<p>c:Documents and Settings%UserName%.matplotlibmatplotlibrc</p>
-<p>用文本编辑器打开此文件，进行如下编辑：</p>
-<p>找到设置font.family的行，改为font.family : monospace，注意去掉前面的#号。</p>
-<p>在下面添加一行：font.monospace : Yahei Mono。</p>
-<p>在matplotlib中使用中文字符串时记住要用unicode格式，例如：u"测试中文显示"。</p>
+<div class="dp-highlighter">
+<div class="bar">通过bookall.groupby(obj)获取所有group</div>
+<div class="bar">然后对每个group的属性进行合并bookunit.<span class="builtins" style="color: #ff1493;">append</span>('&amp;&amp;'.join([<span class="builtins" style="color: #ff1493;">str</span>(x) <span class="keyword" style="font-weight: bold; color: blue;">for</span> x <span class="keyword" style="font-weight: bold; color: blue;">in</span> bookall.ix[v, i].<span class="builtins" style="color: #ff1493;">values</span>]))</div>
+
+<p class="more"><a href="posts/pandas-table-items.html">Read more…</a></p>
+</div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mail-for-bolin.html" class="u-url">mail-for-bolin</a></h1>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/parallel-system-tools.html" class="u-url">parallel-system-tools</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Tao Junjie
             </span></p>
-            <p class="dateline"><a href="posts/mail-for-bolin.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
+            <p class="dateline"><a href="posts/parallel-system-tools.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
         </div>
     </header><div class="p-summary entry-summary">
     <div>
-<p></p>
-<p>北京市海淀区东北旺西路8号中关村软件园28号楼环宇大厦
-TEA Team收</p>
-<p>010-60959407</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/luyou.html" class="u-url">luyou</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/luyou.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>当年万里觅封侯，匹马戍梁州。
-关河梦断何处，尘暗旧貂裘。</p>
-<p>胡未灭，鬓先秋，泪空流。</p>
-<p>此身谁料，心在天山，身老沧洲！</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/linux-mint-15-broadcom43xx-wifi.html" class="u-url">linux-mint-15-broadcom43xx-wifi</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Tao Junjie
-            </span></p>
-            <p class="dateline"><a href="posts/linux-mint-15-broadcom43xx-wifi.html" rel="bookmark"><time class="published dt-published" datetime="2010-01-01T13:44:27+08:00" title="2010-01-01 13:44">2010-01-01 13:44</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p></p>
-<p>sudo apt-get install b43-fwcutter firmware-b43-installer</p>
-<p>http://ydwcn.iteye.com/blog/1126278</p>
-<p>1、查看网卡类型：lspci -vnn | grep 14e4，确定是Broadcom43xx网卡类型</p>
-<p>2、查看ubuntu内核版本：uname -a，我的版本是Linux ubuntu 2.6.35-22-generic</p>
-<p>3、安装b43-fwcutter： Install b43-fwcutter</p>
-<p>写道</p>
-<p>wget http://bu3sch.de/b43/fwcutter/b43-fwcutter-013.tar.bz2</p>
-<p>tar xjf b43-fwcutter-013.tar.bz2</p>
-<p>cd b43-fwcutter-013</p>
-<p>make</p>
-<p>cd ..</p>
-<p>注意：这一步要记住b43-fwcutter安装路径，下面会用到。</p>
-<p>4、根据内核版本选择安装驱动版本：</p>
-<p>注意：下面的安装路径一定要在/lib/firmware/下执行：</p>
-<p>a、如果你的版本你是linux-2.6.24，执行：</p>
-<p>export FIRMWARE_INSTALL_DIR="/lib/firmware"</p>
-<p>wget http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2</p>
-<p>tar xjf broadcom-wl-4.80.53.0.tar.bz2</p>
-<p>cd broadcom-wl-4.80.53.0/kmod</p>
-<p>sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta.o</p>
-<p>b、如果你的版本是linux-2.6.25 或是更高，执行：（我的版本就是选择这里）</p>
-<p>export FIRMWARE_INSTALL_DIR="/lib/firmware"</p>
-<p>wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2</p>
-<p>tar xjf broadcom-wl-4.150.10.5.tar.bz2</p>
-<p>cd broadcom-wl-4.150.10.5/driver</p>
-<p><strong><em>*</em>* b43-fwcutter -w /tmp FILE extract and write firmware to /tmp. </strong>****</p>
-<p>sudo ../../b43-fwcutter-013/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta_mimo.o</p>
-<p>如果到这里，执行成功，会看到解析出好多*.fw文件，没有报警信息，这就大功告成了！</p>
-<p>注意：../../b43-fwcutter-013，这个地方一定要选择自己安装b43-fwcutter的路径。</p>
-<p>好辛苦啊，整了好几天啊，希望这个对初学ubuntu的朋友们有帮助。</p>
+<!--
+.. title: Parallel System Tools
+.. slug: parallel-system-tools
+.. date: 05/28/2014 02:39:05 AM UTC
+.. tags: Python
+.. link:
+.. description:
+.. type: text
+-->
+
+<p>Include fork, pipes, socket, thread, signal, multiprocess</p>
+<p>This is <a href="http://nbviewer.ipython.org/github/muxuezi/pp4p/blob/master/pyprogress.ipynb" title="Parallel System Tools">Parallel System Tools</a> reference link.</p>
 </div>
     </div>
     </article>
