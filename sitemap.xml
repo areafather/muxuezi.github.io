@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://muxuezi.github.io/</loc>
-  <lastmod>2017-02-06T06:55:00Z</lastmod>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/2010/</loc>
@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2017-02-13T00:55:00Z</lastmod>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -75,7 +75,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2017-02-13T01:02:00Z</lastmod>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
@@ -711,7 +711,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-231.html</loc>
-  <lastmod>2017-02-13T01:01:00Z</lastmod>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/index-232.html</loc>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-24.html</loc>
@@ -5546,6 +5550,14 @@
   <lastmod>2017-02-13T01:02:00Z</lastmod>
  </url>
  <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17016-2017-02-13-report.html</loc>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17017-2017-02-15-report.html</loc>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
   <lastmod>2017-02-13T01:02:00Z</lastmod>
  </url>
@@ -10215,7 +10227,11 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2017016-2017-02-12-report.html</loc>
-  <lastmod>2017-02-13T01:02:00Z</lastmod>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017017-2017-02-14-report.html</loc>
+  <lastmod>2017-02-16T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
