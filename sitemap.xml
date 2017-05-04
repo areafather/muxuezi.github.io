@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2017-04-18T23:08:00Z</lastmod>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -75,7 +75,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2017-04-18T23:08:00Z</lastmod>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
@@ -735,7 +735,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-237.html</loc>
-  <lastmod>2017-04-18T23:08:00Z</lastmod>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-24.html</loc>
@@ -5679,7 +5679,19 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/dlott-17043-2017-04-17-report.html</loc>
-  <lastmod>2017-04-18T23:08:00Z</lastmod>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17044-2017-04-19-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17045-2017-04-22-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17046-2017-04-24-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
@@ -10460,6 +10472,22 @@
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2017043-2017-04-16-report.html</loc>
   <lastmod>2017-04-18T23:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017044-2017-04-18-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017045-2017-04-20-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017046-2017-04-23-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017047-2017-04-25-report.html</loc>
+  <lastmod>2017-05-04T22:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
