@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/archive.html</loc>
-  <lastmod>2017-08-15T11:57:00Z</lastmod>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/</loc>
@@ -75,7 +75,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/lottery.html</loc>
-  <lastmod>2017-08-15T11:57:00Z</lastmod>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/categories/machine-learning.html</loc>
@@ -775,7 +775,7 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-246.html</loc>
-  <lastmod>2017-08-15T11:57:00Z</lastmod>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/index-25.html</loc>
@@ -5895,7 +5895,19 @@
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/dlott-17094-2017-08-14-report.html</loc>
-  <lastmod>2017-08-15T11:57:00Z</lastmod>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17095-2017-08-16-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17096-2017-08-19-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/dlott-17097-2017-08-21-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/doc-pyautogui.html</loc>
@@ -10856,6 +10868,18 @@
  <url>
   <loc>https://muxuezi.github.io/posts/slott-2017094-2017-08-13-report.html</loc>
   <lastmod>2017-08-15T11:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017095-2017-08-15-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017096-2017-08-17-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://muxuezi.github.io/posts/slott-2017097-2017-08-20-report.html</loc>
+  <lastmod>2017-09-10T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://muxuezi.github.io/posts/sqlalchemy-introduce.html</loc>
